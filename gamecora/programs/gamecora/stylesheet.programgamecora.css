@@ -1,0 +1,195 @@
+/* START */
+.simpleintro.programintro.program-gamecora .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-gamecora .title {
+	display: none;
+}
+
+.simpleintro.programintro.program-gamecora .main.sprite-0 {
+	background-color: #fff;
+}
+
+.simpleintro.programintro.program-gamecora .main.sprite-1 {
+	display: block;
+	background-image: url(sprites/canecora.png);
+	width: 600px;
+	height: 285px;
+	bottom: -285px;
+	left: 10px;
+}
+
+.simpleintro.programintro.program-gamecora .main.text1 {
+	font-family: Virgo01Regular;
+	display: block;
+	color: #000;
+	height: 90px;
+	line-height: 90px;
+	font-size: 80px;
+	width: 220px;
+	text-align: center;
+	left: 195px;
+	top: 130px;
+}
+
+.simpleintro.programintro.program-gamecora .main.text2 {
+	font-family: Virgo01Regular;
+	display: block;
+	color: #000;
+	height: 90px;
+	line-height: 90px;
+	font-size: 80px;
+	width: 220px;
+	text-align: center;
+	left: 245px;
+	top: 130px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.simpleintro.programintro.program-gamecora .main.text3 {
+	font-family: Virgo01Regular;
+	display: block;
+	color: #000;
+	height: 90px;
+	line-height: 90px;
+	font-size: 80px;
+	width: 130px;
+	text-align: center;
+	left: 475px;
+	top: -100px;
+	color: #d00;
+}
+
+.simpleintro.programintro.program-gamecora .main.description {
+	top: 170px;
+	font-size: 15px;
+	color: #fff;
+	bottom: auto;
+	height:15px;
+	line-height: 15px;
+	padding: 0;
+	margin:0;
+	background-color: #000;
+	font-family: Virgo01Regular;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-gamecora.onair .main.sprite-1 {
+	-webkit-transition: all 1s ease 3s;
+	-moz-transition: all 1s ease 3s;
+	-o-transition: all 1s ease 3s;
+	-ms-transition: all 1s ease 3s;
+	transition: all 1s ease 3s;
+	bottom: -150px;
+}
+
+.simpleintro.programintro.program-gamecora.onair .main.text1 {
+	-webkit-transition: all 1s ease 1s;
+	-moz-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	-ms-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
+	left: 35px;
+}
+
+.simpleintro.programintro.program-gamecora.onair .main.text2 {
+	-webkit-transition: all 1s ease 1s;
+	-moz-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	-ms-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	left: 255px;
+}
+
+.simpleintro.programintro.program-gamecora.onair .main.text3 {
+	-webkit-transition: all 1s ease 1s;
+	-moz-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	-ms-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
+	top: 130px;
+}
+
+.simpleintro.programintro.program-gamecora.onair .main.description {
+	-webkit-transition: all 1s ease 2s;
+	-moz-transition: all 1s ease 2s;
+	-o-transition: all 1s ease 2s;
+	-ms-transition: all 1s ease 2s;
+	transition: all 1s ease 2s;
+	top: 210px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-gamecora.closing .main.text1 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 120px;
+}
+
+.simpleintro.programintro.program-gamecora.closing .main.text2 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 120px;
+}
+
+.simpleintro.programintro.program-gamecora.closing .main.text3 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 120px;
+}
+
+.simpleintro.programintro.program-gamecora.closing .main.description {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	top: 200px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.simpleintro.programintro.program-gamecora.closing .main.sprite-1 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	bottom: 0px;
+}
+
+/* LOADER */
+.onload-programgamecora {
+	z-index: 123321;
+}

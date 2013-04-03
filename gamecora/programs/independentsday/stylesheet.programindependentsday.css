@@ -1,0 +1,215 @@
+/* START */
+.simpleintro.programintro.program-independentsday .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-independentsday .main.program {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 270px;
+	font-size: 40px;
+	color: #222;
+	font-family: KarnivoreRegular;
+	font-weight: normal;
+}
+
+.simpleintro.programintro.program-independentsday .main.description {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 310px;
+	font-size: 18px;
+	color: #222;
+	font-family: KarnivoreRegular;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-0 {
+	background-color: #440055;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-1 {
+	display: block;
+	background-repeat: repeat-x;
+	background-image: url(sprites/buildings.png);
+	width: 100%;
+	height: 150px;
+	bottom: -150px;
+	left: 0px;
+	background-position: 200px 0;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-2 {
+	display: block;
+	background-image: url(sprites/ray.png);
+	width: 100px;
+	top: 200px;
+	left: 270px;
+	height:0;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-3 {
+	display: block;
+	background-image: url(sprites/invader.png);
+	width: 250px;
+	height: 250px;
+	top: -250px;
+	left: 195px;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-4 {
+	display: block;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-5 {
+	display: block;
+	background-image: url(logo.png);
+	width: 230px;
+	height: 230px;
+	top: 25px;
+	left: 205px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.simpleintro.programintro.program-independentsday .main.sprite-6 {
+	display: block;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #440055;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 900;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-independentsday.onair .main.sprite-1 {
+	-webkit-transition: all 3s ease 0s;
+	-moz-transition: all 3s ease 0s;
+	-o-transition: all 3s ease 0s;
+	-ms-transition: all 3s ease 0s;
+	transition: all 3s ease 0s;
+	background-position: 0 0;
+	bottom: 0px;
+}
+
+.simpleintro.programintro.program-independentsday.onair .main.sprite-2 {
+	-webkit-transition: all 3s ease 1.5s;
+	-moz-transition: all 3s ease 1.5s;
+	-o-transition: all 3s ease 1.5s;
+	-ms-transition: all 3s ease 1.5s;
+	transition: all 3s ease 1.5s;
+	display: block;
+	height: 100px;
+	top: 250px;
+}
+
+.simpleintro.programintro.program-independentsday.onair .main.sprite-3 {
+	-webkit-transition: all 2s ease 0s;
+	-moz-transition: all 2s ease 0s;
+	-o-transition: all 2s ease 0s;
+	-ms-transition: all 2s ease 0s;
+	transition: all 2s ease 0s;
+	top: -20px;
+}
+
+.simpleintro.programintro.program-independentsday.onair .main.sprite-4 {
+	-webkit-transition: all 1s ease 2.5s;
+	-moz-transition: all 1s ease 2.5s;
+	-o-transition: all 1s ease 2.5s;
+	-ms-transition: all 1s ease 2.5s;
+	transition: all 1s ease 2.5s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.simpleintro.programintro.program-independentsday.onair .main.sprite-5 {
+	-webkit-transition: all 1s ease 4s;
+	-moz-transition: all 1s ease 4s;
+	-o-transition: all 1s ease 4s;
+	-ms-transition: all 1s ease 4s;
+	transition: all 1s ease 4s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.simpleintro.programintro.program-independentsday.onair .main.program {
+	-webkit-transition: all 1s ease 4.1s;
+	-moz-transition: all 1s ease 4.1s;
+	-o-transition: all 1s ease 4.1s;
+	-ms-transition: all 1s ease 4.1s;
+	transition: all 1s ease 4.1s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.simpleintro.programintro.program-independentsday.onair .main.description {
+	-webkit-transition: all 1s ease 4.2s;
+	-moz-transition: all 1s ease 4.2s;
+	-o-transition: all 1s ease 4.2s;
+	-ms-transition: all 1s ease 4.2s;
+	transition: all 1s ease 4.2s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-independentsday.closing .main.sprite-6 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-independentsday .background {
+	background-color: #440055;
+}
+
+.simpleintro.sectionintro.program-independentsday .main.program {
+	color: #200028;
+}
+
+.simpleintro.sectionintro.program-independentsday .type-text {
+	font-family: KarnivoreRegular;
+}
+
+/* SLIDESHOW */
+.textstream.slideshow.program-independentsday .streamitem .item.title,.textstream.slideshow.program-independentsday .streamitem .item.source {
+	color: #360043;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-independentsday .main.sprite-0 {
+	background-color: #360043;
+}
+
+.textstream.program-independentsday .main.program {
+	color: #360043;
+	font-family: KarnivoreRegular;
+}
+
+/* LOADER */
+.onload-programindependentsday {
+	z-index: 123321;
+}

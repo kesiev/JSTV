@@ -1,0 +1,247 @@
+/* START */
+.simpleintro.programintro.program-sakanascene .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-sakanascene .main.program {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 270px;
+	font-size: 60px;
+	color: #020;
+	font-family: XenophoneRegular;
+	text-shadow: 0 0 5px #fff;
+	font-weight: normal;
+}
+
+.simpleintro.programintro.program-sakanascene .main.description {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 320px;
+	font-size: 25px;
+	color: #020;
+	font-family: XenophoneRegular;
+	text-shadow: 0 0 5px #fff;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-0 {
+	background-color: #37c195;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-1 {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	display: block;
+	background-image: url(sprites/shark.png);
+	width: 600px;
+	height: 600px;
+	top: -100px;
+	left: -600px;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-2 {
+	display: block;
+	background-image: url(sprites/sakanascene.png);
+	width: 300px;
+	height: 300px;
+	top: 45px;
+	left: 170px;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-3 {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	display: block;
+	background-image: url(sprites/sakanafish.png);
+	width: 120px;
+	height: 120px;
+	top: 390px;
+	left: 260px;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-4 {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	display: block;
+	background-image: url(sprites/sakanafish.png);
+	width: 120px;
+	height: 120px;
+	top: 160px;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-5 {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	display: block;
+	background-image: url(sprites/sakanafish.png);
+	width: 120px;
+	height: 120px;
+	top: 160px;
+	left: -120px;
+}
+
+.simpleintro.programintro.program-sakanascene .main.sprite-6 {
+	display: block;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #37c195;
+	z-index: 900;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-sakanascene.onair .main.program {
+	-webkit-transition: all 2s ease 3s;
+	-moz-transition: all 2s ease 3s;
+	-o-transition: all 2s ease 3s;
+	-ms-transition: all 2s ease 3s;
+	transition: all 2s ease 3s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 250px;
+}
+
+.simpleintro.programintro.program-sakanascene.onair .main.description {
+	-webkit-transition: all 2s ease 3.5s;
+	-moz-transition: all 2s ease 3.5s;
+	-o-transition: all 2s ease 3.5s;
+	-ms-transition: all 2s ease 3.5s;
+	transition: all 2s ease 3.5s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 300px;
+}
+
+.simpleintro.programintro.program-sakanascene.onair .main.sprite-1 {
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+
+	-webkit-transition: all 4s linear 1s;
+	-moz-transition: all 4s linear 1s;
+	-o-transition: all 4s linear 1s;
+	-ms-transition: all 4s linear 1s;
+	transition: all 4s linear 1s;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-sakanascene.onair .main.sprite-3 {
+	-webkit-transition: all 3s ease 1s;
+	-moz-transition: all 3s ease 1s;
+	-o-transition: all 3s ease 1s;
+	-ms-transition: all 3s ease 1s;
+	transition: all 3s ease 1s;
+	top: 45px;
+	left: 260px;
+}
+
+.simpleintro.programintro.program-sakanascene.onair .main.sprite-4 {
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+
+	-webkit-transition: all 3s ease 1s;
+	-moz-transition: all 3s ease 1s;
+	-o-transition: all 3s ease 1s;
+	-ms-transition: all 3s ease 1s;
+	transition: all 3s ease 1s;
+	top: 180px;
+	left: 180px;
+}
+
+.simpleintro.programintro.program-sakanascene.onair .main.sprite-5 {
+	-webkit-transform: rotate(200deg);
+	-moz-transform: rotate(200deg);
+	-o-transform: rotate(200deg);
+	-ms-transform: rotate(200deg);
+	transform: rotate(200deg);
+
+	-webkit-transition: all 3s ease 1s;
+	-moz-transition: all 3s ease 1s;
+	-o-transition: all 3s ease 1s;
+	-ms-transition: all 3s ease 1s;
+	transition: all 3s ease 1s;
+	top: 180px;
+	left: 340px;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-sakanascene.closing .main.sprite-6 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-sakanascene .background {
+	background-color: #367c66;
+}
+
+.simpleintro.sectionintro.program-sakanascene .main.program {
+	color: #325348;
+	bottom: -3px;
+}
+
+.simpleintro.sectionintro.program-sakanascene.onair .main.program {
+	bottom: -11px;
+}
+
+.simpleintro.sectionintro.program-sakanascene.closing .main.program {
+	bottom: -3px;
+}
+
+.simpleintro.sectionintro.program-sakanascene .type-text {
+	font-family: XenophoneRegular;
+}
+
+/* SLIDESHOW */
+
+.textstream.slideshow.program-sakanascene .streamitem .item.title,.textstream.slideshow.program-sakanascene .streamitem .item.source {
+	color: #325348;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-sakanascene .main.sprite-0 {
+	background-color: #367c66;
+}
+
+.textstream.program-sakanascene .main.program {
+	color: #325348;
+	font-family: XenophoneRegular;
+	bottom: -3px;
+}
+
+/* LOADER */
+.onload-programsakanascene {
+	z-index: 123321;
+}

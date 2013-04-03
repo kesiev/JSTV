@@ -1,0 +1,211 @@
+/* START */
+.simpleintro.programintro.program-oldcontinent .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-oldcontinent .main.sprite-0 {
+	background-color: #fff;
+}
+
+.simpleintro.programintro.program-oldcontinent .main.sprite-1 {
+	-webkit-transform: rotate(-50deg);
+	-moz-transform: rotate(-50deg);
+	-o-transform: rotate(-50deg);
+	-ms-transform: rotate(-50deg);
+	transform: rotate(-50deg);
+	display: block;
+	background-image: url(sprites/moon.png);
+	width: 300px;
+	height: 300px;
+	top: 15px;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-oldcontinent .main.sprite-2 {
+	-webkit-transform: rotate(-50deg);
+	-moz-transform: rotate(-50deg);
+	-o-transform: rotate(-50deg);
+	-ms-transform: rotate(-50deg);
+	transform: rotate(-50deg);
+	display: block;
+	top: 170px;
+	left: -450px;
+	width: 250px;
+	height: 250px;
+	background-image: url(sprites/europa.png);
+}
+
+.simpleintro.programintro.program-oldcontinent .main.program {
+	padding: 10px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	height: auto;
+	top: -300px;
+	text-shadow: 0 -3px 1px #000;
+	font-family: MinotaurPhatte;
+	color: #fff;
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.simpleintro.programintro.program-oldcontinent .main.description {
+	text-align: center;
+	line-height: 25px;
+	left: 0px;
+	right: 0px;
+	top: 390px;
+	text-shadow: 0 -3px 1px #000;
+	font-family: MinotaurPhatte;
+	font-size: 20px;
+	color: #fff;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-oldcontinent.onair .main.sprite-0 {
+	-webkit-transition: all 0.5s ease 1.5s;
+	-moz-transition: all 0.5s ease 1.5s;
+	-o-transition: all 0.5s ease 1.5s;
+	-ms-transition: all 0.5s ease 1.5s;
+	transition: all 0.5s ease 1.5s;
+	background-color: #008;
+}
+
+.simpleintro.programintro.program-oldcontinent.onair .main.sprite-1 {
+	-webkit-transition: all 0.5s ease 1.5s;
+	-moz-transition: all 0.5s ease 1.5s;
+	-o-transition: all 0.5s ease 1.5s;
+	-ms-transition: all 0.5s ease 1.5s;
+	transition: all 0.5s ease 1.5s;
+
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	-ms-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+	left: 170px;
+}
+
+.simpleintro.programintro.program-oldcontinent.onair .main.sprite-2 {
+	-webkit-transition: all 0.5s ease 1s;
+	-moz-transition: all 0.5s ease 1s;
+	-o-transition: all 0.5s ease 1s;
+	-ms-transition: all 0.5s ease 1s;
+	transition: all 0.5s ease 1s;
+
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	top: 25px;
+	left: 190px;
+}
+
+.simpleintro.programintro.program-oldcontinent.onair .main.description {
+	-webkit-transition: all 0.1s ease 2.5s;
+	-moz-transition: all 0.1s ease 2.5s;
+	-o-transition: all 0.1s ease 2.5s;
+	-ms-transition: all 0.1s ease 2.5s;
+	transition: all 0.1s ease 2.5s;
+	top: 330px;
+	text-shadow: 0 -3px 1px #000;
+}
+
+.simpleintro.programintro.program-oldcontinent.onair .main.program {
+	-webkit-transition: all 0.5s ease 2s;
+	-moz-transition: all 0.5s ease 2s;
+	-o-transition: all 0.5s ease 2s;
+	-ms-transition: all 0.5s ease 2s;
+	transition: all 0.5s ease 2s;
+	top: 280px;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-oldcontinent.closing .main.sprite-1 {
+	-webkit-transition: all 0.5s ease 0.5s;
+	-moz-transition: all 0.5s ease 0.5s;
+	-o-transition: all 0.5s ease 0.5s;
+	-ms-transition: all 0.5s ease 0.5s;
+	transition: all 0.5s ease 0.5s;
+	top: -400px;
+}
+
+.simpleintro.programintro.program-oldcontinent.closing .main.sprite-2 {
+	-webkit-transition: all 0.5s ease 1s;
+	-moz-transition: all 0.5s ease 1s;
+	-o-transition: all 0.5s ease 1s;
+	-ms-transition: all 0.5s ease 1s;
+	transition: all 0.5s ease 1s;
+
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-o-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+	left: 640px;
+}
+
+.simpleintro.programintro.program-oldcontinent.closing .main.program {
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+	top: -350px;
+}
+
+.simpleintro.programintro.program-oldcontinent.closing .main.description {
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	top: 390px;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-oldcontinent .background {
+	background-color: #008;
+}
+
+.simpleintro.sectionintro.program-oldcontinent .main.program {
+	color: #003;
+}
+
+.simpleintro.sectionintro.program-oldcontinent .type-text {
+	font-family: MinotaurPhatte;
+}
+
+/* SLIDESHOW */
+
+.textstream.slideshow.program-oldcontinent .streamitem .item.title,.textstream.slideshow.program-oldcontinent .streamitem .item.source {
+	color: #003;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-oldcontinent .main.sprite-0 {
+	background-color: #003;
+}
+
+.textstream.program-oldcontinent .main.program {
+	color: #003;
+	font-family: MinotaurPhatte;
+}
+
+/* LOADER */
+.onload-programoldcontinent {
+	z-index: 123321;
+}

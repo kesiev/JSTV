@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Gamecora TV - Gaming info from their sources. Nobody in the middle.
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="gamecora/sitestyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="gamecora/channelgenerator.js">
+</script>
+		<script type="text/javascript" src="jstv/jstvt.js">
+</script>
+		<script type="text/javascript" src="jstv/jstvc.js">
+</script>
+		<script type="text/javascript" src="jstv/jstv.js">
+</script>
+	</head>
+	<body onload="embedvideo()">
+		<div class="block">
+			<h1>
+				Gamecora TV <span class="beta">BETA</span>
+			</h1>
+			<h2>
+				Gaming info from their sources. Nobody in the middle.
+			</h2>
+			<p>
+				We're <b>passionate gamers</b> because we're sure that <b>videogame is art</b> from long time and, so, <b>their makers are artists too</b>. We're <b>passionate internet citizen</b> because we're sure that <b>it can give voice</b> and <b>bring first hand information</b> to everybody <b>by itself</b>. That's why <b>Gamecora TV</b> is here.
+			</p>
+		</div>
+		<div class="dark" id="box">
+			<div id="videocontainer"></div>
+		</div>
+		<div class="dark flat">
+			<ul>
+				<li id="sel0">
+					<a href="#box" onclick="tab(0)">Schedule</a>
+				</li>
+				<li id="sel1">
+					<a href="#box" onclick="tab(1)">Sources</a>
+				</li>
+				<li id="sel2">
+					<a href="#box" onclick="tab(2)">Stats</a>
+				</li>
+				<li id="sel3">
+					<a href="#box" onclick="tab(3)">About</a>
+				</li>
+			</ul>
+		</div>
+		<div class="block" id="schedule"></div>
+		<div class="block" id="sources"></div>
+		<div class="block" id="stats"></div>
+		<div class="block" id="about">
+			<h3>
+				Nobody in the middle.
+			</h3>
+			<p>
+				Everything started after me, KesieV, and my girlfriend Bianca, both passionate gamers, read <a target="_blank" href="http://www.neogaf.com/forum/showthread.php?t=510083">this</a> pretty famous post on NeoGAF about the role of <a target="_blank" href="http://www.nintendo.com/nintendo-direct/">Nintendo Direct</a> in gaming journalism.
+			</p>
+			<p>
+				That article, despite its focus is on gaming, depicts an idea I've always had about internet: it has the capabilities to give information from the original source but this practice is not as common as it should. Having first hand information is crucial for <i>making your own opinion about facts</i> instead of <i>making your own opinion about opinions</i>: you'll discover what's <i>right</i>, <i>wrong</i>, <i>fair</i> and <i>unfair</i> by yourself.
+			</p>
+			<p>
+				Keeping this idea in mind, we started the opensourced project <a target="_blank" href="index-jstv.html">JSTV</a> that, thanks to some code and magic, can aggregate informations from various sources and show them in video/reel form, that sometime looks like a <i>train station display</i> or <i>a thematic TV channel</i>, mainly picking the idea of <i>Nintendo Direct</i> and extending that to any topic and source.
+			</p>
+			<p>
+				But is there anything better that turning an idea to its source in order to test its effectiveness? So <b>Gamecora TV</b> was born: hundreds of hand-picked videogame official sources squeezed in a long and ever changing video in which <b>game developers, publishers and any kind of party broadcasts their first-hand news</b>. You'll see obscure and clever game developers, businessman from well known publishers, game screenshots and videos talking by itself. <b>Nobody in the middle</b>.
+			</p>
+			<h3>
+				How it works
+			</h3>
+			<p>
+				When your browser reaches <b>Gamecora TV</b>, it will randomly choose 50 news feeds from the <b>Gamecora TV</b> database every hour. Regardless the published date, the author, the genre or the relevance, it'll pick the original information, cut, sort and spread it in <b>different TV programs</b> and prepare a video for you. It'll also select some nice music by <i>Arnaldo Brenna</i>, our official musician. All you'll see will be some nerdy progress bar and a big play button. Hit it and start watching.
+			</p>
+			<h3>
+				The TV programs
+			</h3>
+			<p>
+				<b>Gamecora TV</b> offers a number of thematic TV shows, which goes on air randomly and with different lenght every time. Which you'll like?
+			</p>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/imho/logo.png)"></div><b>IMHO</b> is about the personal feelings from the leading figures of gaming industry. What they think about games, about gaming and about their own daily life told with usually weird photos, videos, blog posts or short tweets. You'll discover that they are humans too. But with superpowers.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/sakanascene/logo.png)"></div><b>Sakana Scene</b> is where the little fishes show their teeth. All the weird, pixelated, vectorial, lo-fi, brave and fearless worlds that come from the busy garages and living rooms of the indie scene.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/independentsday/logo.png)"></div><b>Independents Day</b> is about organized and trained team of soldiers that fight for their independence and for making the gaming world free from rules. From triple-A games to high quality experiments.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/risingsun/logo.png)"></div><b>Rising Sun</b> keeps telling the long story of the Japanese gaming scene, with its crazy and colorful worlds and designers. It is a spicy dish: lovers will love to death, haters gonna hate it.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/turtleisland/logo.png)"></div><b>Turtle island</b>, instead, tells the other long story of sumptuous gaming which starts from the glowing lines of <a target="_blank" href="http://en.wikipedia.org/wiki/Tennis_for_Two">Tennis For Two</a>: it's about everything playable coming from America.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/oldcontinent/logo.png)"></div><b>The Old Continent</b> is about the rich and intense gaming scene from the oldest continent, leaded by goddess Europa and lightened by her Moon.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/mrfogg/logo.png)"></div><b>Mr. Fogg</b> completes our travel around the world: we will talk about the emerging game scene from Australia, passing to Chile and searching for game developers in every corner of the world.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/strawberryroll/logo.png)"></div><b>Strawberry Roll</b> is for who likes the sweet and funny taste of the red coloured fruit: Nintendo.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/limeroll/logo.png)"></div><b>Lime Roll</b> is perfect sliced for your Martini, your Mojito and everything from Microsoft.
+				<div class="clear"></div>
+			</div>
+			<div class="programdiz">
+				<div class="logo" style="background-image:url(gamecora/programs/blueberryroll/logo.png)"></div><b>Blueberry Roll</b> is classy and sophisticated blue and, surely, as classy and sophisticated as the colours of Sony.
+				<div class="clear"></div>
+			</div>
+			<h3>
+				Open Source
+			</h3>
+			<p>
+				<b>Gamecora TV</b> is included into the <a target="_blank" href="index-jstv.html">JSTV</a> as demo project, so you can download, contribute or simply have a look to the sources downloading them <a target="_blank" href="index-jstv.html#download">here</a>. All the code is MIT/GPL2 but I'm pretty sure that if you want to hear more techno babble you should keep an eye to the <a target="_blank" href="index-jstv.html">JSTV project</a> home page.
+			</p>
+			<h3>
+				Contacts
+			</h3>
+			<p>
+				Suggestions? Comments? Rage? I'm <a target="_blank" href="http://www.kesiev.com">KesieV</a> and you can contact me <a href="mailto:k34e3208s0234i234e0308v@hot123mail.com">here</a> (strip the numbers) or on <a target="_blank" href="http://www.twitter.com/KesieV">Twitter</a>.
+			</p>
+			<h3>
+				Credits and Kudos
+			</h3>
+			<p>
+				<a target="_blank" href="index-jstv.html">JSTV</a>, the core of <b>Gamecora TV</b> was coded by me, <a target="_blank" href="http://www.kesiev.com">KesieV</a>, with the valuable help of <a target="_blank" href="http://www.sublimetext.com/">Sublime Text</a>, but it's quite obvious that it's just a square with some knobs without its database, intro and outro creativity, logos and site review. Well, everything that's not coding was made by <a target="_blank" href="http://something-white.blogspot.it">Bianca</a>, my girlfriend, with the help of <a target="_blank" href="http://inkscape.org/">Inkscape</a>, <a target="_blank" href="http://www.gimp.org/">Gimp</a>, <a target="_blank" href="http://www.libreoffice.org/download">LibreOffice</a> and a huge amount of effort and time. And, whenever we could work as a duo, everything should have some <i>creepy Daffy-Duck-Style beatbox</i> as background music without...
+			<p>
+			<ul>
+				<li><a href="mailto:arnaldobrenna@hotmail.it">IMHO</a> by <b>Arnaldo Brenna</b></li>
+				<li><a href="http://www.lcp.c64.org/files/2003-LCP/compo/gameboy/">Statoil</a> by <b>Zabutom</b></li>
+				<li><a href="http://mp3.tom7.org/t7es/">If you antietam, join 'em</a> by <b>Tom 7 Entertainment System</b></li>
+				<li><a href="http://freemusicarchive.org/music/Plurabelle/Money_Blood_and_Light/">Ropes</a> by <b>Plurabelle</b></li>
+				<li><a href="http://freemusicarchive.org/music/Plurabelle/Money_Blood_and_Light/">Athens OH</a> by <b>Plurabelle</b></li>
+				<li><a href="http://freemusicarchive.org/music/Foniqz/D2_EP/">Spectrum (Subdiffusion Mix)</a> by <b>Foniqz</b></li>
+				<li><a href="http://freemusicarchive.org/music/Miro_Belle/">In Fielder</a> by <b>Miro Belle</b></li>
+			</p>
+			<p>
+				Thanks to <b>Giuseppe and Giovanni La Scala</b>, <b>Gabriele Sala</b>, <b>Stefano Fioretto</b> and <b>Alessio Gatti</b> that shared their gaming passion with us making the <b>Gamecora TV</b> idea better... without knowing!
+			</p>
+			<p>
+				Last but not least, <b>huge thanks</b> to <a target="_blank" href="gamecora/canecora.jpg">Canecora</a>, our resident peluche that passed the last 4 years watching us playing videogames and gifted the project with his own name. It is surely the <i>most informed on gaming</i> of the house.
+			</p>
+		</div>
+		<div class="block footer">
+			<b>Gamecora TV</b> and <b>JSTV</b> &copy; 2013 by <a target="_blank" href="http://www.kesiev.com">KesieV</a>. Show design and graphics by <b>Bianca Brenna</b>. Fonts are under free license and comes from <a target="_blank" href="http://www.fontsquirrel.com/">Font Squirrel</a>.
+		</div><script type="text/javascript">
+			function tab(id) {
+				for (var i=0;i<4;i++) document.getElementById('sel'+i).className=i==id?"selected":"";
+				document.getElementById("schedule").style.display=id==0?"block":"none";
+				document.getElementById("sources").style.display=id==1?"block":"none";
+				document.getElementById("stats").style.display=id==2?"block":"none";
+				document.getElementById("about").style.display=id==3?"block":"none";
+			}
+
+			function embedvideo(){
+				tab(3);
+				JSTV.embed("videocontainer",makeChannel(),function(){
+					document.getElementById("schedule").innerHTML=this.getStats(true).schedule;
+					document.getElementById("sources").innerHTML=this.getStats(true).sources;
+					document.getElementById("stats").innerHTML=this.getStats(true).stats;
+					JSTVC.flush();
+				});
+			}
+		</script>
+	</body>
+</html>

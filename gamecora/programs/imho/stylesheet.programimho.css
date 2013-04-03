@@ -1,0 +1,300 @@
+/* START */
+.simpleintro.programintro.program-imho .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-imho .main.program {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 285px;
+	font-size: 60px;
+	color: #fff;
+	font-family: KomikaHandRegular;
+	text-shadow: 0 0 5px #fff;
+	font-weight: normal;
+}
+
+.simpleintro.programintro.program-imho .main.description {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 360px;
+	bottom: auto;
+	font-size: 15px;
+	color: #020;
+	font-family: KomikaHandRegular;
+	text-shadow: 0 0 5px #fff;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-0 {
+	background-color: #ddd;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-1 {
+	display: block;
+	background-image: url(sprites/imho.png);
+	width: 300px;
+	height: 300px;
+	top: 25px;
+	left: 170px;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-2 {
+	-webkit-transform: scale(0.1,1);
+	-moz-transform: scale(0.1,1);
+	-o-transform: scale(0.1,1);
+	-ms-transform: scale(0.1,1);
+	transform: scale(0.1,1);
+
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+	display: block;
+	background-image: url(sprites/face3.png);
+	width: 30px;
+	height: 30px;
+	top: 130px;
+	left: 200px;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-3 {
+	-webkit-transform: scale(0.1,1);
+	-moz-transform: scale(0.1,1);
+	-o-transform: scale(0.1,1);
+	-ms-transform: scale(0.1,1);
+	transform: scale(0.1,1);
+
+	-webkit-transform-origin: right center;
+	-moz-transform-origin: right center;
+	-o-transform-origin: right center;
+	-ms-transform-origin: right center;
+	transform-origin: right center;
+	display: block;
+	background-image: url(sprites/face4.png);
+	width: 30px;
+	height: 30px;
+	top: 115px;
+	left: 320px;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-4 {
+	-webkit-transform: scale(0.1,1);
+	-moz-transform: scale(0.1,1);
+	-o-transform: scale(0.1,1);
+	-ms-transform: scale(0.1,1);
+	transform: scale(0.1,1);
+
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+	display: block;
+	background-image: url(sprites/face5.png);
+	width: 30px;
+	height: 30px;
+	top: 135px;
+	left: 370px;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-5 {
+	-webkit-transform: scale(1,0.1);
+	-moz-transform: scale(1,0.1);
+	-o-transform: scale(1,0.1);
+	-ms-transform: scale(1,0.1);
+	transform: scale(1,0.1);
+
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	-o-transform-origin: center top;
+	-ms-transform-origin: center top;
+	transform-origin: center top;
+	display: block;
+	background-image: url(sprites/face1.png);
+	width: 30px;
+	height: 30px;
+	left: 260px;
+	top: 60px;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-6 {
+	-webkit-transform: scale(1,0.1);
+	-moz-transform: scale(1,0.1);
+	-o-transform: scale(1,0.1);
+	-ms-transform: scale(1,0.1);
+	transform: scale(1,0.1);
+
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	-o-transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	transform-origin: center bottom;
+	display: block;
+	background-image: url(sprites/face2.png);
+	width: 30px;
+	height: 30px;
+	top: 90px;
+	left: 353px;
+}
+
+.simpleintro.programintro.program-imho .main.sprite-7 {
+	display: block;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #ddd;
+	z-index: 900;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-imho.onair .main.program {
+	-webkit-transition: all 2s ease 3s;
+	-moz-transition: all 2s ease 3s;
+	-o-transition: all 2s ease 3s;
+	-ms-transition: all 2s ease 3s;
+	transition: all 2s ease 3s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 265px;
+}
+
+.simpleintro.programintro.program-imho.onair .main.sprite-2 {
+	-webkit-transition: all 2s ease 1s;
+	-moz-transition: all 2s ease 1s;
+	-o-transition: all 2s ease 1s;
+	-ms-transition: all 2s ease 1s;
+	transition: all 2s ease 1s;
+
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	left: 220px;
+}
+
+.simpleintro.programintro.program-imho.onair .main.sprite-3 {
+	-webkit-transition: all 2s ease 3s;
+	-moz-transition: all 2s ease 3s;
+	-o-transition: all 2s ease 3s;
+	-ms-transition: all 2s ease 3s;
+	transition: all 2s ease 3s;
+
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	left: 305px;
+}
+
+.simpleintro.programintro.program-imho.onair .main.sprite-4 {
+	-webkit-transition: all 2s ease 2s;
+	-moz-transition: all 2s ease 2s;
+	-o-transition: all 2s ease 2s;
+	-ms-transition: all 2s ease 2s;
+	transition: all 2s ease 2s;
+
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	left: 390px;
+}
+
+.simpleintro.programintro.program-imho.onair .main.sprite-5 {
+	-webkit-transition: all 2s ease 2.5s;
+	-moz-transition: all 2s ease 2.5s;
+	-o-transition: all 2s ease 2.5s;
+	-ms-transition: all 2s ease 2.5s;
+	transition: all 2s ease 2.5s;
+
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	top: 80px;
+}
+
+.simpleintro.programintro.program-imho.onair .main.sprite-6 {
+	-webkit-transition: all 2s ease 1.5s;
+	-moz-transition: all 2s ease 1.5s;
+	-o-transition: all 2s ease 1.5s;
+	-ms-transition: all 2s ease 1.5s;
+	transition: all 2s ease 1.5s;
+
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	top: 80px;
+}
+
+.simpleintro.programintro.program-imho.onair .main.description {
+	-webkit-transition: all 2s ease 3.5s;
+	-moz-transition: all 2s ease 3.5s;
+	-o-transition: all 2s ease 3.5s;
+	-ms-transition: all 2s ease 3.5s;
+	transition: all 2s ease 3.5s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 340px;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-imho.closing .main.sprite-7 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-imho .background {
+	background-color: #797979;
+}
+
+.simpleintro.sectionintro.program-imho .main.program {
+	color: #4b4b4b;
+}
+
+.simpleintro.sectionintro.program-imho .type-text {
+	font-family: KomikaHandRegular;
+}
+
+/* SLIDESHOW */
+
+.textstream.slideshow.program-imho .streamitem .item.title,.textstream.slideshow.program-imho .streamitem .item.source {
+	color: #4b4b4b;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-imho .main.sprite-0 {
+	background-color: #4b4b4b;
+}
+
+.textstream.program-imho .main.program {
+	color: #4b4b4b;
+	font-family: KomikaHandRegular;
+}
+
+/* LOADER */
+.onload-programimho {
+	z-index: 123321;
+}

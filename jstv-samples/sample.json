@@ -1,0 +1,41 @@
+{
+	"name":"Sample TV",
+	"description":"A sample TV",
+	"logo":"STV",
+	"width":640,
+	"height":390,
+	"programs":[
+		{
+			"title":"The Sample Program",
+			"description":"Is a sample",
+			"startAt":0
+		}
+	],
+	"scenes":[
+		{
+			"renderer":"simpleintro",
+			"type":"programintro",
+			"program":"The Sample Program",
+			"description":"A sample program loaded via AJAX."
+		},
+		{
+			"title":"YouTube API",
+			"tag":["sample","video","youtube","api"],
+			"link":"http://www.youtube.com/watch?feature=player_embedded&v=u1zgFlCw8Aw",
+			"renderer":"youtube",
+			"videoId":"u1zgFlCw8Aw"
+		}
+	],
+	"sources":[
+		{
+			"description":"A sample source",
+			"tag":["sample","source"],
+			"url":"http://www.youtube.com/"
+		},
+		{
+			"description":"Another sample source",
+			"tag":["anothersample","source"],
+			"url":"http://www.kesiev.com/"
+		}
+	]
+}

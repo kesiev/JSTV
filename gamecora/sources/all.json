@@ -1,0 +1,4724 @@
+[
+	{
+		"url":"http://www.2kgames.com/news/list?format=rss",
+		"queue":"rss",
+		"tag":["2kgames","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.2kgames.com/#/about-2k/",
+		"notes":"Bioshock series",
+		"description":"Official News Feed of 2K Games"
+	},
+	{
+		"url":"twitter://2KGames",
+		"queue":"tweets",
+		"tag":["2kgames","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.2kgames.com/#/about-2k/",
+		"notes":"Bioshock series",
+		"description":"Official Twitter Account of 2K Games"
+	},
+	{
+		"url":"youtube://2KGames",
+		"queue":"youtube",
+		"tag":["2kgames","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.2kgames.com/#/about-2k/",
+		"notes":"Bioshock series",
+		"description":"Official Youtube Channel of 2K Games"
+	},
+	{
+		"url":"twitter://Halowaypoint",
+		"queue":"tweets",
+		"tag":["343industries","microsoft","studio","america","pr","microsoftexclusive"],
+		"about":"http://www.microsoft-careers.com/go/343-Industries-Jobs/190537/",
+		"notes":"Halo 4",
+		"description":"Official Twitter Account of 343 Industries, developer of Halo 4"
+	},
+	{
+		"url":"youtube://HaloWaypoint",
+		"queue":"youtube",
+		"tag":["343industries","microsoft","studio","america","pr","microsoftexclusive"],
+		"about":"http://www.microsoft-careers.com/go/343-Industries-Jobs/190537/",
+		"notes":"Halo 4",
+		"description":"Official Youtube Channel of 343 Industries, developer of Halo 4"
+	},
+	{
+		"url":"flickr://39349482@N08",
+		"queue":"flickr",
+		"tag":["america","people","generic"],
+		"description":"Official Flickr Account of Corrinne Yu: Director of Technology on XBOX 360, PS3, PC & Principal Engine Programmer of Halo 4"
+	},
+	{
+		"url":"twitter://Corrinne",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Corrinne Yu: Director of Technology on XBOX 360, PS3, PC & Principal Engine Programmer of Halo 4"
+	},
+	{
+		"url":"http://www.5thcell.com/category/news/feed/",
+		"queue":"rss",
+		"tag":["5thcell","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.5thcell.com/studio/about/",
+		"notes":"Scribblenauts series",
+		"description":"Official News Feed of 5th Cell"
+	},
+	{
+		"url":"facebook://197404747597",
+		"queue":"rss",
+		"tag":["5thcell","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.5thcell.com/studio/about/",
+		"notes":"Scribblenauts series",
+		"description":"Official Facebook Page of 5th Cell"
+	},
+	{
+		"url":"twitter://5thcell",
+		"queue":"tweets",
+		"tag":["5thcell","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.5thcell.com/studio/about/",
+		"notes":"Scribblenauts series",
+		"description":"Official Twitter Account of 5th Cell"
+	},
+	{
+		"url":"youtube://5THCell",
+		"queue":"youtube",
+		"tag":["5thcell","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.5thcell.com/studio/about/",
+		"notes":"Scribblenauts series",
+		"description":"Official Youtube Channel of 5th Cell"
+	},
+	{
+		"url":"twitter://Swery65",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Deadly Premonition",
+		"description":"Official Twitter Account of Sweary65: Director & Producer for Access Games"
+	},
+	{
+		"url":"http://forums.aceteam.cl/blog/zenoclash/index.php?req=syndicate",
+		"queue":"rss",
+		"tag":["aceteam","indie","studio","world","pr","generic"],
+		"about":"http://www.aceteam.cl/",
+		"notes":"Rock of Ages",
+		"description":"Official News Feed of Ace Team Software"
+	},
+	{
+		"url":"facebook://190437300998555",
+		"queue":"rss",
+		"tag":["aceteam","indie","studio","world","pr","generic"],
+		"about":"http://www.aceteam.cl/",
+		"notes":"Rock of Ages",
+		"description":"Official Facebook Page of Ace Team Software"
+	},
+	{
+		"url":"twitter://theACETeam",
+		"queue":"tweets",
+		"tag":["aceteam","indie","studio","world","pr","generic"],
+		"about":"http://www.aceteam.cl/",
+		"notes":"Rock of Ages",
+		"description":"Official Twitter Account of Ace Team Software"
+	},
+	{
+		"url":"youtube://ACETeamSoftware",
+		"queue":"youtube",
+		"tag":["aceteam","indie","studio","world","pr","generic"],
+		"about":"http://www.aceteam.cl/",
+		"notes":"Rock of Ages",
+		"description":"Official Youtube Channel Ace Team Software"
+	},
+	{
+		"url":"twitter://acquire_pr",
+		"queue":"tweets",
+		"tag":["acquire","independent","studio","japan","pr","japaneseonly"],
+		"about":"http://eng.acquire.co.jp/info.php",
+		"notes":"Tenchu",
+		"description":"Official Twitter Account of Acquire Corp."
+	},
+	{
+		"url":"facebook://198420363518521",
+		"queue":"rss",
+		"tag":["acquire","independent","studio","japan","pr","japaneseonly"],
+		"about":"http://eng.acquire.co.jp/info.php",
+		"notes":"Tenchu",
+		"description":"Official Facebook Page of Acquire Corp."
+	},
+	{
+		"url":"http://apps.shareholder.com/rss/rss.aspx?channels=524&companyid=ACTI",
+		"queue":"rss",
+		"tag":["activision","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.activision.com/ROOT/en_US/web/AboutActivision/seniorManagement/about_us.html",
+		"description":"Official News Feed of Activision"
+	},
+	{
+		"url":"youtube://ActivisionGames",
+		"queue":"youtube",
+		"tag":["activision","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.activision.com/ROOT/en_US/web/AboutActivision/seniorManagement/about_us.html",
+		"description":"Official Youtube Channel of Activision"
+	},
+	{
+		"url":"facebook://245013245537015",
+		"queue":"rss",
+		"tag":["airtightgames","independent","studio","america","pr","generic"],
+		"about":"http://www.airtightgames.com/",
+		"notes":"Quantum Conundrum",
+		"description":"Official Facebook Page of Airtight Games"
+	},
+	{
+		"url":"http://www.inthebasecase.com/?feed=rss2",
+		"queue":"rss",
+		"tag":["america","people","generic"],
+		"notes":"Quantum Conundrum",
+		"description":"Official News Feed of Kim Swift: Creative Director at Airtight Games"
+	},
+	{
+		"url":"twitter://AirtightGames",
+		"queue":"tweets",
+		"tag":["airtightgames","independent","studio","america","pr","generic"],
+		"about":"http://www.airtightgames.com/",
+		"notes":"Quantum Conundrum",
+		"description":"Official Twitter Account of Airtight Games"
+	},
+	{
+		"url":"twitter://K2theSwift",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Quantum Conundrum",
+		"description":"Official Twitter Account of Kim Swift: Creative Director at Airtight Games"
+	},
+	{
+		"url":"facebook://324637879117",
+		"queue":"rss",
+		"tag":["amanitadesign","indie","studio","europe","pr","generic"],
+		"about":"http://amanita-design.net/about.html",
+		"notes":"Machinarium",
+		"description":"Official Facebook Page of Amanita Design"
+	},
+	{
+		"url":"twitter://Amanita_Design",
+		"queue":"tweets",
+		"tag":["amanitadesign","indie","studio","europe","pr","generic"],
+		"about":"http://amanita-design.net/about.html",
+		"notes":"Machinarium",
+		"description":"Official Twitter Account of Amanita Design"
+	},
+	{
+		"url":"http://amanita-design.net/blog/feed/",
+		"queue":"rss",
+		"tag":["amanitadesign","indie","studio","europe","pr","generic"],
+		"about":"http://amanita-design.net/about.html",
+		"notes":"Machinarium",
+		"description":"Official News Feed of Amanita Design"
+	},
+	{
+		"url":"youtube://jdamanita",
+		"queue":"youtube",
+		"tag":["amanitadesign","indie","studio","europe","pr","generic"],
+		"about":"http://amanita-design.net/about.html",
+		"notes":"Machinarium",
+		"description":"Official Youtube Channel of Amanita Design"
+	},
+	{
+		"url":"facebook://280579462046917",
+		"queue":"rss",
+		"tag":["arcsystemworks","thirdparty","publisher","japan","pr","beatemup"],
+		"about":"http://www.arcsystemworks.eu/company.php",
+		"notes":"BlazBlue series",
+		"description":"Official Facebook Page of Arc System Works"
+	},
+	{
+		"url":"twitter://blazblue_europe",
+		"queue":"tweets",
+		"tag":["arcsystemworks","thirdparty","publisher","japan","pr","beatemup"],
+		"about":"http://www.arcsystemworks.eu/company.php",
+		"notes":"BlazBlue series",
+		"description":"Official Twitter Account of Arc System Works"
+	},
+	{
+		"url":"youtube://arcsystemworks",
+		"queue":"youtube",
+		"tag":["arcsystemworks","thirdparty","publisher","japan","pr","beatemup"],
+		"about":"http://www.arcsystemworks.eu/company.php",
+		"notes":"BlazBlue series",
+		"description":"Official Youtube Channel of Arc System Works"
+	},
+	{
+		"url":"twitter://ArenaNet",
+		"queue":"tweets",
+		"tag":["arenanet","thirdparty","studio","america","pr","mmorpg"],
+		"about":"http://www.arena.net/",
+		"notes":"Guild Wars series",
+		"description":"Official Twitter Account of ArenaNet"
+	},
+	{
+		"url":"youtube://arenanetofficial",
+		"queue":"youtube",
+		"tag":["arenanet","thirdparty","studio","america","pr","mmorpg"],
+		"about":"http://www.arena.net/",
+		"notes":"Guild Wars series",
+		"description":"Official Youtube Channel of ArenaNet"
+	},
+	{
+		"url":"youtube://arikaex",
+		"queue":"youtube",
+		"tag":["arika","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.arika.co.jp/arika_eng/company/company.html",
+		"notes":"Tetris: The Grand Master",
+		"description":"Official Youtube Channel of Arika"
+	},
+	{
+		"url":"twitter://ArtePiazza",
+		"queue":"tweets",
+		"tag":["artepiazza","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://www.artepiazza.com/en/about/outline.html",
+		"notes":"Dragon Quest series",
+		"description":"Official Twitter Account of Artepiazza"
+	},
+	{
+		"url":"facebook://172566332793761",
+		"queue":"rss",
+		"tag":["artepiazza","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://www.artepiazza.com/en/about/outline.html",
+		"notes":"Dragon Quest series",
+		"description":"Official Facebook Page of Artepiazza"
+	},
+	{
+		"url":"facebook://151890318180418",
+		"queue":"rss",
+		"tag":["asobostudio","independent","studio","europe","pr","generic"],
+		"about":"http://www.asobostudio.com/about-us.html",
+		"notes":"Fuel",
+		"description":"Official Facebook Page of Asobo Studio"
+	},
+	{
+		"url":"twitter://AsoboStudio",
+		"queue":"tweets",
+		"tag":["asobostudio","independent","studio","europe","pr","generic"],
+		"about":"http://www.asobostudio.com/about-us.html",
+		"notes":"Fuel",
+		"description":"Official Twitter Account of Asobo Studio"
+	},
+	{
+		"url":"youtube://AsoboStudio",
+		"queue":"youtube",
+		"tag":["asobostudio","independent","studio","europe","pr","generic"],
+		"about":"http://www.asobostudio.com/about-us.html",
+		"notes":"Fuel",
+		"description":"Official Youtube Channel of Asobo Studio"
+	},
+	{
+		"url":"facebook://66215843533",
+		"queue":"rss",
+		"tag":["atari","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.atari.com/corporate/about-atari-sa",
+		"description":"Official Facebook Page of Atari"
+	},
+	{
+		"url":"twitter://atari",
+		"queue":"tweets",
+		"tag":["atari","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.atari.com/corporate/about-atari-sa",
+		"description":"Official Twitter Account of Atari"
+	},
+	{
+		"url":"youtube://atari",
+		"queue":"youtube",
+		"tag":["atari","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.atari.com/corporate/about-atari-sa",
+		"description":"Official Youtube Channel of Atari"
+	},
+	{
+		"url":"twitter://atlususa",
+		"queue":"tweets",
+		"tag":["atlus","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.atlus.com/corporate.php",
+		"notes":"Persona Series",
+		"description":"Official Twitter Account of Atlus USA"
+	},
+	{
+		"url":"youtube://atlustube",
+		"queue":"youtube",
+		"tag":["atlus","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://www.atlus.com/corporate.php",
+		"notes":"Persona Series",
+		"description":"Official Youtube Channel of Atlus"
+	},
+	{
+		"url":"twitter://Atlus_jp",
+		"queue":"tweets",
+		"tag":["atlus","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://www.atlus.com/corporate.php",
+		"notes":"Persona Series",
+		"description":"Official Twitter Account of Atlus"
+	},
+	{
+		"url":"http://www.atlusnet.jp/information/rss/",
+		"queue":"rss",
+		"tag":["atlus","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://www.atlus.com/corporate.php",
+		"notes":"Persona Series",
+		"description":"Official News Feed of Atlus"
+	},
+	{
+		"url":"youtube://AtlusUSA",
+		"queue":"youtube",
+		"tag":["atlus","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.atlus.com/corporate.php",
+		"notes":"Persona Series",
+		"description":"Official Youtube Channel of Atlus USA"
+	},
+	{
+		"url":"facebook://141547722567500",
+		"queue":"rss",
+		"tag":["avalanchestudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.avalanchestudios.se/eng/company-history/",
+		"notes":"Just Cause Series",
+		"description":"Official Facebook Page of Avalanche Studios"
+	},
+	{
+		"url":"twitter://AvalancheSweden",
+		"queue":"tweets",
+		"tag":["avalanchestudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.avalanchestudios.se/eng/company-history/",
+		"notes":"Just Cause Series",
+		"description":"Official Twitter Account of Avalanche Studios"
+	},
+	{
+		"url":"facebook://127809343941892",
+		"queue":"rss",
+		"tag":["behaviourinteractive","independent","studio","america","pr","generic"],
+		"about":"http://www.bhvr.com/en/about/",
+		"notes":"Dante's Inferno",
+		"description":"Official Facebook Page of Behaviour Interactive"
+	},
+	{
+		"url":"twitter://Behaviour",
+		"queue":"tweets",
+		"tag":["behaviourinteractive","independent","studio","america","pr","generic"],
+		"about":"http://www.bhvr.com/en/about/",
+		"notes":"Dante's Inferno",
+		"description":"Official Twitter Account of Behaviour Interactive"
+	},
+	{
+		"url":"http://feeds.feedburner.com/bethesdablog",
+		"queue":"rss",
+		"tag":["bethesdasoftworks","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.zenimax.com/profile.htm",
+		"description":"Official Twitter Account of Bethesda Softworks"
+	},
+	{
+		"url":"twitter://bethblog",
+		"queue":"tweets",
+		"tag":["bethesdasoftworks","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.zenimax.com/profile.htm",
+		"description":"Official Twitter Account of Bethesda Softworks"
+	},
+	{
+		"url":"twitter://bgs_devs",
+		"queue":"tweets",
+		"tag":["bethesdagamestudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.zenimax.com/profile.htm",
+		"notes":"The Elder Scrolls Series",
+		"description":"Official Twitter Account of Bethesda Game Studios"
+	},
+	{
+		"url":"youtube://BethesdaSoftworks",
+		"queue":"youtube",
+		"tag":["bethesdasoftworks","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.zenimax.com/profile.htm",
+		"description":"Official Youtube Channel of Bethesda Softworks"
+	},
+	{
+		"url":"http://blog.bioware.com/feed/",
+		"queue":"rss",
+		"tag":["bioware","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.bioware.com/about",
+		"notes":"Mass Effect Series",
+		"description":"Official News Feed of Bioware"
+	},
+	{
+		"url":"facebook://136219176405690",
+		"queue":"rss",
+		"tag":["bioware","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.bioware.com/about",
+		"notes":"Mass Effect Series",
+		"description":"Official Facebook Page of Bioware"
+	},
+	{
+		"url":"twitter://BioWare",
+		"queue":"tweets",
+		"tag":["bioware","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.bioware.com/about",
+		"notes":"Mass Effect Series",
+		"description":"Official Twitter Account of Bioware"
+	},
+	{
+		"url":"twitter://CaseyDHudson",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Casey Hudson: Executive Producer of the Mass Effect Series"
+	},
+	{
+		"url":"twitter://PWatamaniuk",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Preston Watamaniuk: Lead Designer of Mass Effect Series"
+	},
+	{
+		"url":"http://feeds.blitzgamesstudios.com/news/all.rss",
+		"queue":"rss",
+		"tag":["bliztgamestudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.blitzgamesstudios.com/who-we-are",
+		"notes":"Epic Mickey 2",
+		"description":"Official News Feed of Blitz Games Studios"
+	},
+	{
+		"url":"facebook://175795546667",
+		"queue":"rss",
+		"tag":["bliztgamestudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.blitzgamesstudios.com/who-we-are",
+		"notes":"Epic Mickey 2",
+		"description":"Official Facebook Page of Blitz Games Studios"
+	},
+	{
+		"url":"twitter://_bgs_",
+		"queue":"tweets",
+		"tag":["bliztgamestudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.blitzgamesstudios.com/who-we-are",
+		"notes":"Epic Mickey 2",
+		"description":"Official Twitter Account of Blitz Games Studios"
+	},
+	{
+		"url":"youtube://BlitzGamesStudios",
+		"queue":"youtube",
+		"tag":["bliztgamestudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.blitzgamesstudios.com/who-we-are",
+		"notes":"Epic Mickey 2",
+		"description":"Official Youtube Channel of Blitz Games Studios"
+	},
+	{
+		"url":"http://eu.blizzard.com/en-gb/news/rss.xml",
+		"queue":"rss",
+		"tag":["blizzard","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://eu.blizzard.com/en-gb/company/about/",
+		"notes":"Diablo Series",
+		"description":"Official News Feed of Blizzard Entertainment"
+	},
+	{
+		"url":"facebook://152083869857",
+		"queue":"rss",
+		"tag":["blizzard","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://eu.blizzard.com/en-gb/company/about/",
+		"notes":"Diablo Series",
+		"description":"Official Facebook Page of Blizzard  Entertainment"
+	},
+	{
+		"url":"facebook://161714937184786",
+		"queue":"rss",
+		"tag":["bugbear","independent","studio","europe","pr","racing"],
+		"about":"http://www.facebook.com/bugbeargames/info",
+		"notes":"FlatOut",
+		"description":"Official Facebook Page of Bugbear Entertainment"
+	},
+	{
+		"url":"twitter://bugbeargames",
+		"queue":"tweets",
+		"tag":["bugbear","independent","studio","europe","pr","racing"],
+		"about":"http://www.facebook.com/bugbeargames/info",
+		"notes":"FlatOut",
+		"description":"Official Twitter Account of Bugbear Entertainment"
+	},
+	{
+		"url":"http://www.bungie.net/en-us/Rss/News?tag=&creationDate=0&currentPage=1&itemsPerPage=8",
+		"queue":"rss",
+		"tag":["bungie","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.bungie.net/en-us/AboutUs#page=index",
+		"notes":"Halo Series",
+		"description":"Official News Feed of Bungie"
+	},
+	{
+		"url":"facebook://57193326148",
+		"queue":"rss",
+		"tag":["bungie","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.bungie.net/en-us/AboutUs#page=index",
+		"notes":"Halo Series",
+		"description":"Official Facebook Page of Bungie"
+	},
+	{
+		"url":"twitter://bungie",
+		"queue":"tweets",
+		"tag":["bungie","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.bungie.net/en-us/AboutUs#page=index",
+		"notes":"Halo Series",
+		"description":"Official Twitter Account of Bungie"
+	},
+	{
+		"url":"youtube://Bungie",
+		"queue":"youtube",
+		"tag":["bungie","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.bungie.net/en-us/AboutUs#page=index",
+		"notes":"Halo Series",
+		"description":"Official Youtube Channel of Bungie"
+	},
+	{
+		"url":"facebook://13505357691",
+		"queue":"rss",
+		"tag":["indie","europe","people","experimental"],
+		"about":"http://cactusquid.com/",
+		"notes":"Hotline Miami",
+		"description":"Official Facebook Page of Cactusquid"
+	},
+	{
+		"url":"twitter://cactusquid",
+		"queue":"tweets",
+		"tag":["indie","europe","people","experimental"],
+		"about":"http://cactusquid.com/",
+		"notes":"Hotline Miami",
+		"description":"Official Twitter Account of Cactusquid"
+	},
+	{
+		"url":"http://rss.capcom-unity.com/blog/rss",
+		"queue":"rss",
+		"tag":["capcom","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.capcom.com/us/?corpinfo",
+		"description":"Official News Feed of Capcom"
+	},
+	{
+		"url":"facebook://6938264959",
+		"queue":"rss",
+		"tag":["capcom","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.capcom.com/us/?corpinfo",
+		"description":"Official Facebook Page of Capcom"
+	},
+	{
+		"url":"twitter://Capcom_Unity",
+		"queue":"tweets",
+		"tag":["capcom","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.capcom.com/us/?corpinfo",
+		"description":"Official Twitter Account of Capcom"
+	},
+	{
+		"url":"youtube://CapcomUnityVideos",
+		"queue":"youtube",
+		"tag":["capcom","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.capcom.com/us/?corpinfo",
+		"description":"Official Youtube Channel of Capcom"
+	},
+	{
+		"url":"facebook://197061503697145",
+		"queue":"rss",
+		"tag":["capybaragames","indie","studio","america","pr","generic"],
+		"about":"http://www.capybaragames.com/",
+		"notes":"Critter Crunch",
+		"description":"Official Facebook Page of Capybara Games"
+	},
+	{
+		"url":"flickr://51277380@N08",
+		"queue":"flickr",
+		"tag":["capybaragames","indie","studio","america","pr","generic"],
+		"about":"http://www.capybaragames.com/",
+		"notes":"Critter Crunch",
+		"description":"Official Flickr Album of Capybara Games"
+	},
+	{
+		"url":"tumblr://capygames",
+		"queue":"rss",
+		"tag":["capybaragames","indie","studio","america","pr","generic"],
+		"about":"http://www.capybaragames.com/",
+		"notes":"Critter Crunch",
+		"description":"Official Tumblr Account of Capybara Games"
+	},
+	{
+		"url":"http://www.capybaragames.com/feed/",
+		"queue":"rss",
+		"tag":["capybaragames","indie","studio","america","pr","generic"],
+		"about":"http://www.capybaragames.com/",
+		"notes":"Critter Crunch",
+		"description":"Official News Feed of Capybara Games"
+	},
+	{
+		"url":"twitter://CAPYGAMES",
+		"queue":"tweets",
+		"tag":["capybaragames","indie","studio","america","pr","generic"],
+		"about":"http://www.capybaragames.com/",
+		"notes":"Critter Crunch",
+		"description":"Official Twitter Account of Capybara Games"
+	},
+	{
+		"url":"youtube://capybaragames",
+		"queue":"youtube",
+		"tag":["capybaragames","indie","studio","america","pr","generic"],
+		"about":"http://www.capybaragames.com/",
+		"notes":"Critter Crunch",
+		"description":"Official Youtube Channel of Capybara Games"
+	},
+	{
+		"url":"twitter://krispiotrowski",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"description":"Official Twitter Account of Kris Piotrowski: Creative Director & Game Designer of Capybara"
+	},
+	{
+		"url":"facebook://112992778755697",
+		"queue":"rss",
+		"tag":["caveinteractive","thirdparty","studio","japan","pr","shmup"],
+		"about":"http://caveinteractive.com/about/outline-of-business/",
+		"notes":"Dodonpachi Resurrection",
+		"description":"Official Facebook Page of CAVE Interactive"
+	},
+	{
+		"url":"http://caveinteractive.com/category/news/feed/",
+		"queue":"rss",
+		"tag":["caveinteractive","thirdparty","studio","japan","pr","shmup"],
+		"about":"http://caveinteractive.com/about/outline-of-business/",
+		"notes":"Dodonpachi Resurrection",
+		"description":"Official News Feed of CAVE Interactive"
+	},
+	{
+		"url":"youtube://cavecoltd",
+		"queue":"youtube",
+		"tag":["caveinteractive","thirdparty","studio","japan","pr","shmup"],
+		"about":"http://caveinteractive.com/about/outline-of-business/",
+		"notes":"Dodonpachi Resurrection",
+		"description":"Official Youtube Channel of CAVE Interactive"
+	},
+	{
+		"url":"facebook://283103815139159",
+		"queue":"rss",
+		"tag":["cdprojekt","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.youtube.com/user/CDPRED/about",
+		"notes":"The Witcher series",
+		"description":"Official Facebook Page of CD Projekt Red"
+	},
+	{
+		"url":"http://cdpred.com/feed/",
+		"queue":"rss",
+		"tag":["cdprojekt","thirdparty","publisher","worldwide","devblog","generic"],
+		"about":"http://www.youtube.com/user/CDPRED/about",
+		"notes":"The Witcher series",
+		"description":"Official News Feed of CD Projekt Red"
+	},
+	{
+		"url":"twitter://CDProjektRED",
+		"queue":"tweets",
+		"tag":["cdprojekt","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.youtube.com/user/CDPRED/about",
+		"notes":"The Witcher series",
+		"description":"Official Twitter Account of CD Projekt Red"
+	},
+	{
+		"url":"youtube://CDPRED",
+		"queue":"youtube",
+		"tag":["cdprojekt","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.youtube.com/user/CDPRED/about",
+		"notes":"The Witcher series",
+		"description":"Official Youtube Channel of CD Projekt Red"
+	},
+	{
+		"url":"facebook://115215961870869",
+		"queue":"rss",
+		"tag":["climaxstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.climaxstudios.com/who-we-are",
+		"notes":"Silent Hill: Shattered Memories",
+		"description":"Official Facebook Page of Climax Studios"
+	},
+	{
+		"url":"http://www.climaxstudios.com/feed/",
+		"queue":"rss",
+		"tag":["climaxstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.climaxstudios.com/who-we-are",
+		"notes":"Silent Hill: Shattered Memories",
+		"description":"Official News Feed of Climax Studios"
+	},
+	{
+		"url":"twitter://ClimaxStudios",
+		"queue":"tweets",
+		"tag":["climaxstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.climaxstudios.com/who-we-are",
+		"notes":"Silent Hill: Shattered Memories",
+		"description":"Official Twitter Account of Climax Studios"
+	},
+	{
+		"url":"facebook://147069901979780",
+		"queue":"rss",
+		"tag":["codeglue","indie","studio","europe","pr","generic"],
+		"about":"http://www.codeglue.com/codeglue/",
+		"notes":"Rocket Riot",
+		"description":"Official Facebook Page of Codeglue"
+	},
+	{
+		"url":"youtube://CodeglueTV",
+		"queue":"youtube",
+		"tag":["codeglue","indie","studio","europe","pr","generic"],
+		"about":"http://www.codeglue.com/codeglue/",
+		"notes":"Rocket Riot",
+		"description":"Official Youtube Channel of Codeglue"
+	},
+	{
+		"url":"twitter://codeglue",
+		"queue":"tweets",
+		"tag":["codeglue","indie","studio","europe","pr","generic"],
+		"about":"http://www.codeglue.com/codeglue/",
+		"notes":"Rocket Riot",
+		"description":"Official Twitter Account of Codeglue"
+	},
+	{
+		"url":"twitter://Codemasters",
+		"queue":"tweets",
+		"tag":["codemasters","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.codemasters.com/uk/about-us/",
+		"notes":"DiRT",
+		"description":"Official Twitter Account of Codemaster"
+	},
+	{
+		"url":"http://www.codemasters.com/uk/articles.rss",
+		"queue":"rss",
+		"tag":["codemasters","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.codemasters.com/uk/about-us/",
+		"notes":"DiRT",
+		"description":"Official News Feed of Codemaster"
+	},
+	{
+		"url":"facebook://13475974993300",
+		"queue":"rss",
+		"tag":["criterion","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.criteriongames.com/about/",
+		"notes":"Burnout series",
+		"description":"Official Facebook Page of Criterion Games"
+	},
+	{
+		"url":"http://blog.criteriongames.com/rss.xml",
+		"queue":"rss",
+		"tag":["criterion","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.criteriongames.com/about/",
+		"notes":"Burnout series",
+		"description":"Official News Feed of Criterion Games"
+	},
+	{
+		"url":"twitter://CriterionGames",
+		"queue":"tweets",
+		"tag":["criterion","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.criteriongames.com/about/",
+		"notes":"Burnout series",
+		"description":"Official Twitter Account of Criterion Games"
+	},
+	{
+		"url":"youtube://burnoutteamrocks",
+		"queue":"youtube",
+		"tag":["criterion","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.criteriongames.com/about/",
+		"notes":"Burnout series",
+		"description":"Official Youtube Channel of Criterion Games"
+	},
+	{
+		"url":"facebook://8277214270",
+		"queue":"rss",
+		"tag":["crystaldynamics","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/pages/Crystal-Dynamics/8277214270?id=8277214270&sk=info",
+		"notes":"Tomb Raider series",
+		"description":"Official Facebook Page of Crystal Dynamics"
+	},
+	{
+		"url":"twitter://CrystalDynamics",
+		"queue":"tweets",
+		"tag":["crystaldynamics","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/pages/Crystal-Dynamics/8277214270?id=8277214270&sk=info",
+		"notes":"Tomb Raider series",
+		"description":"Official Twitter Account of Crystal Dynamics"
+	},
+	{
+		"url":"youtube://CrystalDynamicsGames",
+		"queue":"youtube",
+		"tag":["crystaldynamics","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/pages/Crystal-Dynamics/8277214270?id=8277214270&sk=info",
+		"notes":"Tomb Raider series",
+		"description":"Official Youtube Channel of Crystal Dynamics"
+	},
+	{
+		"url":"facebook://191374600928079",
+		"queue":"rss",
+		"tag":["crytek","independent","studio","europe","devblog","generic"],
+		"about":"http://www.crytek.com/company",
+		"notes":"Far Cry series",
+		"description":"Facebook Page of Crytek's Official Development Portal for all CryENGINE Products"
+	},
+	{
+		"url":"facebook://234568920286",
+		"queue":"rss",
+		"tag":["crytek","independent","studio","europe","pr","generic"],
+		"about":"http://www.crytek.com/company",
+		"notes":"Far Cry series",
+		"description":"Official Facebook Page of Crytek"
+	},
+	{
+		"url":"http://www.crytek.com/blog/rss",
+		"queue":"rss",
+		"tag":["crytek","independent","studio","europe","pr","generic"],
+		"about":"http://www.crytek.com/company",
+		"notes":"Far Cry series",
+		"description":"Official News Feed of Crytek"
+	},
+	{
+		"url":"http://www.crytek.com/rss",
+		"queue":"rss",
+		"tag":["crytek","independent","studio","europe","pr","generic"],
+		"about":"http://www.crytek.com/company",
+		"notes":"Far Cry series",
+		"description":"Official News Feed of Crytek"
+	},
+	{
+		"url":"twitter://crytek",
+		"queue":"tweets",
+		"tag":["crytek","independent","studio","europe","pr","generic"],
+		"about":"http://www.crytek.com/company",
+		"notes":"Far Cry series",
+		"description":"Official Twitter Account of Crytek"
+	},
+	{
+		"url":"facebook://157229434299827",
+		"queue":"rss",
+		"tag":["cyberconnect2","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.cc2.co.jp/en/company.html",
+		"description":"Official Facebook Page of CyberConnect2"
+	},
+	{
+		"url":"http://www.cc2.co.jp/blog_en/?feed=rss",
+		"queue":"rss",
+		"tag":["cyberconnect2","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.cc2.co.jp/en/company.html",
+		"description":"Official News Feed of CyberConnect2"
+	},
+	{
+		"url":"twitter://cc2information",
+		"queue":"tweets",
+		"tag":["cyberconnect2","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.cc2.co.jp/en/company.html",
+		"description":"Official Twitter Account of CyberConnect2"
+	},
+	{
+		"url":"youtube://cc2channel",
+		"queue":"youtube",
+		"tag":["cyberconnect2","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.cc2.co.jp/en/company.html",
+		"description":"Official Youtube Channel of CyberConnect 2"
+	},
+	{
+		"url":"twitter://D3_PUBLISHER",
+		"queue":"tweets",
+		"tag":["d3","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://d3publisher.us/Corporate.asp",
+		"description":"Official Twitter Account of D3"
+	},
+	{
+		"url":"youtube://D3Publisher",
+		"queue":"youtube",
+		"tag":["d3","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://d3publisher.us/Corporate.asp",
+		"description":"Official Youtube Channel of D3"
+	},
+	{
+		"url":"http://criminalcrackdown.blogspot.com/feeds/posts/default",
+		"queue":"rss",
+		"tag":["america","people","generic"],
+		"notes":"God of War series",
+		"description":"Official News Feed of David Scott Jaffe: Video Game Designer of Twisted Metal & God of War"
+	},
+	{
+		"url":"twitter://davidscottjaffe",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"God of War series",
+		"description":"Official Twitter Account of David Scott Jaffe: Video Game Designer of Twisted Metal & God of War"
+	},
+	{
+		"url":"facebook://200756696602812",
+		"queue":"rss",
+		"tag":["deadelicentertainment","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.daedalic.de/en/About/?PHPSESSID=6s19g674mrgm6eugcq6eorc3q6",
+		"notes":"Chaos on Deponia",
+		"description":"Official Facebook Page of Daedelic Entertainment"
+	},
+	{
+		"url":"http://www.daedalic.de/rss/rss_en.php",
+		"queue":"rss",
+		"tag":["deadelicentertainment","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.daedalic.de/en/About/?PHPSESSID=6s19g674mrgm6eugcq6eorc3q6",
+		"notes":"Chaos on Deponia",
+		"description":"Official News Feed of Daedelic Entertainment"
+	},
+	{
+		"url":"twitter://daedalic",
+		"queue":"tweets",
+		"tag":["deadelicentertainment","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.daedalic.de/en/About/?PHPSESSID=6s19g674mrgm6eugcq6eorc3q6",
+		"notes":"Chaos on Deponia",
+		"description":"Official Twitter Account of Daedelic Entertainment"
+	},
+	{
+		"url":"youtube://DaedalicEnt",
+		"queue":"youtube",
+		"tag":["deadelicentertainment","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.daedalic.de/en/About/?PHPSESSID=6s19g674mrgm6eugcq6eorc3q6",
+		"notes":"Chaos on Deponia",
+		"description":"Official Youtube Channel of Daedelic Entertainment"
+	},
+	{
+		"url":"twitter://deepsilver",
+		"queue":"tweets",
+		"tag":["deepsilver","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.deepsilver.com/about-us/",
+		"description":"Official Twitter Account of Deep Silver"
+	},
+	{
+		"url":"facebook://327980644135",
+		"queue":"rss",
+		"tag":["deepsilver","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.deepsilver.com/about-us/",
+		"description":"Official Facebook Page of Deep Silver"
+	},
+	{
+		"url":"youtube://deepsilverhq",
+		"queue":"youtube",
+		"tag":["deepsilver","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.deepsilver.com/about-us/",
+		"description":"Official Youtube Channel of Deep Silver"
+	},
+	{
+		"url":"http://dice.se/publications/feed/",
+		"queue":"rss",
+		"tag":["dice","thirdparty","studio","europe","devblog","generic"],
+		"about":"http://dice.se/about/",
+		"notes":"Battlefield series",
+		"description":"Official Publications Feed of DICE"
+	},
+	{
+		"url":"twitter://EA_DICE",
+		"queue":"tweets",
+		"tag":["dice","thirdparty","studio","europe","pr","generic"],
+		"about":"http://dice.se/about/",
+		"notes":"Battlefield series",
+		"description":"Official Twitter Account of DICE"
+	},
+	{
+		"url":"tumblr://disneyinteractive",
+		"queue":"rss",
+		"tag":["disneyinteractive","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://news.disneyinteractive.com/aboutus/companyOverview.shtml",
+		"description":"Official Tumblr Account of Disney Interactive"
+	},
+	{
+		"url":"twitter://disneygames",
+		"queue":"tweets",
+		"tag":["disneyinteractive","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://news.disneyinteractive.com/aboutus/companyOverview.shtml",
+		"description":"Official Twitter Account of Disney Games"
+	},
+	{
+		"url":"twitter://disneyinteract",
+		"queue":"tweets",
+		"tag":["disneyinteractive","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://news.disneyinteractive.com/aboutus/companyOverview.shtml",
+		"description":"Official Twitter Account of Disney Interactive"
+	},
+	{
+		"url":"youtube://DisneyVideoGames",
+		"queue":"youtube",
+		"tag":["disneyinteractive","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://news.disneyinteractive.com/aboutus/companyOverview.shtml",
+		"description":"Official Youtube Channel of Disney Interactive"
+	},
+	{
+		"url":"facebook://39764057287",
+		"queue":"rss",
+		"tag":["doublefine","independent","studio","america","pr","generic"],
+		"about":"http://www.doublefine.com/about/",
+		"notes":"Brütal Legend",
+		"description":"Official Facebook Page of Double Fine"
+	},
+	{
+		"url":"tumblr://doublefine",
+		"queue":"rss",
+		"tag":["doublefine","independent","studio","america","devblog","generic"],
+		"about":"http://www.doublefine.com/about/",
+		"notes":"Brütal Legend",
+		"description":"Official Tumblr Account of Double Fine"
+	},
+	{
+		"url":"http://grumpygamer.com/rss2.0",
+		"queue":"rss",
+		"tag":["america","people","generic"],
+		"description":"Official News Feed of Ron Gilbert: Game Designer at Double Fine Productions"
+	},
+	{
+		"url":"http://www.doublefine.com/rss/",
+		"queue":"rss",
+		"tag":["doublefine","independent","studio","america","pr","generic"],
+		"about":"http://www.doublefine.com/about/",
+		"notes":"Brütal Legend",
+		"description":"Official News Feed of Double Fine"
+	},
+	{
+		"url":"twitter://doublefine",
+		"queue":"tweets",
+		"tag":["doublefine","independent","studio","america","pr","generic"],
+		"about":"http://www.doublefine.com/about/",
+		"notes":"Brütal Legend",
+		"description":"Official Twitter Account of Double Fine"
+	},
+	{
+		"url":"twitter://grumpygamer",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Ron Gilbert: Game Designer at Double Fine Productions"
+	},
+	{
+		"url":"twitter://timoflegend",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Tim Shaffer: Founder of Double Fine"
+	},
+	{
+		"url":"youtube://DoubleFineProd",
+		"queue":"youtube",
+		"tag":["doublefine","independent","studio","america","pr","generic"],
+		"about":"http://www.doublefine.com/about/",
+		"notes":"Brütal Legend",
+		"description":"Official Youtube Channel of Double Fine"
+	},
+	{
+		"url":"facebook://151517541539878",
+		"queue":"rss",
+		"tag":["drinkboxstudios","indie","studio","america","pr","generic"],
+		"about":"http://drinkboxstudios.com/blog/about-us/",
+		"notes":"Tales From Space",
+		"description":"Official Facebook Page of Drinkbox Studios"
+	},
+	{
+		"url":"http://www.drinkboxstudios.com/blog/?feed=rss2",
+		"queue":"rss",
+		"tag":["drinkboxstudios","indie","studio","america","pr","generic"],
+		"about":"http://drinkboxstudios.com/blog/about-us/",
+		"notes":"Tales From Space",
+		"description":"Official News Feed of Drinkbox Studios"
+	},
+	{
+		"url":"twitter://Drinkboxstudios",
+		"queue":"tweets",
+		"tag":["drinkboxstudios","indie","studio","america","pr","generic"],
+		"about":"http://drinkboxstudios.com/blog/about-us/",
+		"notes":"Tales From Space",
+		"description":"Official Twitter Account of Drinkbox Studios"
+	},
+	{
+		"url":"facebook://68678914189",
+		"queue":"rss",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.ea.com/about",
+		"description":"Official Facebook Page of Electronic Arts"
+	},
+	{
+		"url":"http://www.ea.com/rss/news",
+		"queue":"rss",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.ea.com/about",
+		"description":"Official News Feed of Electronic Arts"
+	},
+	{
+		"url":"twitter://EA",
+		"queue":"tweets",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.ea.com/about",
+		"description":"Official Twitter Account of Electronic Arts"
+	},
+	{
+		"url":"twitter://EAMobile",
+		"queue":"tweets",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","mobile"],
+		"about":"http://www.ea.com/about",
+		"description":"Official Twitter Account of Electronic Games Mobile"
+	},
+	{
+		"url":"twitter://EASPORTS",
+		"queue":"tweets",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","sport"],
+		"about":"http://www.ea.com/about",
+		"description":"Official Twitter Account of EA Sports"
+	},
+	{
+		"url":"youtube://EA",
+		"queue":"youtube",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.ea.com/about",
+		"description":"Official Youtube Channel of Electronic Arts"
+	},
+	{
+		"url":"youtube://EASPORTS",
+		"queue":"youtube",
+		"tag":["ea","thirdparty","publisher","worldwide","pr","sport"],
+		"about":"http://www.ea.com/about",
+		"description":"Official Youtube Channel of EA Sports"
+	},
+	{
+		"url":"http://edmundm.com/rss",
+		"queue":"rss",
+		"tag":["indie","america","people","generic"],
+		"notes":"Super Meat Boy",
+		"description":"Official News Feed of Edmund McMillen: Indie Game Developer"
+	},
+	{
+		"url":"twitter://EdmundMcMillenn",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"notes":"Super Meat Boy",
+		"description":"Official Twitter Account of Edmund McMillen: Indie Game Developer"
+	},
+	{
+		"url":"http://www.eidosmontreal.com/?func=rss-games&locale=en_US",
+		"queue":"rss",
+		"tag":["eidosmontreal","thirdparty","studio","studio","pr","generic"],
+		"about":"http://www.eidosmontreal.com/studio/od",
+		"notes":"Deus Ex: Human Revolution",
+		"description":"Official News Feed of Eidos Montreal"
+	},
+	{
+		"url":"http://www.eidosmontreal.com/?func=rss-studio&locale=en_US",
+		"queue":"rss",
+		"tag":["eidosmontreal","thirdparty","studio","studio","pr","generic"],
+		"about":"http://www.eidosmontreal.com/studio/od",
+		"notes":"Deus Ex: Human Revolution",
+		"description":"Official News Feed of Eidos Montreal"
+	},
+	{
+		"url":"twitter://eidosmontreal",
+		"queue":"tweets",
+		"tag":["eidosmontreal","thirdparty","studio","studio","pr","generic"],
+		"about":"http://www.eidosmontreal.com/studio/od",
+		"notes":"Deus Ex: Human Revolution",
+		"description":"Official Twitter Account of Eidos Montreal"
+	},
+	{
+		"url":"youtube://EidosMontreal",
+		"queue":"youtube",
+		"tag":["eidosmontreal","thirdparty","studio","studio","pr","generic"],
+		"about":"http://www.eidosmontreal.com/studio/od",
+		"notes":"Deus Ex: Human Revolution",
+		"description":"Official Youtube Channel of Eidos Montreal"
+	},
+	{
+		"url":"facebook://109587019132162",
+		"queue":"rss",
+		"tag":["epicgames","thirdparty","studio","america","devblog","generic"],
+		"about":"http://epicgames.com/about",
+		"notes":"Gears of War series",
+		"description":"Official Facebook Page of Unreal Engine"
+	},
+	{
+		"url":"facebook://44457290139",
+		"queue":"rss",
+		"tag":["epicgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://epicgames.com/about",
+		"notes":"Gears of War series",
+		"description":"Official Facebook Page of Epic Games"
+	},
+	{
+		"url":"http://epicgames.com/events/rss",
+		"queue":"rss",
+		"tag":["epicgames","thirdparty","studio","america","events","generic"],
+		"about":"http://epicgames.com/about",
+		"notes":"Gears of War series",
+		"description":"Official Epic Games Events News Feed"
+	},
+	{
+		"url":"twitter://EpicGames",
+		"queue":"tweets",
+		"tag":["epicgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://epicgames.com/about",
+		"notes":"Gears of War series",
+		"description":"Official Twitter Account of Epic Games"
+	},
+	{
+		"url":"twitter://UnrealEngine",
+		"queue":"tweets",
+		"tag":["epicgames","thirdparty","studio","america","devblog","generic"],
+		"about":"http://epicgames.com/about",
+		"notes":"Gears of War series",
+		"description":"Official Twitter Account of Unreal Engine"
+	},
+	{
+		"url":"youtube://epicgamesinc",
+		"queue":"youtube",
+		"tag":["epicgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://epicgames.com/about",
+		"notes":"Gears of War series",
+		"description":"Official Youtube Channel of Epic Games"
+	},
+	{
+		"url":"twitter://PhenomEvolution",
+		"queue":"tweets",
+		"tag":["evolutionstudios","sony","studio","europe","pr","racing"],
+		"about":"http://www.evos.net/games/",
+		"notes":"Motor Storm series",
+		"description":"Official Twitter Account of Evolution Studios"
+	},
+	{
+		"url":"http://2dboy.com/feed/",
+		"queue":"rss",
+		"tag":["2dboy","indie","studio","america","pr","experimental"],
+		"about":"http://2dboy.com/about.php",
+		"notes":"World of Goo",
+		"description":"Official News Feed of 2D Boy"
+	},
+	{
+		"url":"facebook://95503416635",
+		"queue":"rss",
+		"tag":["fireflystudios","independent","studio","europe","pr","rts"],
+		"about":"http://www.fireflyworlds.com/index.php?option=com_content&task=view&id=330&Itemid=314",
+		"notes":"Stronghold series",
+		"description":"Official Facebook Page of Firefly Studios"
+	},
+	{
+		"url":"twitter://fireflyworlds",
+		"queue":"tweets",
+		"tag":["fireflystudios","independent","studio","europe","pr","rts"],
+		"about":"http://www.fireflyworlds.com/index.php?option=com_content&task=view&id=330&Itemid=314",
+		"notes":"Stronghold series",
+		"description":"Official Twitter Account of Firefly Studios"
+	},
+	{
+		"url":"youtube://fireflyworlds",
+		"queue":"youtube",
+		"tag":["fireflystudios","independent","studio","europe","pr","rts"],
+		"about":"http://www.fireflyworlds.com/index.php?option=com_content&task=view&id=330&Itemid=314",
+		"notes":"Stronghold series",
+		"description":"Official Youtube Channel of Firefly Studios"
+	},
+	{
+		"url":"facebook://257613620920942",
+		"queue":"rss",
+		"tag":["freebirdgames","indie","studio","america","pr","experimental"],
+		"about":"http://freebirdgames.com/about-us/",
+		"notes":"To The Moon",
+		"description":"Official Facebook Page of Freebird Games"
+	},
+	{
+		"url":"twitter://Reives_Freebird",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"notes":"To The Moon",
+		"description":"Official Twitter Account of Kan Gao: Director & Co-composer of To The Moon by Freebird Games"
+	},
+	{
+		"url":"http://freebirdgames.com/feed/",
+		"queue":"rss",
+		"tag":["freebirdgames","indie","studio","america","pr","experimental"],
+		"about":"http://freebirdgames.com/about-us/",
+		"notes":"To The Moon",
+		"description":"Official News Feed of Freebird Games"
+	},
+	{
+		"url":"youtube://Reivier",
+		"queue":"youtube",
+		"tag":["freebirdgames","indie","studio","america","pr","experimental"],
+		"about":"http://freebirdgames.com/about-us/",
+		"notes":"To The Moon",
+		"description":"Official Youtube Channel of Freebird Games"
+	},
+	{
+		"url":"twitter://FSGStudio",
+		"queue":"tweets",
+		"tag":["freestylegames","thirdparty","studio","europe","pr","music"],
+		"about":"http://www.freestylegames.com/about-freestylegames.php",
+		"notes":"Dj Hero series",
+		"description":"Official Twitter Account of Freestylegames"
+	},
+	{
+		"url":"facebook://157917794248664",
+		"queue":"rss",
+		"tag":["freestylegames","thirdparty","studio","europe","pr","music"],
+		"about":"http://www.freestylegames.com/about-freestylegames.php",
+		"notes":"Dj Hero series",
+		"description":"Official Facebook Page of Freestylegames"
+	},
+	{
+		"url":"http://frictionalgames.blogspot.com/feeds/posts/default",
+		"queue":"rss",
+		"tag":["frictionalgames","indie","studio","europe","devblog","adventure"],
+		"about":"http://www.frictionalgames.com/site/about",
+		"notes":"Amnesia",
+		"description":"Official News Feed of Frictional Games"
+	},
+	{
+		"url":"twitter://frictionalgames",
+		"queue":"tweets",
+		"tag":["frictionalgames","indie","studio","europe","pr","adventure"],
+		"about":"http://www.frictionalgames.com/site/about",
+		"notes":"Amnesia",
+		"description":"Official Twitter Account of Frictional Games"
+	},
+	{
+		"url":"youtube://frictionalgames",
+		"queue":"youtube",
+		"tag":["frictionalgames","indie","studio","europe","pr","adventure"],
+		"about":"http://www.frictionalgames.com/site/about",
+		"notes":"Amnesia",
+		"description":"Official Youtube Channel of Frictional Games"
+	},
+	{
+		"url":"twitter://senden_ogu",
+		"queue":"tweets",
+		"tag":["fromsoftware","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.fromsoftware.jp/en/corpinfo/",
+		"notes":"Dark Souls",
+		"description":"Official Twitter Account of FromSoftware"
+	},
+	{
+		"url":"http://www.fromsoftware.jp/rss.php",
+		"queue":"rss",
+		"tag":["fromsoftware","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.fromsoftware.jp/en/corpinfo/",
+		"notes":"Dark Souls",
+		"description":"Official News Feed of FromSoftware"
+	},
+	{
+		"url":"youtube://fromSoftwareInc",
+		"queue":"youtube",
+		"tag":["fromsoftware","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.fromsoftware.jp/en/corpinfo/",
+		"notes":"Dark Souls",
+		"description":"Official Youtube Channel of FromSoftware"
+	},
+	{
+		"url":"twitter://frontierdev",
+		"queue":"tweets",
+		"tag":["frontierdevelopments","independent","publisher","worldwide","pr","generic"],
+		"about":"http://frontier.co.uk/about/",
+		"notes":"LostWinds",
+		"description":"Official Twitter Account of Frontier Developments"
+	},
+	{
+		"url":"facebook://140745889282372",
+		"queue":"rss",
+		"tag":["frontierdevelopments","independent","publisher","worldwide","pr","generic"],
+		"about":"http://frontier.co.uk/about/",
+		"notes":"LostWinds",
+		"description":"Official Facebook Page of Frontier Developments"
+	},
+	{
+		"url":"youtube://frontierDevelopments",
+		"queue":"youtube",
+		"tag":["frontierdevelopments","independent","publisher","worldwide","pr","generic"],
+		"about":"http://frontier.co.uk/about/",
+		"notes":"LostWinds",
+		"description":"Official Youtube Channel of Frontier Developments"
+	},
+	{
+		"url":"facebook://253535054305",
+		"queue":"rss",
+		"tag":["frozenbyte","independent","studio","europe","pr","generic"],
+		"about":"http://frozenbyte.com/company.php",
+		"notes":"Trine",
+		"description":"Official Facebook Page of Frozenbyte"
+	},
+	{
+		"url":"http://frozenbyte.com/blog/?feed=rss",
+		"queue":"rss",
+		"tag":["frozenbyte","independent","studio","europe","pr","generic"],
+		"about":"http://frozenbyte.com/company.php",
+		"notes":"Trine",
+		"description":"Official News Feed of Frozenbyte"
+	},
+	{
+		"url":"youtube://FrozenbyteGames",
+		"queue":"youtube",
+		"tag":["frozenbyte","independent","studio","europe","pr","generic"],
+		"about":"http://frozenbyte.com/company.php",
+		"notes":"Trine",
+		"description":"Official Youtube Channel Frozenbyte"
+	},
+	{
+		"url":"twitter://Frozenbyte",
+		"queue":"tweets",
+		"tag":["frozenbyte","independent","studio","europe","pr","generic"],
+		"about":"http://frozenbyte.com/company.php",
+		"notes":"Trine",
+		"description":"Official Twitter Account of Frozenbyte"
+	},
+	{
+		"url":"twitter://fumito_ueda",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Shadow of The Colossus",
+		"description":"Official Twitter Account of Fumito Ueda: Director & Lead designer of Ico and Shadow of the Colossus"
+	},
+	{
+		"url":"facebook://52762114248",
+		"queue":"rss",
+		"tag":["gamefreak","nintendo","studio","japan","pr","generic"],
+		"about":"http://www.gamefreak.co.jp/",
+		"notes":"Pokemon",
+		"description":"Official Facebook Page of GameFreak"
+	},
+	{
+		"url":"http://www.gamearts.com/rss/news.xml",
+		"queue":"rss",
+		"tag":["gamearts","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.gamearts.com/company/greeting.html",
+		"notes":"Grandia",
+		"description":"Official News Feed of Game Arts"
+	},
+	{
+		"url":"http://blog.gameloft.com/index.php/feed/",
+		"queue":"rss",
+		"tag":["gameloft","thirdparty","publisher","europe","pr","mobile"],
+		"about":"http://www.gameloft.com/corporate/company/introduction/",
+		"notes":"Nova",
+		"description":"Official News Feed of Gameloft"
+	},
+	{
+		"url":"twitter://Gameloft",
+		"queue":"tweets",
+		"tag":["gameloft","thirdparty","publisher","europe","pr","mobile"],
+		"about":"http://www.gameloft.com/corporate/company/introduction/",
+		"notes":"Nova",
+		"description":"Official Twitter Account of Gameloft"
+	},
+	{
+		"url":"youtube://gameloft",
+		"queue":"youtube",
+		"tag":["gameloft","thirdparty","publisher","europe","pr","mobile"],
+		"about":"http://www.gameloft.com/corporate/company/introduction/",
+		"notes":"Nova",
+		"description":"Official Facebook Page of Gameloft"
+	},
+	{
+		"url":"facebook://116754005013600",
+		"queue":"rss",
+		"tag":["gaspoweredgames","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.gaspowered.com/team.php",
+		"notes":"Dungeon Siege",
+		"description":"Official Facebook Page of Gas Powered Games"
+	},
+	{
+		"url":"twitter://GasPoweredGames",
+		"queue":"tweets",
+		"tag":["gaspoweredgames","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.gaspowered.com/team.php",
+		"notes":"Dungeon Siege",
+		"description":"Official Twitter Account of Gas Powered Games"
+	},
+	{
+		"url":"facebook://298652701947",
+		"queue":"rss",
+		"tag":["gearbox","independent","studio","america","pr","generic"],
+		"about":"http://www.gearboxsoftware.com/about",
+		"notes":"Borderlands series",
+		"description":"Official Facebook Page of Gearbox"
+	},
+	{
+		"url":"http://www.gearboxsoftware.com/rss",
+		"queue":"rss",
+		"tag":["gearbox","independent","studio","america","pr","generic"],
+		"about":"http://www.gearboxsoftware.com/about",
+		"notes":"Borderlands series",
+		"description":"Official News Feed of Gearbox"
+	},
+	{
+		"url":"twitter://gearboxsoftware",
+		"queue":"tweets",
+		"tag":["gearbox","independent","studio","america","pr","generic"],
+		"about":"http://www.gearboxsoftware.com/about",
+		"notes":"Borderlands series",
+		"description":"Official Twitter Account of Gearbox"
+	},
+	{
+		"url":"youtube://gearboxsoftware",
+		"queue":"youtube",
+		"tag":["gearbox","independent","studio","america","pr","generic"],
+		"about":"http://www.gearboxsoftware.com/about",
+		"notes":"Borderlands series",
+		"description":"Official Youtube Channel of Gearbox"
+	},
+	{
+		"url":"facebook://108889785816901",
+		"queue":"rss",
+		"tag":["grasshopper","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.grasshoppermanufacture.com/en/index.html",
+		"notes":"Killer7",
+		"description":"Official Facebook Page of Grasshopper Manufacture"
+	},
+	{
+		"url":"flickr://53678041@N02",
+		"queue":"flickr",
+		"tag":["grasshopper","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.grasshoppermanufacture.com/en/index.html",
+		"notes":"Killer7",
+		"description":"Official Flickr Album of Grasshopper Manufacture"
+	},
+	{
+		"url":"http://www.grasshoppermanufacture.com/en/news/news.xml",
+		"queue":"rss",
+		"tag":["grasshopper","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.grasshoppermanufacture.com/en/index.html",
+		"notes":"Killer7",
+		"description":"Official News Feed of Grasshopper"
+	},
+	{
+		"url":"twitter://Grasshopper_EN",
+		"queue":"tweets",
+		"tag":["grasshopper","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.grasshoppermanufacture.com/en/index.html",
+		"notes":"Killer7",
+		"description":"Official Twitter Account of Grasshopper Manufacture"
+	},
+	{
+		"url":"twitter://suda_51",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Killer7",
+		"description":"Official Twitter Account of Suda 51: Grasshopper Manufacture CEO"
+	},
+	{
+		"url":"youtube://GrasshopperOffline",
+		"queue":"youtube",
+		"tag":["grasshopper","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.grasshoppermanufacture.com/en/index.html",
+		"notes":"Killer7",
+		"description":"Official Youtube Channel of Grasshopper"
+	},
+	{
+		"url":"facebook://179751088724627",
+		"queue":"rss",
+		"tag":["guerilla","sony","studio","europe","pr","generic"],
+		"about":"http://www.guerrilla-games.com/",
+		"notes":"Killzone series",
+		"description":"Official Facebook Page of Guerrila Games"
+	},
+	{
+		"url":"twitter://guerrilla_jobs",
+		"queue":"tweets",
+		"tag":["guerilla","sony","studio","europe","pr","generic"],
+		"about":"http://www.guerrilla-games.com/",
+		"notes":"Killzone series",
+		"description":"Official Twitter Account of Guerilla Games"
+	},
+	{
+		"url":"facebook://164137436960644",
+		"queue":"rss",
+		"tag":["haemimontgames","thirdparty","studio","europe","pr","strategy"],
+		"about":"http://www.haemimontgames.com/company/index.html",
+		"notes":"Tropico series",
+		"description":"Official Facebook Page of Haemimont Games"
+	},
+	{
+		"url":"facebook://61597338747",
+		"queue":"rss",
+		"tag":["halbrickstudios","independent","studio","world","pr","generic"],
+		"about":"http://halfbrick.com/about-us/",
+		"notes":"Fruit Ninja",
+		"description":"Official Facebook Page of Halfbrick Studios"
+	},
+	{
+		"url":"http://halfbrick.com/feed/",
+		"queue":"rss",
+		"tag":["halbrickstudios","independent","studio","world","pr","generic"],
+		"about":"http://halfbrick.com/about-us/",
+		"notes":"Fruit Ninja",
+		"description":"Official News Feed of Halfbrick Studios"
+	},
+	{
+		"url":"twitter://Halfbrick",
+		"queue":"tweets",
+		"tag":["halbrickstudios","independent","studio","world","pr","generic"],
+		"about":"http://halfbrick.com/about-us/",
+		"notes":"Fruit Ninja",
+		"description":"Official Twitter Account of Halfbrick Studios"
+	},
+	{
+		"url":"youtube://HalfbrickStudios",
+		"queue":"youtube",
+		"tag":["halbrickstudios","independent","studio","world","pr","generic"],
+		"about":"http://halfbrick.com/about-us/",
+		"notes":"Fruit Ninja",
+		"description":"Official Youtube Channel of Halfbrick Studios"
+	},
+	{
+		"url":"facebook://40419348133",
+		"queue":"rss",
+		"tag":["harmonix","independent","studio","america","pr","music"],
+		"about":"http://www.harmonixmusic.com/",
+		"notes":"Rock Band",
+		"description":"Official Facebook Page of Harmonix Music"
+	},
+	{
+		"url":"twitter://Harmonix",
+		"queue":"tweets",
+		"tag":["harmonix","independent","studio","america","pr","music"],
+		"about":"http://www.harmonixmusic.com/",
+		"notes":"Rock Band",
+		"description":"Official Twitter Account of Harmonix Music"
+	},
+	{
+		"url":"youtube://HarmonixMusic",
+		"queue":"youtube",
+		"tag":["harmonix","independent","studio","america","pr","music"],
+		"about":"http://www.harmonixmusic.com/",
+		"notes":"Rock Band",
+		"description":"Official Youtube Channel of Harmonix Music"
+	},
+	{
+		"url":"facebook://102819309811616",
+		"queue":"rss",
+		"tag":["hbstudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.hb-studios.com/#about",
+		"notes":"Fifa",
+		"description":"Official Facebook Page of Hb Studios"
+	},
+	{
+		"url":"youtube://HBStudiosDeveloper",
+		"queue":"youtube",
+		"tag":["hbstudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.hb-studios.com/#about",
+		"notes":"Fifa",
+		"description":"Official Youtube Channel of Hb Studios"
+	},
+	{
+		"url":"twitter://hb_studios",
+		"queue":"tweets",
+		"tag":["hbstudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.hb-studios.com/#about",
+		"notes":"Fifa",
+		"description":"Official Twitter Account of Hb Studios"
+	},
+	{
+		"url":"facebook://137258892982163",
+		"queue":"rss",
+		"tag":["headstronggames","independent","studio","europe","pr","generic"],
+		"about":"http://www.headstrong-games.com/main.html",
+		"notes":"The House of The Dead",
+		"description":"Official Facebook Page Headstrong Games"
+	},
+	{
+		"url":"twitter://HeadstrongGames",
+		"queue":"tweets",
+		"tag":["headstronggames","independent","studio","europe","pr","generic"],
+		"about":"http://www.headstrong-games.com/main.html",
+		"notes":"The House of The Dead",
+		"description":"Official Twitter Account Headstrong Games"
+	},
+	{
+		"url":"facebook://111587242449",
+		"queue":"rss",
+		"tag":["hellogames","indie","studio","europe","pr","generic"],
+		"about":"http://www.hellogames.org/about-us/",
+		"notes":"Joe Danger",
+		"description":"Official Facebook Page of Hello Games"
+	},
+	{
+		"url":"flickr://42847534@N04",
+		"queue":"flickr",
+		"tag":["hellogames","indie","studio","europe","pr","generic"],
+		"about":"http://www.hellogames.org/about-us/",
+		"notes":"Joe Danger",
+		"description":"Official Flickr Account of Hello Games"
+	},
+	{
+		"url":"http://feeds.feedburner.com/HelloGames",
+		"queue":"rss",
+		"tag":["hellogames","indie","studio","europe","pr","generic"],
+		"about":"http://www.hellogames.org/about-us/",
+		"notes":"Joe Danger",
+		"description":"Official News Feed of Hello Games"
+	},
+	{
+		"url":"twitter://hellogames",
+		"queue":"tweets",
+		"tag":["hellogames","indie","studio","europe","pr","generic"],
+		"about":"http://www.hellogames.org/about-us/",
+		"notes":"Joe Danger",
+		"description":"Official Twitter Account Hello Games"
+	},
+	{
+		"url":"youtube://HelloGamesTube",
+		"queue":"youtube",
+		"tag":["hellogames","indie","studio","europe","pr","generic"],
+		"about":"http://www.hellogames.org/about-us/",
+		"notes":"Joe Danger",
+		"description":"Official Youtube Channel of Hello Games"
+	},
+	{
+		"url":"facebook://286944394659980",
+		"queue":"rss",
+		"tag":["highvoltage","independent","studio","america","pr","generic"],
+		"about":"http://www.high-voltage.com/",
+		"notes":"The Conduit",
+		"description":"Official Facebook Page of High Voltage Software"
+	},
+	{
+		"url":"twitter://HVSGames",
+		"queue":"tweets",
+		"tag":["highvoltage","independent","studio","america","pr","generic"],
+		"about":"http://www.high-voltage.com/",
+		"notes":"The Conduit",
+		"description":"Official Twitter Account of High Voltage Software"
+	},
+	{
+		"url":"youtube://HighVoltageSoftware",
+		"queue":"youtube",
+		"tag":["highvoltage","independent","studio","america","pr","generic"],
+		"about":"http://www.high-voltage.com/",
+		"notes":"The Conduit",
+		"description":"Official Youtube Channel of High Voltage Software"
+	},
+	{
+		"url":"facebook://92082566210",
+		"queue":"rss",
+		"tag":["housemarque","independent","studio","europe","pr","generic"],
+		"about":"http://www.housemarque.com/about-us/company-story/",
+		"notes":"Super Stardust",
+		"description":"Official Facebook Page of Housemarque"
+	},
+	{
+		"url":"http://feeds.feedburner.com/housemarque",
+		"queue":"rss",
+		"tag":["housemarque","independent","studio","europe","pr","generic"],
+		"about":"http://www.housemarque.com/about-us/company-story/",
+		"notes":"Super Stardust",
+		"description":"Official News Feed of Housemarque"
+	},
+	{
+		"url":"twitter://Housemarque",
+		"queue":"tweets",
+		"tag":["housemarque","independent","studio","europe","pr","generic"],
+		"about":"http://www.housemarque.com/about-us/company-story/",
+		"notes":"Super Stardust",
+		"description":"Official Twitter Account of Housemarque"
+	},
+	{
+		"url":"youtube://housemarquegames",
+		"queue":"youtube",
+		"tag":["housemarque","independent","studio","europe","pr","generic"],
+		"about":"http://www.housemarque.com/about-us/company-story/",
+		"notes":"Super Stardust",
+		"description":"Official Youtube Channel of Housemarque"
+	},
+	{
+		"url":"facebook://256072430180",
+		"queue":"rss",
+		"tag":["humanhead","independent","studio","america","pr","generic"],
+		"about":"http://www.humanhead.com/company.html#about",
+		"notes":"Prey",
+		"description":"Official Facebook Page of Human Head Studios"
+	},
+	{
+		"url":"twitter://humanheadgames",
+		"queue":"tweets",
+		"tag":["humanhead","independent","studio","america","pr","generic"],
+		"about":"http://www.humanhead.com/company.html#about",
+		"notes":"Prey",
+		"description":"Official Twitter Account of Human Head Studios"
+	},
+	{
+		"url":"twitter://NoogyTweet",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"notes":"Dust: An Elysian Tale",
+		"description":"Official Twitter Account of Dean Dodrill: Independent Animator & Game Developer."
+	},
+	{
+		"url":"twitter://ID_AA_Carmack",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Doom series",
+		"description":"Official Twitter Account of John Carmack: Founder & Technical director of Id Software"
+	},
+	{
+		"url":"twitter://idSoftware",
+		"queue":"tweets",
+		"tag":["idsoftware","thirdparty","studio","america","pr","generic"],
+		"notes":"Doom series",
+		"description":"Official Twitter Account of id Software"
+	},
+	{
+		"url":"twitter://romero",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Doom series",
+		"description":"Official Twitter Account of John Romero: Game designer of Wolfenstein 3D, Doom and Quake"
+	},
+	{
+		"url":"twitter://infinite_ammo",
+		"queue":"tweets",
+		"tag":["infiniteammo","indie","studio","america","pr","experimental"],
+		"about":"http://infiniteammo.ca/about-2/",
+		"notes":"Aquaria",
+		"description":"Official Twitter Account of Infinite Ammo"
+	},
+	{
+		"url":"facebook://92819932488",
+		"queue":"rss",
+		"tag":["infinityward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/InfinityWardStudio/info",
+		"notes":"Call of Duty: Modern Warfare series",
+		"description":"Official Facebook Page of Infinity Ward"
+	},
+	{
+		"url":"twitter://infinityward",
+		"queue":"tweets",
+		"tag":["infinityward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/InfinityWardStudio/info",
+		"notes":"Call of Duty: Modern Warfare series",
+		"description":"Official Twitter Account of Infinity Ward"
+	},
+	{
+		"url":"twitter://IWMarkRubin",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Mark Rubin: Executive Producer of Infinity Ward"
+	},
+	{
+		"url":"youtube://InfinityWard",
+		"queue":"youtube",
+		"tag":["infinityward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/InfinityWardStudio/info",
+		"notes":"Call of Duty: Modern Warfare series",
+		"description":"Official Youtube Channel of Infinity Ward"
+	},
+	{
+		"url":"facebook://91127584852",
+		"queue":"rss",
+		"tag":["insomniacgames","sony","studio","america","pr","generic"],
+		"about":"http://www.insomniacgames.com/about/",
+		"notes":"Rachet&Clank series",
+		"description":"Official Facebook Page of Insomniac Games"
+	},
+	{
+		"url":"http://www.insomniacgames.com/category/research-development/feed/",
+		"queue":"rss",
+		"tag":["insomniacgames","sony","studio","america","devblog","generic"],
+		"about":"http://www.insomniacgames.com/about/",
+		"notes":"Rachet&Clank series",
+		"description":"Official News Feed of Insomniac Research & Development"
+	},
+	{
+		"url":"http://www.insomniacgames.com/feed/",
+		"queue":"rss",
+		"tag":["insomniacgames","sony","studio","america","pr","generic"],
+		"about":"http://www.insomniacgames.com/about/",
+		"notes":"Rachet&Clank series",
+		"description":"Official News Feed of Insomniac Games"
+	},
+	{
+		"url":"twitter://insomniacgames",
+		"queue":"tweets",
+		"tag":["insomniacgames","sony","studio","america","pr","generic"],
+		"about":"http://www.insomniacgames.com/about/",
+		"notes":"Rachet&Clank series",
+		"description":"Official Twitter Account of Insomniac Games"
+	},
+	{
+		"url":"youtube://insomgames",
+		"queue":"youtube",
+		"tag":["insomniacgames","sony","studio","america","pr","generic"],
+		"about":"http://www.insomniacgames.com/about/",
+		"notes":"Rachet&Clank series",
+		"description":"Official Youtube Channel of Insomniac Games"
+	},
+	{
+		"url":"twitter://InterplayGames",
+		"queue":"tweets",
+		"tag":["interplaygames","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.interplay.com/about/index.php",
+		"notes":"MDK",
+		"description":"Official Twitter Account of Interplay Games"
+	},
+	{
+		"url":"http://feeds.feedburner.com/introversion_blog",
+		"queue":"rss",
+		"tag":["introversion","indie","studio","europe","pr","experimental"],
+		"about":"http://www.introversion.co.uk/aboutus.html",
+		"notes":"Darwinia",
+		"description":"Official News Feed of Introversion Software"
+	},
+	{
+		"url":"twitter://IVSoftware",
+		"queue":"tweets",
+		"tag":["introversion","indie","studio","europe","pr","experimental"],
+		"about":"http://www.introversion.co.uk/aboutus.html",
+		"notes":"Darwinia",
+		"description":"Official Twitter Account of Introversion Software"
+	},
+	{
+		"url":"youtube://IVSoftware",
+		"queue":"youtube",
+		"tag":["introversion","indie","studio","europe","pr","experimental"],
+		"about":"http://www.introversion.co.uk/aboutus.html",
+		"notes":"Darwinia",
+		"description":"Official Youtube Channel of Introversion Software"
+	},
+	{
+		"url":"http://www.ioi.dk/?feed=rss2",
+		"queue":"rss",
+		"tag":["iointeractive","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ioi.dk/?page_id=81",
+		"notes":"Hitman series",
+		"description":"Official News Feed of IO interactive"
+	},
+	{
+		"url":"twitter://IOInteractive",
+		"queue":"tweets",
+		"tag":["iointeractive","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ioi.dk/?page_id=81",
+		"notes":"Hitman series",
+		"description":"Official Twitter Account of IO interactive"
+	},
+	{
+		"url":"http://feeds.feedburner.com/irem_web",
+		"queue":"rss",
+		"tag":["iremsoftware","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://www.irem.co.jp/e/company/index.html",
+		"notes":"R-Type",
+		"description":"Official News Feed of IREM SOFTWARE"
+	},
+	{
+		"url":"facebook://191346860973212",
+		"queue":"rss",
+		"tag":["iremsoftware","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://www.irem.co.jp/e/company/index.html",
+		"notes":"R-Type",
+		"description":"Official Facebook Page of IREM SOFTWARE"
+	},
+	{
+		"url":"youtube://IREMSOFTWARE",
+		"queue":"youtube",
+		"tag":["iremsoftware","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.irem.co.jp/e/company/index.html",
+		"notes":"R-Type",
+		"description":"Official Youtube Channel of IREM SOFTWARE"
+	},
+	{
+		"url":"flickr://44791089@N03",
+		"queue":"flickr",
+		"tag":["irrationalgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://irrationalgames.com/studio/",
+		"notes":"Bioshock series",
+		"description":"Official Flickr Account of Irrational Games"
+	},
+	{
+		"url":"http://irrationalgames.com/feed/",
+		"queue":"rss",
+		"tag":["irrationalgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://irrationalgames.com/studio/",
+		"notes":"Bioshock series",
+		"description":"Official News Feed of Irrational Games"
+	},
+	{
+		"url":"twitter://iglevine",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Bioshock series",
+		"description":"Official Twitter Account of Ken Levine: Creative Director of Irrational Games"
+	},
+	{
+		"url":"facebook://293112665458",
+		"queue":"rss",
+		"tag":["irrationalgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://irrationalgames.com/studio/",
+		"notes":"Bioshock series",
+		"description":"Official Facebook Page of Irrational Games"
+	},
+	{
+		"url":"twitter://irrationalgames",
+		"queue":"tweets",
+		"tag":["irrationalgames","thirdparty","studio","america","pr","generic"],
+		"about":"http://irrationalgames.com/studio/",
+		"notes":"Bioshock series",
+		"description":"Official Twitter Account of Irrational Games"
+	},
+	{
+		"url":"twitter://therealsaibot",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Mortal Kombat series",
+		"description":"Official Twitter Account of John Tobias: Co-Creator of Mortal Kombat"
+	},
+	{
+		"url":"twitter://Jonathan_Blow",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"notes":"Braid",
+		"description":"Official Twitter Account of Jonathan Blow"
+	},
+	{
+		"url":"http://jordanmechner.com/feed/",
+		"queue":"rss",
+		"tag":["america","people","generic"],
+		"notes":"Prince of Persia series",
+		"description":"Official News Feed of Jordan Mechner: Screenwriter and creator of Prince of Persia"
+	},
+	{
+		"url":"twitter://jmechner",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Prince of Persia series",
+		"description":"Official Twitter Account of Jordan Mechner: Screenwriter and creator of Prince of Persia"
+	},
+	{
+		"url":"youtube://kleient",
+		"queue":"youtube",
+		"tag":["kleientertainment","indie","studio","america","pr","generic"],
+		"about":"http://kleientertainment.com/about/",
+		"notes":"Shank",
+		"description":"Official Youtube Channel Account of Klei Entertainment"
+	},
+	{
+		"url":"twitter://klei",
+		"queue":"tweets",
+		"tag":["kleientertainment","indie","studio","america","pr","generic"],
+		"about":"http://kleientertainment.com/about/",
+		"notes":"Shank",
+		"description":"Official Twitter Account of Klei Entertainment"
+	},
+	{
+		"url":"twitter://hideo_kojima_en",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Metal Gear series",
+		"description":"Official Twitter Account of Hideo Kojima: Director of Kojima Productions"
+	},
+	{
+		"url":"twitter://kojima_pro_live",
+		"queue":"tweets",
+		"tag":["kojimaproductions","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.konami.jp/kojima_pro/english/",
+		"notes":"Metal Gear series",
+		"description":"Official Twitter Account of Kojima Productions"
+	},
+	{
+		"url":"facebook://33404976120",
+		"queue":"rss",
+		"tag":["konami","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://konami.com/about/",
+		"description":"Official Facebook Page of Konami"
+	},
+	{
+		"url":"twitter://konami",
+		"queue":"tweets",
+		"tag":["konami","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://konami.com/about/",
+		"description":"Official Twitter Account of Konami"
+	},
+	{
+		"url":"youtube://konami",
+		"queue":"youtube",
+		"tag":["konami","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://konami.com/about/",
+		"description":"Official Youtube Channel of Konami"
+	},
+	{
+		"url":"facebook://137449482995423",
+		"queue":"rss",
+		"tag":["indie","europe","people","generic"],
+		"notes":"Noitu Love",
+		"description":"Official Facebook Page of Konjak"
+	},
+	{
+		"url":"youtube://konjakonjak",
+		"queue":"youtube",
+		"tag":["indie","europe","people","generic"],
+		"notes":"Noitu Love",
+		"description":"Official Youtube Channel of Konjak"
+	},
+	{
+		"url":"http://www.konjak.org/rss.xml",
+		"queue":"rss",
+		"tag":["indie","europe","people","generic"],
+		"notes":"Noitu Love",
+		"description":"Official News Feed of Konjak"
+	},
+	{
+		"url":"twitter://konjak",
+		"queue":"tweets",
+		"tag":["indie","europe","people","generic"],
+		"notes":"Noitu Love",
+		"description":"Official Twitter Account of Konjak"
+	},
+	{
+		"url":"facebook://154072634652943",
+		"queue":"rss",
+		"tag":["larianstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.larian.com/company.php",
+		"notes":"Divinity series",
+		"description":"Official Facebook Page of Larian Studios"
+	},
+	{
+		"url":"twitter://larianstudios",
+		"queue":"tweets",
+		"tag":["larianstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.larian.com/company.php",
+		"notes":"Divinity series",
+		"description":"Official Twitter Account of Larian Studios"
+	},
+	{
+		"url":"youtube://LarianStudios",
+		"queue":"youtube",
+		"tag":["larianstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.larian.com/company.php",
+		"notes":"Divinity series",
+		"description":"Official Youtube Channel of Larian Studios"
+	},
+	{
+		"url":"facebook://120741978014469",
+		"queue":"rss",
+		"tag":["level5","thirdparty","publisher","japan","pr","generic"],
+		"about":"http://level5ia.com/company/",
+		"notes":"Professor Layton series",
+		"description":"Official Facebook Page of Level 5 IA"
+	},
+	{
+		"url":"twitter://LEVEL5_IA",
+		"queue":"tweets",
+		"tag":["level5","thirdparty","publisher","japan","pr","generic"],
+		"about":"http://level5ia.com/company/",
+		"notes":"Professor Layton series",
+		"description":"Official Twitter Account of Level 5 IA"
+	},
+	{
+		"url":"youtube://Level5ch",
+		"queue":"youtube",
+		"tag":["level5","thirdparty","publisher","japan","pr","generic"],
+		"about":"http://level5ia.com/company/",
+		"notes":"Professor Layton series",
+		"description":"Official Youtube Channel of Level 5 IA"
+	},
+	{
+		"url":"facebook://181613441114",
+		"queue":"rss",
+		"tag":["lexisnumerique","independent","publisher","worldwide","pr","generic"],
+		"about":"http://www.facebook.com/lexis.numerique/info",
+		"notes":"In Memoriam",
+		"description":"Official Facebook Page of Lexis Numerique"
+	},
+	{
+		"url":"twitter://LexisNumerique",
+		"queue":"tweets",
+		"tag":["lexisnumerique","independent","publisher","worldwide","pr","generic"],
+		"about":"http://www.facebook.com/lexis.numerique/info",
+		"notes":"In Memoriam",
+		"description":"Official Twitter Account of Lexis Numerique"
+	},
+	{
+		"url":"http://feeds.feedburner.com/LionheadStudios",
+		"queue":"rss",
+		"tag":["lionheadstudios","microsoft","studio","europe","pr","generic"],
+		"about":"http://lionhead.com/about-lionhead/",
+		"notes":"Fable series",
+		"description":"Official News Feed of Lionhead Studios"
+	},
+	{
+		"url":"twitter://lionheadstudios",
+		"queue":"tweets",
+		"tag":["lionheadstudios","microsoft","studio","europe","pr","generic"],
+		"about":"http://lionhead.com/about-lionhead/",
+		"notes":"Fable series",
+		"description":"Official Twitter Account of Lionhead Studios"
+	},
+	{
+		"url":"youtube://LionheadStudios",
+		"queue":"youtube",
+		"tag":["lionheadstudios","microsoft","studio","europe","pr","generic"],
+		"about":"http://lionhead.com/about-lionhead/",
+		"notes":"Fable series",
+		"description":"Official Youtube Channel of Lionhead Studios"
+	},
+	{
+		"url":"http://minotaurproject.co.uk/blog/?feed=rss2",
+		"queue":"rss",
+		"tag":["llamasoft","indie","studio","europe","pr","generic"],
+		"about":"http://minotaurproject.co.uk/about.php",
+		"notes":"Attack of the Mutant Camels ",
+		"description":"Official News Feed of Llamasoft"
+	},
+	{
+		"url":"http://www.lucasarts.com/data/headlines.xml",
+		"queue":"rss",
+		"tag":["lucasarts","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.lucasarts.com/company/about/page1.html",
+		"notes":"Monkey Island series",
+		"description":"Official News Feed of Lucasarts"
+	},
+	{
+		"url":"facebook://101270363641",
+		"queue":"rss",
+		"tag":["majesco","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.majescoent.com/content/about-majesco-entertainment",
+		"notes":"Zumba Fitness series",
+		"description":"Official Facebook Page of Majesco Entertainment"
+	},
+	{
+		"url":"twitter://Majesco",
+		"queue":"tweets",
+		"tag":["majesco","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.majescoent.com/content/about-majesco-entertainment",
+		"notes":"Zumba Fitness series",
+		"description":"Official Twitter Account of Majesco Entertainment"
+	},
+	{
+		"url":"youtube://MajescoGames",
+		"queue":"youtube",
+		"tag":["majesco","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.majescoent.com/content/about-majesco-entertainment",
+		"notes":"Zumba Fitness series",
+		"description":"Official Youtube Channel of Majesco Entertainment"
+	},
+	{
+		"url":"facebook://90826968327",
+		"queue":"rss",
+		"tag":["mediamolecule","sony","studio","europe","pr","generic"],
+		"about":"http://www.mediamolecule.com/images/uploads/files/20100302-sony_computer_entertainment_acquires_media_molecule.pdf",
+		"notes":"Little Big Planet series",
+		"description":"Official Facebook Page of Media Molecule"
+	},
+	{
+		"url":"http://feeds.feedburner.com/MediaMoleculeBlog",
+		"queue":"rss",
+		"tag":["mediamolecule","sony","studio","europe","pr","generic"],
+		"about":"http://www.mediamolecule.com/images/uploads/files/20100302-sony_computer_entertainment_acquires_media_molecule.pdf",
+		"notes":"Little Big Planet series",
+		"description":"Official News Feed of Media Molecule"
+	},
+	{
+		"url":"http://feeds.feedburner.com/MmLab",
+		"queue":"rss",
+		"tag":["mediamolecule","sony","studio","europe","devblog","generic"],
+		"about":"http://www.mediamolecule.com/images/uploads/files/20100302-sony_computer_entertainment_acquires_media_molecule.pdf",
+		"notes":"Little Big Planet series",
+		"description":"Official Media Molecule Dev News Feed"
+	},
+	{
+		"url":"twitter://mediamolecule",
+		"queue":"tweets",
+		"tag":["mediamolecule","sony","studio","europe","pr","generic"],
+		"about":"http://www.mediamolecule.com/images/uploads/files/20100302-sony_computer_entertainment_acquires_media_molecule.pdf",
+		"notes":"Little Big Planet series",
+		"description":"Official Twitter Account of Media Molecule"
+	},
+	{
+		"url":"youtube://MediaMolecule",
+		"queue":"youtube",
+		"tag":["mediamolecule","sony","studio","europe","pr","generic"],
+		"about":"http://www.mediamolecule.com/images/uploads/files/20100302-sony_computer_entertainment_acquires_media_molecule.pdf",
+		"notes":"Little Big Planet series",
+		"description":"Official Youtube Channel of Media Molecule"
+	},
+	{
+		"url":"twitter://mercurysteam",
+		"queue":"tweets",
+		"tag":["mercurysteam","thirdparty","studio","europe","pr","generic"],
+		"about":"http://company.mercurysteam.com/html/?language_code=en",
+		"notes":"Castlevania: Lords of Shadow",
+		"description":"Official Twitter Account of Mercury Steam"
+	},
+	{
+		"url":"facebook://367502717404",
+		"queue":"rss",
+		"tag":["microids","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.facebook.com/microids/info",
+		"notes":"Still Life",
+		"description":"Official Facebook Page of Microïds"
+	},
+	{
+		"url":"twitter://microids_off",
+		"queue":"tweets",
+		"tag":["microids","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.facebook.com/microids/info",
+		"notes":"Still Life",
+		"description":"Official Twitter Account of Microïds"
+	},
+	{
+		"url":"youtube://anumaninteractive",
+		"queue":"youtube",
+		"tag":["microids","thirdparty","publisher","worldwide","pr","adventure"],
+		"about":"http://www.facebook.com/microids/info",
+		"notes":"Still Life",
+		"description":"Official Youtube Channel of Microïds"
+	},
+	{
+		"url":"facebook://16547831022",
+		"queue":"rss",
+		"tag":["microsoft","publisher","worldwide","pr","xbox"],
+		"description":"Official Facebook Page of Microsoft XBOX"
+	},
+	{
+		"url":"http://feeds.feedburner.com/MajorNelson",
+		"queue":"rss",
+		"tag":["america","people","generic"],
+		"description":"Official News Feed of Larry Hryb:  Director of Programming for XBOX Live"
+	},
+	{
+		"url":"twitter://majornelson",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Larry Hryb: Director of Programming for XBOX Live"
+	},
+	{
+		"url":"twitter://XBOX",
+		"queue":"tweets",
+		"tag":["microsoft","publisher","worldwide","pr","xbox"],
+		"description":"Official Twitter Account of Microsoft XBOX"
+	},
+	{
+		"url":"youtube://xbox",
+		"queue":"youtube",
+		"tag":["microsoft","publisher","worldwide","pr","xbox"],
+		"description":"Official Youtube Channel of Microsoft XBOX"
+	},
+	{
+		"url":"twitter://MilestoneItaly",
+		"queue":"tweets",
+		"tag":["milestone","independent","studio","europe","pr","racing"],
+		"about":"http://www.milestone.it/EN-us/company.htm",
+		"notes":"World Rally Championship ",
+		"description":"Official Twitter Account of Milestone"
+	},
+	{
+		"url":"facebook://1269086230",
+		"queue":"rss",
+		"tag":["japan","people","generic"],
+		"notes":"Final Fantasy series",
+		"description":"Official Facebook Page of Hironobu Sakaguchi: Game Designer & Creator of the Final Fantasy Series"
+	},
+	{
+		"url":"facebook://404006412960321",
+		"queue":"rss",
+		"tag":["mistwalker","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.mistwalkercorp.com/index.html",
+		"notes":"The Last Story",
+		"description":"Official Facebook Page of Mistwalker"
+	},
+	{
+		"url":"twitter://auuo",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Final Fantasy series",
+		"description":"Official Twitter Account of Hironobu Sakaguchi: Game Designer & Creator of the Final Fantasy Series"
+	},
+	{
+		"url":"twitter://mistwalker",
+		"queue":"tweets",
+		"tag":["mistwalker","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.mistwalkercorp.com/index.html",
+		"notes":"The Last Story",
+		"description":"Official Twitter Account of Mistwalker"
+	},
+	{
+		"url":"http://mojang.com/feed/",
+		"queue":"rss",
+		"tag":["mojang","independent","studio","europe","pr","generic"],
+		"about":"http://mojang.com/about/",
+		"notes":"Minecraft",
+		"description":"Official News Feed of Mojang"
+	},
+	{
+		"url":"facebook://16607723841",
+		"queue":"rss",
+		"tag":["monolithproductions","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.lith.com/Studio/",
+		"notes":"F.E.A.R. 2: Project Origin",
+		"description":"Official Facebook Page of Monolith Productions"
+	},
+	{
+		"url":"twitter://MonolithDev",
+		"queue":"tweets",
+		"tag":["monolithproductions","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.lith.com/Studio/",
+		"notes":"F.E.A.R. 2: Project Origin",
+		"description":"Official Twitter Account of Monolith Productions"
+	},
+	{
+		"url":"twitter://MONOLITHSOFT",
+		"queue":"tweets",
+		"tag":["monolithsoft","thirdparty","studio","japan","pr","japaneseonly"],
+		"notes":"Xenoblade Chronicles",
+		"description":"Official Twitter Account of Monolith Soft"
+	},
+	{
+		"url":"facebook://220077224721514",
+		"queue":"rss",
+		"tag":["monolithsoft","thirdparty","studio","japan","pr","japaneseonly"],
+		"notes":"Xenoblade Chronicles",
+		"description":"Official Facebook Page of Monolith Soft"
+	},
+	{
+		"url":"tumblr://mossmouth",
+		"queue":"rss",
+		"tag":["mossmouth","indie","studio","america","pr","generic"],
+		"about":"http://www.mossmouth.com/",
+		"notes":"Spelunky",
+		"description":"Official Tumblr Account of Mossmouth"
+	},
+	{
+		"url":"twitter://mossmouth",
+		"queue":"tweets",
+		"tag":["mossmouth","indie","studio","america","pr","generic"],
+		"about":"http://www.mossmouth.com/",
+		"notes":"Spelunky",
+		"description":"Official Twitter Account of Mossmouth"
+	},
+	{
+		"url":"facebook://49054165628",
+		"queue":"rss",
+		"tag":["namcobandai","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.namcobandaigames.com/company",
+		"description":"Official Facebook Page of Namco Bandai"
+	},
+	{
+		"url":"http://www.uk.namcobandaigames.eu/feed/news",
+		"queue":"rss",
+		"tag":["namcobandai","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.namcobandaigames.com/company",
+		"description":"Official News Feed of Namco Bandai"
+	},
+	{
+		"url":"twitter://namcogames",
+		"queue":"tweets",
+		"tag":["namcobandai","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.namcobandaigames.com/company",
+		"description":"Official Twitter Account of Namco Bandai Games"
+	},
+	{
+		"url":"youtube://NamcoBandaiGames",
+		"queue":"youtube",
+		"tag":["namcobandai","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.namcobandaigames.com/company",
+		"description":"Official Youtube Channel of Namco Bandai"
+	},
+	{
+		"url":"youtube://NamcoBandaiGamesEU",
+		"queue":"youtube",
+		"tag":["namcobandai","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.namcobandaigames.com/company",
+		"description":"Official Youtube Channel of Namco Bandai"
+	},
+	{
+		"url":"facebook://503301973024964",
+		"queue":"rss",
+		"tag":["nanaonsha","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.nanaon-sha.com/eng.html",
+		"notes":"PaRappa the Rapper",
+		"description":"Official Facebook Page of Nanaon-Sha Co"
+	},
+	{
+		"url":"twitter://natsume_inc",
+		"queue":"tweets",
+		"tag":["natsume","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.natsume.com/welcome/index.html",
+		"notes":"Harvest Moon series",
+		"description":"Official Twitter Account of Natsume"
+	},
+	{
+		"url":"facebook://94338588396",
+		"queue":"rss",
+		"tag":["natsume","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.natsume.com/welcome/index.html",
+		"notes":"Harvest Moon series",
+		"description":"Official Facebook Page of Natsume"
+	},
+	{
+		"url":"youtube://NatsumeUSA",
+		"queue":"youtube",
+		"tag":["natsume","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.natsume.com/welcome/index.html",
+		"notes":"Harvest Moon series",
+		"description":"Official Facebook Page of Natsume"
+	},
+	{
+		"url":"facebook://57327290245",
+		"queue":"rss",
+		"tag":["naughtydog","sony","studio","america","pr","generic"],
+		"about":"http://www.naughtydog.com/company/",
+		"notes":"Uncharted series",
+		"description":"Official Facebook Page of Naughty Dog"
+	},
+	{
+		"url":"flickr://28423600@N02",
+		"queue":"flickr",
+		"tag":["naughtydog","sony","studio","america","pr","generic"],
+		"about":"http://www.naughtydog.com/company/",
+		"notes":"Uncharted series",
+		"description":"Official Flickr Album of Naughty Dog"
+	},
+	{
+		"url":"http://feeds.feedburner.com/NaughtyDog",
+		"queue":"rss",
+		"tag":["naughtydog","sony","studio","america","pr","generic"],
+		"about":"http://www.naughtydog.com/company/",
+		"notes":"Uncharted series",
+		"description":"Official News Feed of Naughty Dog"
+	},
+	{
+		"url":"twitter://Naughty_Dog",
+		"queue":"tweets",
+		"tag":["naughtydog","sony","studio","america","pr","generic"],
+		"about":"http://www.naughtydog.com/company/",
+		"notes":"Uncharted series",
+		"description":"Official Twitter Account of Naughty Dog"
+	},
+	{
+		"url":"youtube://NaughtyDog",
+		"queue":"youtube",
+		"tag":["naughtydog","sony","studio","america","pr","generic"],
+		"about":"http://www.naughtydog.com/company/",
+		"notes":"Uncharted series",
+		"description":"Official Youtube Channel of Naughty Dog"
+	},
+	{
+		"url":"twitter://noobde",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Injustice: Gods Among us",
+		"description":"Official Twitter Account of Ed Boon: Creative Director at NetherRealm Studios"
+	},
+	{
+		"url":"facebook://119902304857335",
+		"queue":"rss",
+		"tag":["nextlevelgames","independent","studio","america","pr","generic"],
+		"about":"http://www.nextlevelgames.com/index.php",
+		"notes":"Luigi's Mansion: Dark moon",
+		"description":"Official Facebook Page of Next Level Games"
+	},
+	{
+		"url":"facebook://1692651099",
+		"queue":"rss",
+		"tag":["nicalis","independent","studio","america","pr","generic"],
+		"about":"http://www.nicalis.com/about.php#",
+		"notes":"Cave Story – Wii & 3DS version",
+		"description":"Official Facebook Page of Nicalis"
+	},
+	{
+		"url":"http://blog.nicalis.com/feed/",
+		"queue":"rss",
+		"tag":["nicalis","independent","studio","america","pr","generic"],
+		"about":"http://www.nicalis.com/about.php#",
+		"notes":"Cave Story – Wii & 3DS version",
+		"description":"Official News Feed of Nicalis"
+	},
+	{
+		"url":"twitter://nicalis",
+		"queue":"tweets",
+		"tag":["nicalis","independent","studio","america","pr","generic"],
+		"about":"http://www.nicalis.com/about.php#",
+		"notes":"Cave Story – Wii & 3DS version",
+		"description":"Official Twitter Account of Nicalis"
+	},
+	{
+		"url":"youtube://nicalisinc",
+		"queue":"youtube",
+		"tag":["nicalis","independent","studio","america","pr","generic"],
+		"about":"http://www.nicalis.com/about.php#",
+		"notes":"Cave Story – Wii & 3DS version",
+		"description":"Official Youtube Channel of Nicalis"
+	},
+	{
+		"url":"facebook://153034448093973",
+		"queue":"rss",
+		"tag":["nihonfalcom","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://en.wikipedia.org/wiki/Nihon_Falcom",
+		"notes":"Dragon Slayer series",
+		"description":"Official Facebook Page of Nihon Falcom"
+	},
+	{
+		"url":"http://www.falcom.com/new.xml",
+		"queue":"rss",
+		"tag":["nihonfalcom","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://en.wikipedia.org/wiki/Nihon_Falcom",
+		"notes":"Dragon Slayer series",
+		"description":"Official News Feed of Nihon Falcom"
+	},
+	{
+		"url":"twitter://NihonFalcom",
+		"queue":"tweets",
+		"tag":["nihonfalcom","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://en.wikipedia.org/wiki/Nihon_Falcom",
+		"notes":"Dragon Slayer series",
+		"description":"Official Twitter Account of Nihon Falcom"
+	},
+	{
+		"url":"youtube://NihonFalcomSince1981",
+		"queue":"youtube",
+		"tag":["nihonfalcom","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://en.wikipedia.org/wiki/Nihon_Falcom",
+		"notes":"Dragon Slayer series",
+		"description":"Official Youtube Channel of Nihon Falcom"
+	},
+	{
+		"url":"twitter://NinjaTheory",
+		"queue":"tweets",
+		"tag":["ninjatheory","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ninjatheory.com/about.php",
+		"notes":"Enslaved: Odissey to the West",
+		"description":"Official Youtube Page of Ninja Theory"
+	},
+	{
+		"url":"youtube://OfficialNinjaTheory",
+		"queue":"youtube",
+		"tag":["ninjatheory","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ninjatheory.com/about.php",
+		"notes":"Enslaved: Odissey to the West",
+		"description":"Official Twitter Account of Ninja Theory"
+	},
+	{
+		"url":"facebook://119240841493711",
+		"queue":"rss",
+		"tag":["nintendo","publisher","worldwide","pr","generic"],
+		"description":"Official Facebook Page of Nintendo"
+	},
+	{
+		"url":"http://www.nintendo.com/feed",
+		"queue":"rss",
+		"tag":["nintendo","publisher","worldwide","pr","generic"],
+		"description":"Official News Feed of Nintendo"
+	},
+	{
+		"url":"http://www.nintendo.com/gamefeed",
+		"queue":"rss",
+		"tag":["nintendo","publisher","worldwide","pr","generic"],
+		"description":"Official Nintendo Games News Feed"
+	},
+	{
+		"url":"twitter://NintendoAmerica",
+		"queue":"tweets",
+		"tag":["nintendo","publisher","worldwide","pr","generic"],
+		"description":"Official Twitter Account of Nintendo"
+	},
+	{
+		"url":"youtube://3DSNintendo",
+		"queue":"youtube",
+		"tag":["nintendo","publisher","worldwide","pr","3ds"],
+		"description":"Official Youtube Channel of Nintendo 3DS"
+	},
+	{
+		"url":"youtube://Nintendo",
+		"queue":"youtube",
+		"tag":["nintendo","publisher","worldwide","pr","generic"],
+		"description":"Official Youtube Channel of Nintendo"
+	},
+	{
+		"url":"youtube://wiiu",
+		"queue":"youtube",
+		"tag":["nintendo","publisher","worldwide","pr","wiiu"],
+		"description":"Official Youtube Channel of Nintendo Wii U"
+	},
+	{
+		"url":"twitter://NISAmerica",
+		"queue":"tweets",
+		"tag":["nisamerica","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"description":"Official Twitter Account of NIS America"
+	},
+	{
+		"url":"twitter://NISAinEurope",
+		"queue":"tweets",
+		"tag":["nisamerica","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"description":"Official Twitter Account of NIS America in Europe"
+	},
+	{
+		"url":"facebook://256055541894",
+		"queue":"rss",
+		"tag":["nisamerica","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"description":"Official Facebook Account of NIS America in Europe"
+	},
+	{
+		"url":"youtube://NISAmerica",
+		"queue":"youtube",
+		"tag":["nisamerica","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"description":"Official Youtube Channel of NIS America"
+	},
+	{
+		"url":"facebook://133196759098",
+		"queue":"rss",
+		"tag":["nspace","independent","studio","america","pr","generic"],
+		"about":"http://www.n-space.com/About.html",
+		"notes":"Heroes of Ruin",
+		"description":"Official Facebook Page of n-Space"
+	},
+	{
+		"url":"http://nspaceinc.wordpress.com/feed/",
+		"queue":"rss",
+		"tag":["nspace","independent","studio","america","pr","generic"],
+		"about":"http://www.n-space.com/About.html",
+		"notes":"Heroes of Ruin",
+		"description":"Official News Feed of n-Space"
+	},
+	{
+		"url":"twitter://n_Space",
+		"queue":"tweets",
+		"tag":["nspace","independent","studio","america","pr","generic"],
+		"about":"http://www.n-space.com/About.html",
+		"notes":"Heroes of Ruin",
+		"description":"Official Twitter Account of n-Space"
+	},
+	{
+		"url":"facebook://82956101592",
+		"queue":"rss",
+		"tag":["obsidianentertainment","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.obsidian.net/jobs/open-positions",
+		"notes":"Fallout New Vegas",
+		"description":"Official Facebook Page of Obsidian Entertainment"
+	},
+	{
+		"url":"twitter://obsidian",
+		"queue":"tweets",
+		"tag":["obsidianentertainment","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.obsidian.net/jobs/open-positions",
+		"notes":"Fallout New Vegas",
+		"description":"Official Twitter Account of Obsidian Entertainment"
+	},
+	{
+		"url":"youtube://ObsidianEnt",
+		"queue":"youtube",
+		"tag":["obsidianentertainment","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.obsidian.net/jobs/open-positions",
+		"notes":"Fallout New Vegas",
+		"description":"Official Youtube Channel of  Obsidian Entertainment"
+	},
+	{
+		"url":"facebook://165852613451752",
+		"queue":"rss",
+		"tag":["oddworlinhabitants","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.oddworld.com/about/",
+		"notes":"Abe's Oddysee",
+		"description":"Official Facebook Page of Oddworld Inhabitants"
+	},
+	{
+		"url":"http://www.oddworld.com/feed/",
+		"queue":"rss",
+		"tag":["oddworlinhabitants","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.oddworld.com/about/",
+		"notes":"Abe's Oddysee",
+		"description":"Official News Feed of Oddworld Inhabitants"
+	},
+	{
+		"url":"twitter://oddworldinc",
+		"queue":"tweets",
+		"tag":["oddworlinhabitants","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.oddworld.com/about/",
+		"notes":"Abe's Oddysee",
+		"description":"Official Twitter Account of Oddworld Inhabitants"
+	},
+	{
+		"url":"youtube://oddworldinhabitants",
+		"queue":"youtube",
+		"tag":["oddworlinhabitants","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.oddworld.com/about/",
+		"notes":"Abe's Oddysee",
+		"description":"Official Youtube Channel of Oddworld Inhabitants"
+	},
+	{
+		"url":"facebook://179874216386",
+		"queue":"rss",
+		"tag":["pendulostudios","thirdparty","studio","europe","pr","adventure"],
+		"about":"http://www.pendulo-studios.com/EN%20pendulo.html",
+		"notes":"Runaway series",
+		"description":"Official Facebook Page of Pendulo Studios"
+	},
+	{
+		"url":"twitter://pendulostudios",
+		"queue":"tweets",
+		"tag":["pendulostudios","thirdparty","studio","europe","pr","adventure"],
+		"about":"http://www.pendulo-studios.com/EN%20pendulo.html",
+		"notes":"Runaway series",
+		"description":"Official Twitter Account of Pendulo Studios"
+	},
+	{
+		"url":"youtube://PenduloStudios",
+		"queue":"youtube",
+		"tag":["pendulostudios","thirdparty","studio","europe","pr","adventure"],
+		"about":"http://www.pendulo-studios.com/EN%20pendulo.html",
+		"notes":"Runaway series",
+		"description":"Official Youtube Channel of Pendulo Studios"
+	},
+	{
+		"url":"http://www.peoplecanfly.com/blog/feed/",
+		"queue":"rss",
+		"tag":["peoplecanfly","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.peoplecanfly.com/blog/",
+		"notes":"Bulletstorm",
+		"description":"Official News Feed of People Can Fly"
+	},
+	{
+		"url":"youtube://PeopleCanFlyEpic",
+		"queue":"youtube",
+		"tag":["peoplecanfly","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.peoplecanfly.com/blog/",
+		"notes":"Bulletstorm",
+		"description":"Official Youtube Channel of People Can Fly"
+	},
+	{
+		"url":"facebook://115736333788",
+		"queue":"rss",
+		"tag":["petroglyph","independent","studio","america","pr","generic"],
+		"about":"http://www.petroglyphgames.com/aboutus",
+		"notes":"Star Wars: Empire at War",
+		"description":"Official Facebook Page of Petroglyph"
+	},
+	{
+		"url":"twitter://petroglyphgames",
+		"queue":"tweets",
+		"tag":["petroglyph","independent","studio","america","pr","generic"],
+		"about":"http://www.petroglyphgames.com/aboutus",
+		"notes":"Star Wars: Empire at War",
+		"description":"Official Twitter Account of Petroglyph"
+	},
+	{
+		"url":"youtube://petroglyphgames",
+		"queue":"youtube",
+		"tag":["petroglyph","independent","studio","america","pr","generic"],
+		"about":"http://www.petroglyphgames.com/aboutus",
+		"notes":"Star Wars: Empire at War",
+		"description":"Official Youtube Channel of Petroglyph"
+	},
+	{
+		"url":"twitter://amaya_pixel",
+		"queue":"tweets",
+		"tag":["indie","japan","people","generic"],
+		"notes":"Cave Story",
+		"description":"Official Twitter Account of Daisuke Amaya aka Pixel: Creator of Cave Story"
+	},
+	{
+		"url":"facebook://19840559024",
+		"queue":"rss",
+		"tag":["platinumgames","independent","studio","japan","pr","generic"],
+		"about":"http://platinumgames.com/about/",
+		"notes":"Bayonetta",
+		"description":"Official Facebook Page of Platinum Games"
+	},
+	{
+		"url":"http://feeds.feedburner.com/PlatinumGames",
+		"queue":"rss",
+		"tag":["platinumgames","independent","studio","japan","pr","generic"],
+		"about":"http://platinumgames.com/about/",
+		"notes":"Bayonetta",
+		"description":"Official Platinum Games News Feed"
+	},
+	{
+		"url":"twitter://platinumgames",
+		"queue":"tweets",
+		"tag":["platinumgames","independent","studio","japan","pr","generic"],
+		"about":"http://platinumgames.com/about/",
+		"notes":"Bayonetta",
+		"description":"Official Twitter Account of Platinum Games"
+	},
+	{
+		"url":"youtube://platinumgames",
+		"queue":"youtube",
+		"tag":["platinumgames","independent","studio","japan","pr","generic"],
+		"about":"http://platinumgames.com/about/",
+		"notes":"Bayonetta",
+		"description":"Official Youtube Channel of Platinum Games"
+	},
+	{
+		"url":"twitter://DinoPatti",
+		"queue":"tweets",
+		"tag":["indie","europe","people","experimental"],
+		"about":"http://limbogame.org/company/",
+		"notes":"Limbo",
+		"description":"Officila Twitter Account of Dino Patti: Ceo of PlayDead"
+	},
+	{
+		"url":"http://eu.gran-turismo.com/gb/rss/1.0/news.xml",
+		"queue":"rss",
+		"tag":["polyphonydigital","sony","studio","japan","pr","racing"],
+		"about":"http://www.polyphony.co.jp/english/",
+		"notes":"Gran Turismo series",
+		"description":"Official News Feed of Polyphony Digital"
+	},
+	{
+		"url":"youtube://PolyphonyDigitalGT5",
+		"queue":"youtube",
+		"tag":["polyphonydigital","sony","studio","japan","pr","racing"],
+		"about":"http://www.polyphony.co.jp/english/",
+		"notes":"Gran Turismo series",
+		"description":"Official Youtube Channel of Polyphony Digital"
+	},
+	{
+		"url":"http://polytroncorporation.com/feed",
+		"queue":"rss",
+		"tag":["polytron","indie","studio","america","pr","generic"],
+		"about":"http://polytroncorporation.com/about",
+		"notes":"Fez",
+		"description":"Official News Feed of Polytron"
+	},
+	{
+		"url":"twitter://polytron",
+		"queue":"tweets",
+		"tag":["polytron","indie","studio","america","pr","generic"],
+		"about":"http://polytroncorporation.com/about",
+		"notes":"Fez",
+		"description":"Official Twitter Account of Polytron"
+	},
+	{
+		"url":"facebook://10154539995",
+		"queue":"rss",
+		"tag":["popcap","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.popcap.com/about-us",
+		"notes":"Plants Vs Zombie",
+		"description":"Official Facebook Page of PopCap Games"
+	},
+	{
+		"url":"youtube://PopCapChannel",
+		"queue":"youtube",
+		"tag":["popcap","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.popcap.com/about-us",
+		"notes":"Plants Vs Zombie",
+		"description":"Official Youtube Channel of PopCap Games"
+	},
+	{
+		"url":"http://blog.popcap.com/feed/",
+		"queue":"rss",
+		"tag":["popcap","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.popcap.com/about-us",
+		"notes":"Plants Vs Zombie",
+		"description":"Official News Feed of PopCap Games"
+	},
+	{
+		"url":"twitter://PopCap",
+		"queue":"tweets",
+		"tag":["popcap","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.popcap.com/about-us",
+		"notes":"Plants Vs Zombie",
+		"description":"Official Twitter Account of PopCap Games"
+	},
+	{
+		"url":"twitter://nakayuji",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Sonic The Hedgedog",
+		"description":"Official Twitter Account of Yuji Naka: Founder of Prope & Lead Programmer of Sonic The Hedgedog"
+	},
+	{
+		"url":"twitter://PixelJunkNews",
+		"queue":"tweets",
+		"tag":["q-games","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.q-games.com/profile.php",
+		"notes":"Starfox64 3D",
+		"description":"Official Twitter Account of Q-Games"
+	},
+	{
+		"url":"http://www.qentertainment.com/eng/index.xml",
+		"queue":"rss",
+		"tag":["qentertainment","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.qentertainment.com/eng/ee0000/ee1000/",
+		"notes":"Rez",
+		"description":"Official News Feed of Q Entertainment"
+	},
+	{
+		"url":"twitter://Mizuguchitter",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Rez",
+		"description":"Official Twitter Account of Tetsuya Mizuguchi: Chief Officer of Q Entertainment and Game Designer of Rez"
+	},
+	{
+		"url":"twitter://Q_Entertainment",
+		"queue":"tweets",
+		"tag":["qentertainment","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.qentertainment.com/eng/ee0000/ee1000/",
+		"notes":"Rez",
+		"description":"Official Twitter Account of Q Entertainment"
+	},
+	{
+		"url":"http://www.quanticdream.com/en/rss",
+		"queue":"rss",
+		"tag":["quanticdreams","sony","studio","europe","pr","generic"],
+		"notes":"Heavy Rain",
+		"description":"Official News Feed of Quantic Dreams"
+	},
+	{
+		"url":"twitter://CageDavid",
+		"queue":"tweets",
+		"tag":["europe","people","generic"],
+		"notes":"Heavy Rain",
+		"description":"Official Twitter Account of David Cage: Founder & CEO of Quantic Dream"
+	},
+	{
+		"url":"youtube://QuanticDreamGames",
+		"queue":"youtube",
+		"tag":["quanticdreams","sony","studio","europe","pr","generic"],
+		"notes":"Heavy Rain",
+		"description":"Official Youtube Channel of Quantic Dreams"
+	},
+	{
+		"url":"twitter://queasy00",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"about":"http://www.queasygames.com/",
+		"notes":"Everyday Shooter ",
+		"description":"Official Twitter Account of Jonathan Mak: Founder of Queasy Games"
+	},
+	{
+		"url":"facebook://136128606405154",
+		"queue":"rss",
+		"tag":["rare","microsoft","studio","europe","pr","generic"],
+		"about":"http://www.rare.net/company#mainContentBody",
+		"notes":"Banjo-Kazooie: Nuts & Bolts",
+		"description":"Official Facebook Page of Rare"
+	},
+	{
+		"url":"http://rare.co.uk/blog/feed/",
+		"queue":"rss",
+		"tag":["rare","microsoft","studio","europe","devblog","generic"],
+		"about":"http://www.rare.net/company#mainContentBody",
+		"notes":"Banjo-Kazooie: Nuts & Bolts",
+		"description":"Official News Feed of Rare"
+	},
+	{
+		"url":"twitter://RareLtd",
+		"queue":"tweets",
+		"tag":["rare","microsoft","studio","europe","pr","generic"],
+		"about":"http://www.rare.net/company#mainContentBody",
+		"notes":"Banjo-Kazooie: Nuts & Bolts",
+		"description":"Official Twitter Account of Rare"
+	},
+	{
+		"url":"youtube://RareLimited",
+		"queue":"youtube",
+		"tag":["rare","microsoft","studio","europe","pr","generic"],
+		"about":"http://www.rare.net/company#mainContentBody",
+		"notes":"Banjo-Kazooie: Nuts & Bolts",
+		"description":"Official Youtube Channel of Rare"
+	},
+	{
+		"url":"facebook://133210400043895",
+		"queue":"rss",
+		"tag":["realitypump","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.realitypump.com/en/company.html",
+		"notes":"Two Worlds",
+		"description":"Official Facebook Page of Reality Pump"
+	},
+	{
+		"url":"twitter://Reality_Pump",
+		"queue":"tweets",
+		"tag":["realitypump","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.realitypump.com/en/company.html",
+		"notes":"Two Worlds",
+		"description":"Official Twitter Account of Reality Pump"
+	},
+	{
+		"url":"twitter://relicgames",
+		"queue":"tweets",
+		"tag":["relicgames","thirdparty","studio","america","pr","rts"],
+		"about":"http://www.relic.com/about/",
+		"notes":"Warhammer 40,000",
+		"description":"Official Twitter Account of Relic Games"
+	},
+	{
+		"url":"facebook://174252906165",
+		"queue":"rss",
+		"tag":["remedygames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://remedygames.com/studio/",
+		"notes":"Alan Wake",
+		"description":"Official Facebook Page of Remedy Games"
+	},
+	{
+		"url":"http://remedygames.com/feed/",
+		"queue":"rss",
+		"tag":["remedygames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://remedygames.com/studio/",
+		"notes":"Alan Wake",
+		"description":"Official News Feed of Remedy Games"
+	},
+	{
+		"url":"twitter://remedygames",
+		"queue":"tweets",
+		"tag":["remedygames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://remedygames.com/studio/",
+		"notes":"Alan Wake",
+		"description":"Official Twitter Account of Remedy Games"
+	},
+	{
+		"url":"youtube://RemedyGames",
+		"queue":"youtube",
+		"tag":["remedygames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://remedygames.com/studio/",
+		"notes":"Alan Wake",
+		"description":"Official Youtube Channel of Remedy Games"
+	},
+	{
+		"url":"http://joolswatsham.blogspot.com/feeds/posts/default",
+		"queue":"rss",
+		"tag":["indie","america","people","generic"],
+		"about":"http://www.renegadekid.com/company.htm",
+		"notes":"Dementium",
+		"description":"Official News Feed of Jools Watsham: Founder of Renegade Kid"
+	},
+	{
+		"url":"twitter://JoolsWatsham",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"about":"http://www.renegadekid.com/company.htm",
+		"notes":"Dementium",
+		"description":"Official Twitter Account of Jools Watsham: Founder of Renegade Kid"
+	},
+	{
+		"url":"facebook://226841837428797",
+		"queue":"rss",
+		"tag":["retrostudios","nintendo","studio","america","pr","generic"],
+		"about":"http://www.retrostudios.com/retro.asp",
+		"notes":"Metroid Prime series",
+		"description":"Official Facebook Page of Retro Studios"
+	},
+	{
+		"url":"twitter://vonkoz",
+		"queue":"tweets",
+		"tag":["retrostudios","nintendo","studio","america","pr","generic"],
+		"about":"http://www.retrostudios.com/retro.asp",
+		"notes":"Metroid Prime series",
+		"description":"Official Twitter Account of Erik Kozlowsky: Artist for Retro Studios"
+	},
+	{
+		"url":"facebook://127239338857",
+		"queue":"rss",
+		"tag":["revolutionsoftware","thirdparty","studio","europe","pr","adventure"],
+		"about":"http://www.facebook.com/revolutionsoftware/info",
+		"notes":"Broken Sword series",
+		"description":"Official Facebook Page of Revolution Software"
+	},
+	{
+		"url":"http://revolution.co.uk/news/feeds/latest/",
+		"queue":"rss",
+		"tag":["revolutionsoftware","thirdparty","studio","europe","pr","adventure"],
+		"about":"http://www.facebook.com/revolutionsoftware/info",
+		"notes":"Broken Sword series",
+		"description":"Official News Feed of Revolution Software"
+	},
+	{
+		"url":"twitter://revbot",
+		"queue":"tweets",
+		"tag":["revolutionsoftware","thirdparty","studio","europe","pr","adventure"],
+		"about":"http://www.facebook.com/revolutionsoftware/info",
+		"notes":"Broken Sword series",
+		"description":"Official Twitter Account of Revolution Software"
+	},
+	{
+		"url":"facebook://317998471601271",
+		"queue":"rss",
+		"tag":["ripstone","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.ripstone.com/#work",
+		"description":"Official Facebook Page of Ripstone"
+	},
+	{
+		"url":"twitter://ripstonegames",
+		"queue":"tweets",
+		"tag":["ripstone","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.ripstone.com/#work",
+		"description":"Official Twitter Account of Ripstone"
+	},
+	{
+		"url":"facebook://122125238635",
+		"queue":"rss",
+		"tag":["risingstar","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.risingstargames.com/page.aspx?page=corporate-information",
+		"description":"Official Facebook Page of Rising Star Games"
+	},
+	{
+		"url":"flickr://72431563@N06",
+		"queue":"flickr",
+		"tag":["risingstar","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.risingstargames.com/page.aspx?page=corporate-information",
+		"description":"Official Flickr Account of Rising Star Games"
+	},
+	{
+		"url":"tumblr://risingstargames",
+		"queue":"rss",
+		"tag":["risingstar","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.risingstargames.com/page.aspx?page=corporate-information",
+		"description":"Official Tumblr Account of Rising Star Games"
+	},
+	{
+		"url":"twitter://risingstargames",
+		"queue":"tweets",
+		"tag":["risingstar","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.risingstargames.com/page.aspx?page=corporate-information",
+		"description":"Official Twitter Account of Rising Star Games"
+	},
+	{
+		"url":"youtube://RisingStarGames",
+		"queue":"youtube",
+		"tag":["risingstar","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://www.risingstargames.com/page.aspx?page=corporate-information",
+		"description":"Official Youtube Channel of Rising Star Games"
+	},
+	{
+		"url":"http://www.rockstargames.com/newswire.rss",
+		"queue":"rss",
+		"tag":["rockstar","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.rockstargames.com/#/?lb=corpinfo",
+		"notes":"GTA series",
+		"description":"Official News Feed of Rockstar Games"
+	},
+	{
+		"url":"twitter://RockstarGames",
+		"queue":"tweets",
+		"tag":["rockstar","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.rockstargames.com/#/?lb=corpinfo",
+		"notes":"GTA series",
+		"description":"Official Twitter Account of Rockstar Games"
+	},
+	{
+		"url":"youtube://rockstargames",
+		"queue":"youtube",
+		"tag":["rockstar","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.rockstargames.com/#/?lb=corpinfo",
+		"notes":"GTA series",
+		"description":"Official Youtube Channel of Rockstar Games"
+	},
+	{
+		"url":"twitter://RocksteadyGames",
+		"queue":"tweets",
+		"tag":["rocksteadystudios","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.rocksteadyltd.com/company.html",
+		"notes":"Batman Arkham series",
+		"description":"Official Twitter Account of Rocksteady Studios"
+	},
+	{
+		"url":"youtube://ronimogames",
+		"queue":"youtube",
+		"tag":["ronimogames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ronimo-games.com/",
+		"notes":"Awesomenauts",
+		"description":"Official Youtube Channel of Ronimo Games"
+	},
+	{
+		"url":"twitter://RonimoGames",
+		"queue":"tweets",
+		"tag":["ronimogames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ronimo-games.com/",
+		"notes":"Awesomenauts",
+		"description":"Official Twitter Account of Ronimo Games"
+	},
+	{
+		"url":"facebook://177854561890",
+		"queue":"rss",
+		"tag":["ronimogames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ronimo-games.com/",
+		"notes":"Awesomenauts",
+		"description":"Official Facebook Page of Ronimo Games"
+	},
+	{
+		"url":"http://joostdevblog.blogspot.com/feeds/posts/default",
+		"queue":"rss",
+		"tag":["ronimogames","thirdparty","studio","europe","devblog","generic"],
+		"about":"http://www.ronimo-games.com/",
+		"notes":"Awesomenauts",
+		"description":"Official Devblog of Joost Van Dongen: Lead Programmer & Co-founder of Ronimo Games"
+	},
+	{
+		"url":"twitter://JoostDevBlog",
+		"queue":"tweets",
+		"tag":["ronimogames","thirdparty","studio","europe","devblog","generic"],
+		"about":"http://www.ronimo-games.com/",
+		"notes":"Awesomenauts",
+		"description":"Official Twitter Account of Joost Van Dongen: Lead Programmer & Co-founder of Ronimo Games"
+	},
+	{
+		"url":"facebook://44094657327",
+		"queue":"rss",
+		"tag":["ruffiangames","independent","studio","europe","pr","generic"],
+		"about":"http://www.ruffiangames.com/",
+		"notes":"Crackdown 2",
+		"description":"Official Facebook Page of Ruffian Games"
+	},
+	{
+		"url":"twitter://ruffiangames",
+		"queue":"tweets",
+		"tag":["ruffiangames","independent","studio","europe","pr","generic"],
+		"about":"http://www.ruffiangames.com/",
+		"notes":"Crackdown 2",
+		"description":"Official Twitter Account of Ruffian Games"
+	},
+	{
+		"url":"twitter://runicgames",
+		"queue":"tweets",
+		"tag":["runicgames","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.runicgames.com/about",
+		"notes":"Torchlight series",
+		"description":"Official Twitter Account of Runic Games"
+	},
+	{
+		"url":"youtube://runicgames",
+		"queue":"youtube",
+		"tag":["runicgames","thirdparty","studio","america","pr","rpg"],
+		"about":"http://www.runicgames.com/about",
+		"notes":"Torchlight series",
+		"description":"Official Youtube Channel of Runic Games"
+	},
+	{
+		"url":"facebook://311680968918229",
+		"queue":"rss",
+		"tag":["saberinteractive","independent","studio","europe","pr","generic"],
+		"about":"http://www.saber3d.com/en/studio/",
+		"notes":"Inversion",
+		"description":"Official Facebook Page of Saber Interactive"
+	},
+	{
+		"url":"twitter://TweetsSaber",
+		"queue":"tweets",
+		"tag":["saberinteractive","independent","studio","europe","pr","generic"],
+		"about":"http://www.saber3d.com/en/studio/",
+		"notes":"Inversion",
+		"description":"Official Twitter Account of Saber Interactive"
+	},
+	{
+		"url":"facebook://28248536795",
+		"queue":"rss",
+		"tag":["sega","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.sega.com/?t=EnglishUSA",
+		"description":"Official Facebook Page of Sega"
+	},
+	{
+		"url":"flickr://23380910@N04",
+		"queue":"flickr",
+		"tag":["sega","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.sega.com/?t=EnglishUSA",
+		"description":"Official Flickr Account of Sega"
+	},
+	{
+		"url":"http://blogs.sega.com/feed",
+		"queue":"rss",
+		"tag":["sega","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.sega.com/?t=EnglishUSA",
+		"description":"Official Sega Games News Feed"
+	},
+	{
+		"url":"twitter://sega",
+		"queue":"tweets",
+		"tag":["sega","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.sega.com/?t=EnglishUSA",
+		"description":"Official Twitter Account of Sega"
+	},
+	{
+		"url":"youtube://SegaAmerica",
+		"queue":"youtube",
+		"tag":["sega","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.sega.com/?t=EnglishUSA",
+		"description":"Official Youtube Channel of Sega"
+	},
+	{
+		"url":"facebook://319115778144754",
+		"queue":"rss",
+		"tag":["serellan","indie","studio","america","pr","generic"],
+		"about":"http://serellan.com/sample-page/",
+		"notes":"Takedown project",
+		"description":"Official Facebook Page of Serellan"
+	},
+	{
+		"url":"flickr://77756297@N07",
+		"queue":"flickr",
+		"tag":["serellan","indie","studio","america","pr","generic"],
+		"about":"http://serellan.com/sample-page/",
+		"notes":"Takedown project",
+		"description":"Official Flickr Account of Serellan"
+	},
+	{
+		"url":"twitter://Serellan",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"about":"http://serellan.com/sample-page/",
+		"notes":"Tom Clancy’s Ghost Recon series",
+		"description":"Official Twitter Account of Christian Allen:  Game Designer"
+	},
+	{
+		"url":"twitter://ShinenGames",
+		"queue":"tweets",
+		"tag":["shinenmultimedia","nintendo","studio","europe","pr","generic"],
+		"about":"http://www.shinen.com/company/",
+		"notes":"Nano Assault NEO",
+		"description":"Official Twitter Account of Shin'en Multimedia"
+	},
+	{
+		"url":"youtube://ShinenGames",
+		"queue":"youtube",
+		"tag":["shinenmultimedia","nintendo","studio","europe","pr","generic"],
+		"about":"http://www.shinen.com/company/",
+		"notes":"Nano Assault NEO",
+		"description":"Official Youtube Channel of Shin'en Multimedia"
+	},
+	{
+		"url":"facebook://270688947320",
+		"queue":"rss",
+		"tag":["skastudios","indie","studio","america","pr","generic"],
+		"about":"http://ska-studios.com/about/",
+		"notes":"The Dishwasher series",
+		"description":"Official Facebook Page of Ska Studios"
+	},
+	{
+		"url":"http://ska-studios.com/feed/",
+		"queue":"rss",
+		"tag":["skastudios","indie","studio","america","pr","generic"],
+		"about":"http://ska-studios.com/about/",
+		"notes":"The Dishwasher series",
+		"description":"Official News Feed of Ska Studios"
+	},
+	{
+		"url":"twitter://skastudios",
+		"queue":"tweets",
+		"tag":["skastudios","indie","studio","america","pr","generic"],
+		"about":"http://ska-studios.com/about/",
+		"notes":"The Dishwasher series",
+		"description":"Official Twitter Account of Ska Studios"
+	},
+	{
+		"url":"youtube://skastudiosvids",
+		"queue":"youtube",
+		"tag":["skastudios","indie","studio","america","pr","generic"],
+		"about":"http://ska-studios.com/about/",
+		"notes":"The Dishwasher series",
+		"description":"Official Youtube Channel of Ska Studios"
+	},
+	{
+		"url":"http://sledgehammergames.com/rss/blog.rss",
+		"queue":"rss",
+		"tag":["sledgehammergames","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.sledgehammergames.com/studio/story",
+		"notes":"Call of Duty MW3",
+		"description":"Official News Feed of Sledgehammer Games"
+	},
+	{
+		"url":"twitter://MichaelCondrey",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"description":"Official Twitter Account of Michael Condrey: Co-founder & Chief Development Officer of Sledgehammer Game"
+	},
+	{
+		"url":"twitter://SHGames",
+		"queue":"tweets",
+		"tag":["sledgehammergames","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.sledgehammergames.com/studio/story",
+		"notes":"Call of Duty MW3",
+		"description":"Official Twitter Account of Sledgehammer Game"
+	},
+	{
+		"url":"youtube://SledgehammerGames",
+		"queue":"youtube",
+		"tag":["sledgehammergames","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.sledgehammergames.com/studio/story",
+		"notes":"Call of Duty MW3",
+		"description":"Official Youtube Channel of Sledgehammer Games"
+	},
+	{
+		"url":"facebook://151065061620151",
+		"queue":"rss",
+		"tag":["slightlymadstudios","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.facebook.com/Slightlymadstudios/info",
+		"notes":"Need For Speed Unleashed series",
+		"description":"Official Facebook Page of Slightly Mad Studios"
+	},
+	{
+		"url":"http://www.slightlymadstudios.com/feed/",
+		"queue":"rss",
+		"tag":["slightlymadstudios","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.facebook.com/Slightlymadstudios/info",
+		"notes":"Need For Speed Unleashed series",
+		"description":"Official News Feed of Slightly Mad Studios"
+	},
+	{
+		"url":"twitter://slightlymadteam",
+		"queue":"tweets",
+		"tag":["slightlymadstudios","thirdparty","studio","europe","pr","racing"],
+		"about":"http://www.facebook.com/Slightlymadstudios/info",
+		"notes":"Need For Speed Unleashed series",
+		"description":"Official Twitter Account of Slightly Mad Studios"
+	},
+	{
+		"url":"facebook://115381791848274",
+		"queue":"rss",
+		"tag":["snkplaymore","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.snkplaymoreusa.com/company-information",
+		"description":"Official Facebook Page of SNK Playmore for XBOX Live"
+	},
+	{
+		"url":"facebook://169231106430956",
+		"queue":"rss",
+		"tag":["snkplaymore","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.snkplaymoreusa.com/company-information",
+		"description":"Official Facebook Page of SNK Playmore NeoGeo Station"
+	},
+	{
+		"url":"http://www.snkplaymoreusa.com/Rss.aspx?ContentID=974414",
+		"queue":"rss",
+		"tag":["snkplaymore","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.snkplaymoreusa.com/company-information",
+		"description":"Official News Feed of SNK Playmore USA"
+	},
+	{
+		"url":"http://www.snkplaymore.co.jp/rss.xml",
+		"queue":"rss",
+		"tag":["snkplaymore","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://www.snkplaymoreusa.com/company-information",
+		"description":"Official News Feed of SNK Playmore"
+	},
+	{
+		"url":"youtube://snkplaymoreGame",
+		"queue":"youtube",
+		"tag":["snkplaymore","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.snkplaymoreusa.com/company-information",
+		"description":"Official Youtube Channel of SNK Playmore"
+	},
+	{
+		"url":"facebook://14104316802",
+		"queue":"rss",
+		"tag":["sony","publisher","worldwide","pr","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Facebook Page of Playstation Blog"
+	},
+	{
+		"url":"flickr://8309149@N08",
+		"queue":"flickr",
+		"tag":["sony","publisher","worldwide","pr","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Flickr Album of Playstation Blog"
+	},
+	{
+		"url":"http://feeds.feedburner.com/psblog",
+		"queue":"rss",
+		"tag":["sony","publisher","worldwide","pr","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official News Feed of Sony"
+	},
+	{
+		"url":"twitter://HeyPlayStation",
+		"queue":"tweets",
+		"tag":["sony","publisher","worldwide","events","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Twitter Account of Playstation Events"
+	},
+	{
+		"url":"twitter://PlayStation",
+		"queue":"tweets",
+		"tag":["sony","publisher","worldwide","pr","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Twitter Account of Playstation Blog"
+	},
+	{
+		"url":"twitter://yosp",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"description":"Official Twitter Account of Shuhei Yoshida - President of Sony's Worldwide Studios for Sony Computer Entertainment Inc"
+	},
+	{
+		"url":"youtube://PlayStation",
+		"queue":"youtube",
+		"tag":["sony","publisher","worldwide","pr","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Youtube Channel of Playstation Blog"
+	},
+	{
+		"url":"youtube://PlayStation3",
+		"queue":"youtube",
+		"tag":["sony","publisher","worldwide","pr","ps3"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Youtube Channel of Sony PS3"
+	},
+	{
+		"url":"youtube://psvita",
+		"queue":"youtube",
+		"tag":["sony","publisher","worldwide","pr","psvita"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Youtube Channel of Sony PSVita"
+	},
+	{
+		"url":"youtube://sceablog",
+		"queue":"youtube",
+		"tag":["sony","publisher","worldwide","pr","generic"],
+		"about":"http://www.scei.co.jp/corporate/index_e.html",
+		"description":"Official Youtube Channel of Sony"
+	},
+	{
+		"url":"twitter://Sora_Sakurai",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Kid Icarus series",
+		"description":"Official Twitter Account of Masahiro Sakurai: Director of Software Development of Sora"
+	},
+	{
+		"url":"http://www.spike-chunsoft.co.jp/news/productrss",
+		"queue":"rss",
+		"tag":["spikechunsoft","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://en.wikipedia.org/wiki/Spike_Chunsoft",
+		"description":"Official News Feed of Spike Chunsoft Products"
+	},
+	{
+		"url":"http://www.spike-chunsoft.co.jp/news/corporaterss",
+		"queue":"rss",
+		"tag":["spikechunsoft","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://en.wikipedia.org/wiki/Spike_Chunsoft",
+		"description":"Official News Feed of Spike Chunsoft Corporate"
+	},
+	{
+		"url":"youtube://spikechunsoft",
+		"queue":"youtube",
+		"tag":["spikechunsoft","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://en.wikipedia.org/wiki/Spike_Chunsoft",
+		"description":"Official Youtube Channel of Spike Chunsoft"
+	},
+	{
+		"url":"facebook://27158486126",
+		"queue":"rss",
+		"tag":["splashdamage","independent","studio","europe","pr","generic"],
+		"about":"http://www.facebook.com/splashdamage/info",
+		"notes":"Brink",
+		"description":"Official Facebook Page of Splash Damage"
+	},
+	{
+		"url":"flickr://48456608@N00",
+		"queue":"flickr",
+		"tag":["splashdamage","independent","studio","europe","pr","generic"],
+		"about":"http://www.facebook.com/splashdamage/info",
+		"notes":"Brink",
+		"description":"Official Flickr Account of Splash Damage"
+	},
+	{
+		"url":"http://feeds.feedburner.com/splashdamage",
+		"queue":"rss",
+		"tag":["splashdamage","independent","studio","europe","pr","generic"],
+		"about":"http://www.facebook.com/splashdamage/info",
+		"notes":"Brink",
+		"description":"Official News Feed of Splash Damage"
+	},
+	{
+		"url":"twitter://splashdamage",
+		"queue":"tweets",
+		"tag":["splashdamage","independent","studio","europe","pr","generic"],
+		"about":"http://www.facebook.com/splashdamage/info",
+		"notes":"Brink",
+		"description":"Official Twitter Account of Splash Damage"
+	},
+	{
+		"url":"youtube://splashdamageltd",
+		"queue":"youtube",
+		"tag":["splashdamage","independent","studio","europe","pr","generic"],
+		"about":"http://www.facebook.com/splashdamage/info",
+		"notes":"Brink",
+		"description":"Official Youtube Channel of Splash Damage"
+	},
+	{
+		"url":"facebook://59916854460",
+		"queue":"rss",
+		"tag":["squareenix","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.hd.square-enix.com/eng/company/group.html",
+		"notes":"Final Fantasy series",
+		"description":"Official Facebook Page of Square Enix UK"
+	},
+	{
+		"url":"http://feeds.feedburner.com/square-enix/en",
+		"queue":"rss",
+		"tag":["squareenix","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.hd.square-enix.com/eng/company/group.html",
+		"notes":"Final Fantasy series",
+		"description":"Official News Feed of Square Enix UK"
+	},
+	{
+		"url":"http://www.jp.square-enix.com/whatsnew/whatsnew.rdf",
+		"queue":"rss",
+		"tag":["squareenix","thirdparty","publisher","worldwide","pr","japaneseonly"],
+		"about":"http://www.hd.square-enix.com/eng/company/group.html",
+		"notes":"Final Fantasy series",
+		"description":"Official News Feed of Square Enix JP"
+	},
+	{
+		"url":"twitter://Square_Enix_EU",
+		"queue":"tweets",
+		"tag":["squareenix","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.hd.square-enix.com/eng/company/group.html",
+		"notes":"Final Fantasy series",
+		"description":"Official Twitter Account of Square Enix UK"
+	},
+	{
+		"url":"youtube://UKSquareEnix",
+		"queue":"youtube",
+		"tag":["squareenix","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.hd.square-enix.com/eng/company/group.html",
+		"notes":"Final Fantasy series",
+		"description":"Official Youtube Channel of Square Enix UK"
+	},
+	{
+		"url":"facebook://43877163537",
+		"queue":"rss",
+		"tag":["starbreeze","independent","studio","europe","pr","generic"],
+		"about":"http://www.starbreeze.com/company/",
+		"notes":"Syndicate",
+		"description":"Official Facebook Page of Starbreeze"
+	},
+	{
+		"url":"http://www.starbreeze.com/feed/",
+		"queue":"rss",
+		"tag":["starbreeze","independent","studio","europe","pr","generic"],
+		"about":"http://www.starbreeze.com/company/",
+		"notes":"Syndicate",
+		"description":"Official News Feed of Starbreeze"
+	},
+	{
+		"url":"twitter://StarbreezeAB",
+		"queue":"tweets",
+		"tag":["starbreeze","independent","studio","europe","pr","generic"],
+		"about":"http://www.starbreeze.com/company/",
+		"notes":"Syndicate",
+		"description":"Official Twitter Account of Starbreeze"
+	},
+	{
+		"url":"facebook://136320256391932",
+		"queue":"rss",
+		"tag":["suckerpunch","sony","studio","america","pr","generic"],
+		"about":"https://twitter.com/SuckerPunchProd",
+		"notes":"Infamous series",
+		"description":"Official Facebook Page of Sucker Punch"
+	},
+	{
+		"url":"http://feeds.feedburner.com/SuckerPunchProductions",
+		"queue":"rss",
+		"tag":["suckerpunch","sony","studio","america","pr","generic"],
+		"about":"https://twitter.com/SuckerPunchProd",
+		"notes":"Infamous series",
+		"description":"Official News Feed of Sucker Punch"
+	},
+	{
+		"url":"twitter://SuckerPunchProd",
+		"queue":"tweets",
+		"tag":["suckerpunch","sony","studio","america","pr","generic"],
+		"about":"https://twitter.com/SuckerPunchProd",
+		"notes":"Infamous series",
+		"description":"Official Twitter Account of Sucker Punch"
+	},
+	{
+		"url":"twitter://the1console",
+		"queue":"tweets",
+		"tag":["superbrothers","indie","studio","america","pr","experimental"],
+		"about":"http://superbrothers.ca/index.html",
+		"notes":"Sword And Sworcery EP",
+		"description":"Official Twitter Account of Superbrothers"
+	},
+	{
+		"url":"facebook://311994162559",
+		"queue":"rss",
+		"tag":["supergiant","indie","studio","america","pr","generic"],
+		"about":"http://supergiantgames.com/?page_id=2",
+		"notes":"Bastion",
+		"description":"Official Facebook Page of Supergiant"
+	},
+	{
+		"url":"http://supergiantgames.com/?feed=rss2",
+		"queue":"rss",
+		"tag":["supergiant","indie","studio","america","pr","generic"],
+		"about":"http://supergiantgames.com/?page_id=2",
+		"notes":"Bastion",
+		"description":"Official News Feed of Supergiant"
+	},
+	{
+		"url":"facebook://79769122483",
+		"queue":"rss",
+		"tag":["supervillain","indie","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/SuperVillainStudios/info",
+		"notes":"Fat Princess",
+		"description":"Official Facebook Page of Super Villain Studios"
+	},
+	{
+		"url":"http://www.svsgames.com/?feed=rss2",
+		"queue":"rss",
+		"tag":["supervillain","indie","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/SuperVillainStudios/info",
+		"notes":"Fat Princess",
+		"description":"Official News Feed of Super Villain Studios"
+	},
+	{
+		"url":"twitter://SVSGames",
+		"queue":"tweets",
+		"tag":["supervillain","indie","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/SuperVillainStudios/info",
+		"notes":"Fat Princess",
+		"description":"Official Twitter Account of Super Villain Studios"
+	},
+	{
+		"url":"youtube://SuperVillainStudios",
+		"queue":"youtube",
+		"tag":["supervillain","indie","studio","america","pr","generic"],
+		"about":"http://www.facebook.com/SuperVillainStudios/info",
+		"notes":"Fat Princess",
+		"description":"Official Youtube Channel of Super Villain Studios"
+	},
+	{
+		"url":"twitter://TaitoCorp",
+		"queue":"tweets",
+		"tag":["taito","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.taito.com/company/info/profile.html",
+		"description":"Official Twitter Account of Taito"
+	},
+	{
+		"url":"youtube://TaitoCorp",
+		"queue":"youtube",
+		"tag":["taito","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.taito.com/company/info/profile.html",
+		"description":"Official Youtube Channel of Taito"
+	},
+	{
+		"url":"facebook://49725656617",
+		"queue":"rss",
+		"tag":["taleoftales","indie","studio","europe","pr","experimental"],
+		"about":"http://www.tale-of-tales.com/",
+		"notes":"The Path",
+		"description":"Official Facebook Page of Tale of Tales"
+	},
+	{
+		"url":"flickr://81482434@N00",
+		"queue":"flickr",
+		"tag":["taleoftales","indie","studio","europe","pr","experimental"],
+		"about":"http://www.tale-of-tales.com/",
+		"notes":"The Path",
+		"description":"Official Flickr Account of Tale of Tales"
+	},
+	{
+		"url":"twitter://taleoftales",
+		"queue":"tweets",
+		"tag":["taleoftales","indie","studio","europe","pr","experimental"],
+		"about":"http://www.tale-of-tales.com/",
+		"notes":"The Path",
+		"description":"Official Twitter Account of Tale of Tales"
+	},
+	{
+		"url":"facebook://172159299466336",
+		"queue":"rss",
+		"tag":["tangogameworks","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.tangogameworks.com/studio/info",
+		"description":"Official Facebook Page of Tango Gameworks"
+	},
+	{
+		"url":"http://www.tangogameworks.com/index/rss.xml",
+		"queue":"rss",
+		"tag":["tangogameworks","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.tangogameworks.com/studio/info",
+		"description":"Official News Feed of Tango Gameworks"
+	},
+	{
+		"url":"twitter://Shinji_Mikami_E",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Resident Evil series",
+		"description":"Official Twitter Account of Shinji Mikami: Director at Tango Gameworks"
+	},
+	{
+		"url":"twitter://Tango_gw_en",
+		"queue":"tweets",
+		"tag":["tangogameworks","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.tangogameworks.com/studio/info",
+		"description":"Official Twitter Account of Tango Gameworks"
+	},
+	{
+		"url":"http://www.tantalus.com.au/news_feed.xml",
+		"queue":"rss",
+		"tag":["tantalusmedia","independent","studio","world","pr","generic"],
+		"about":"http://www.tantalus.com.au/about.html",
+		"notes":"Funky Barn ",
+		"description":"Official News Feed of Tantalus Media"
+	},
+	{
+		"url":"twitter://Team17Ltd",
+		"queue":"tweets",
+		"tag":["team17","independent","publisher","worldwide","pr","generic"],
+		"about":"http://www.team17.com/about-us",
+		"notes":"Worms series",
+		"description":"Official Twitter Account of Team17"
+	},
+	{
+		"url":"youtube://Team17SoftwareLtd",
+		"queue":"youtube",
+		"tag":["team17","independent","publisher","worldwide","pr","generic"],
+		"about":"http://www.team17.com/about-us",
+		"notes":"Worms series",
+		"description":"Official Facebook Page of Team17"
+	},
+	{
+		"url":"facebook://159231720769012",
+		"queue":"rss",
+		"tag":["teamninja","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.facebook.com/teamninjastudio/info",
+		"notes":"Ninja Gaiden series",
+		"description":"Official Facebook Page of Team Ninja"
+	},
+	{
+		"url":"twitter://TeamNINJAStudio",
+		"queue":"tweets",
+		"tag":["teamninja","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.facebook.com/teamninjastudio/info",
+		"notes":"Ninja Gaiden series",
+		"description":"Official Twitter Account of Team Ninja"
+	},
+	{
+		"url":"facebook://101727165027",
+		"queue":"rss",
+		"tag":["tecmokoei","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.koeitecmo.co.jp/e/principles.html",
+		"description":"Official Facebook Page of Tecmo Koei America"
+	},
+	{
+		"url":"facebook://109196331784",
+		"queue":"rss",
+		"tag":["tecmokoei","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.koeitecmo.co.jp/e/principles.html",
+		"description":"Official Facebook Page of Tecmo Europe"
+	},
+	{
+		"url":"facebook://48306691162",
+		"queue":"rss",
+		"tag":["tecmokoei","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.koeitecmo.co.jp/e/principles.html",
+		"description":"Official Facebook Page of Koei Europe"
+	},
+	{
+		"url":"twitter://tecmokoeieurope",
+		"queue":"tweets",
+		"tag":["tecmokoei","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.koeitecmo.co.jp/e/principles.html",
+		"description":"Official Twitter Account of Tecmo Koei Europe"
+	},
+	{
+		"url":"youtube://KoeiCorp",
+		"queue":"youtube",
+		"tag":["tecmokoei","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.koeitecmo.co.jp/e/principles.html",
+		"description":"Official Youtube Channel of Tecmo Koei America"
+	},
+	{
+		"url":"youtube://MyKOEITV",
+		"queue":"youtube",
+		"tag":["tecmokoei","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.koeitecmo.co.jp/e/principles.html",
+		"description":"Official Youtube Channel of Tecmo Koei Europe"
+	},
+	{
+		"url":"http://feeds.feedburner.com/telltaleblog",
+		"queue":"rss",
+		"tag":["telltalegames","independent","studio","america","pr","generic"],
+		"about":"http://www.telltalegames.com/company/",
+		"notes":"The Walking Dead",
+		"description":"Official News Feed of Telltale Games"
+	},
+	{
+		"url":"twitter://telltalegames",
+		"queue":"tweets",
+		"tag":["telltalegames","independent","studio","america","pr","generic"],
+		"about":"http://www.telltalegames.com/company/",
+		"notes":"The Walking Dead",
+		"description":"Official Twitter Account of Telltale Games"
+	},
+	{
+		"url":"youtube://TelltaleGames",
+		"queue":"youtube",
+		"tag":["telltalegames","independent","studio","america","pr","generic"],
+		"about":"http://www.telltalegames.com/company/",
+		"notes":"The Walking Dead",
+		"description":"Official Youtube Channel of Telltale Games"
+	},
+	{
+		"url":"facebook://431786053568594",
+		"queue":"rss",
+		"tag":["tequilaworks","independent","studio","europe","pr","generic"],
+		"about":"http://www.tequilaworks.com/eng/tequila-works",
+		"notes":"Deadlight",
+		"description":"Official Facebook Page of Tequila Works"
+	},
+	{
+		"url":"twitter://tequilaworks",
+		"queue":"tweets",
+		"tag":["tequilaworks","independent","studio","europe","pr","generic"],
+		"about":"http://www.tequilaworks.com/eng/tequila-works",
+		"notes":"Deadlight",
+		"description":"Official Twitter Account of Tequila Works"
+	},
+	{
+		"url":"youtube://tequilaworks",
+		"queue":"youtube",
+		"tag":["tequilaworks","independent","studio","europe","pr","generic"],
+		"about":"http://www.tequilaworks.com/eng/tequila-works",
+		"notes":"Deadlight",
+		"description":"Official Youtube Channel of Tequila Works"
+	},
+	{
+		"url":"http://distractionware.com/blog/feed/",
+		"queue":"rss",
+		"tag":["indie","europe","people","generic"],
+		"about":"http://distractionware.com/blog/about-me/",
+		"notes":"VVVVVV",
+		"description":"Official News Feed of Terry Cavanagh"
+	},
+	{
+		"url":"twitter://terrycavanagh",
+		"queue":"tweets",
+		"tag":["indie","europe","people","generic"],
+		"about":"http://distractionware.com/blog/about-me/",
+		"notes":"VVVVVV",
+		"description":"Official Twitter Account of Terry Cavanagh"
+	},
+	{
+		"url":"facebook://193637694014149",
+		"queue":"rss",
+		"tag":["tetris","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.tetris.com/about-tetris/index.aspx",
+		"description":"Official Facebook Page of Tetris"
+	},
+	{
+		"url":"twitter://Tetris_Official",
+		"queue":"tweets",
+		"tag":["tetris","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.tetris.com/about-tetris/index.aspx",
+		"description":"Official Twitter Account of Tetris"
+	},
+	{
+		"url":"twitter://thatgamecompany",
+		"queue":"tweets",
+		"tag":["thatgamecompany","indie","studio","america","pr","experimental"],
+		"about":"http://thatgamecompany.com/company/",
+		"notes":"Journey",
+		"description":"Official Twitter Account of Thatgamecompany"
+	},
+	{
+		"url":"http://thatgamecompany.com/feed/",
+		"queue":"rss",
+		"tag":["thatgamecompany","indie","studio","america","pr","experimental"],
+		"about":"http://thatgamecompany.com/company/",
+		"notes":"Journey",
+		"description":"Official News Feed of Thatgamecompany"
+	},
+	{
+		"url":"facebook://7759705950",
+		"queue":"rss",
+		"tag":["thebehemoth","indie","studio","america","pr","generic"],
+		"about":"https://www.facebook.com/thebehemoth/info",
+		"notes":"Castle Crashers",
+		"description":"Official Facebook Page of The Behemoth"
+	},
+	{
+		"url":"http://devblog.thebehemoth.com/feed/",
+		"queue":"rss",
+		"tag":["thebehemoth","indie","studio","america","devblog","generic"],
+		"about":"https://www.facebook.com/thebehemoth/info",
+		"notes":"Castle Crashers",
+		"description":"Official Devblog of The Behemoth"
+	},
+	{
+		"url":"twitter://thebehemoth",
+		"queue":"tweets",
+		"tag":["thebehemoth","indie","studio","america","pr","generic"],
+		"about":"https://www.facebook.com/thebehemoth/info",
+		"notes":"Castle Crashers",
+		"description":"Official Twitter Account of The Behemoth"
+	},
+	{
+		"url":"youtube://thebehem0th",
+		"queue":"youtube",
+		"tag":["thebehemoth","indie","studio","america","pr","generic"],
+		"about":"https://www.facebook.com/thebehemoth/info",
+		"notes":"Castle Crashers",
+		"description":"Official Youtube Channel of The Behemoth"
+	},
+	{
+		"url":"twitter://TheOddGentlemen",
+		"queue":"tweets",
+		"tag":["theoddgentlemen","indie","studio","america","pr","generic"],
+		"about":"http://www.theoddgentlemen.com/About_Us.html",
+		"notes":"The Misadventures of P.B. Winterbottom",
+		"description":"Official Twitter Account of The Odd Gentlemen"
+	},
+	{
+		"url":"tumblr://oddgentlemen",
+		"queue":"rss",
+		"tag":["theoddgentlemen","indie","studio","america","pr","generic"],
+		"about":"http://www.theoddgentlemen.com/About_Us.html",
+		"notes":"The Misadventures of P.B. Winterbottom",
+		"description":"Official Tumblr Account of The Odd Gentlemen"
+	},
+	{
+		"url":"youtube://TheZenUnited",
+		"queue":"youtube",
+		"tag":["thezenunited","thirdparty","distributor","worldwide","pr","generic"],
+		"about":"http://store.blazbluegame.com/about--contact-1-w.asp",
+		"description":"Official Youtube Channel of The Zen United"
+	},
+	{
+		"url":"facebook://461896177211270",
+		"queue":"rss",
+		"tag":["tigonstudios","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://www.tigonstudios.com/index2.htm",
+		"notes":"Vin Diesel Wheelman",
+		"description":"Official Facebook Page of Tigon Studios"
+	},
+	{
+		"url":"http://www.timegate.com/news/rss/",
+		"queue":"rss",
+		"tag":["timegatestudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.timegate.com/about/",
+		"notes":"Section 8: Prejudice",
+		"description":"Official News Feed of Timegate Studios"
+	},
+	{
+		"url":"twitter://TimeGateStudios",
+		"queue":"tweets",
+		"tag":["timegatestudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.timegate.com/about/",
+		"notes":"Section 8: Prejudice",
+		"description":"Official Twitter Account of Timegate Studios"
+	},
+	{
+		"url":"youtube://TimeGateStudiosInc",
+		"queue":"youtube",
+		"tag":["timegatestudios","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.timegate.com/about/",
+		"notes":"Section 8: Prejudice",
+		"description":"Official Youtube Channel of Timegate Studios"
+	},
+	{
+		"url":"twitter://mechabadger",
+		"queue":"tweets",
+		"tag":["europe","people","generic"],
+		"description":"Official Twitter Account of Toby Guard: Game Designer & Creator of Lara Croft"
+	},
+	{
+		"url":"facebook://147116311992383",
+		"queue":"rss",
+		"tag":["trapdoor","indie","studio","america","pr","generic"],
+		"about":"http://www.trapdoorinc.com/#about",
+		"notes":"Warp",
+		"description":"Official Facebook Page of Trapdoor"
+	},
+	{
+		"url":"twitter://trapdoorinc",
+		"queue":"tweets",
+		"tag":["trapdoor","indie","studio","america","pr","generic"],
+		"about":"http://www.trapdoorinc.com/#about",
+		"notes":"Warp",
+		"description":"Official Twitter Account of Trapdoor"
+	},
+	{
+		"url":"facebook://43119577723",
+		"queue":"rss",
+		"tag":["treyarch","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.treyarch.com/about",
+		"notes":"Call of Duty Balck Ops series",
+		"description":"Official Facebook Page of Treyarch"
+	},
+	{
+		"url":"twitter://treyarch",
+		"queue":"tweets",
+		"tag":["treyarch","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.treyarch.com/about",
+		"notes":"Call of Duty Balck Ops series",
+		"description":"Official Twitter Account of Treyarch"
+	},
+	{
+		"url":"youtube://Treyarch",
+		"queue":"youtube",
+		"tag":["treyarch","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.treyarch.com/about",
+		"notes":"Call of Duty Balck Ops series",
+		"description":"Official Youtube Channel of Treyarch"
+	},
+	{
+		"url":"twitter://Tri_Crescendo",
+		"queue":"tweets",
+		"tag":["tricrescendo","thirdparty","studio","japan","pr","generic"],
+		"about":"http://www.tri-crescendo.co.jp/index.html",
+		"notes":"Star Ocean",
+		"description":"Official Twitter Account of Tri Crescendo"
+	},
+	{
+		"url":"facebook://206451302699651",
+		"queue":"rss",
+		"tag":["triumphstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.triumphstudios.com/index.php",
+		"notes":"Overlord series",
+		"description":"Official Facebook Page of Triumph Studios"
+	},
+	{
+		"url":"twitter://TriumphStudios",
+		"queue":"tweets",
+		"tag":["triumphstudios","independent","studio","europe","pr","generic"],
+		"about":"http://www.triumphstudios.com/index.php",
+		"notes":"Overlord series",
+		"description":"Official Twitter Account of Triumph Studios"
+	},
+	{
+		"url":"twitter://JonTt",
+		"queue":"tweets",
+		"tag":["europe","people","generic"],
+		"notes":"Lego Star Wars series",
+		"description":"Official Twitter Account of Jon Burton: Design Director of TT Games"
+	},
+	{
+		"url":"twitter://TTGames",
+		"queue":"tweets",
+		"tag":["ttgames","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.ttgames.com/history/",
+		"notes":"Lego Star Wars series",
+		"description":"Official Twitter Account of TT Games"
+	},
+	{
+		"url":"twitter://Turn10Studios",
+		"queue":"tweets",
+		"tag":["turn10","microsoft","studio","america","pr","racing"],
+		"about":"http://forzamotorsport.net/en-US/turn10.aspx",
+		"notes":"Forza Motor Sport series",
+		"description":"Official Twitter Account of Turn 10"
+	},
+	{
+		"url":"youtube://Turn10Studios",
+		"queue":"youtube",
+		"tag":["turn10","microsoft","studio","america","pr","racing"],
+		"about":"http://forzamotorsport.net/en-US/turn10.aspx",
+		"notes":"Forza Motor Sport series",
+		"description":"Official Youtube Channel of Turn 10"
+	},
+	{
+		"url":"facebook://351253423973",
+		"queue":"rss",
+		"tag":["twistedpixelgames","microsoft","studio","america","pr","generic"],
+		"about":"http://twistedpixelgames.com/",
+		"notes":"Splosion Man",
+		"description":"Official Facebook Page of Twisted Pixel Games"
+	},
+	{
+		"url":"twitter://deliciousbees",
+		"queue":"tweets",
+		"tag":["america","people","generic"],
+		"notes":"Splosion Man",
+		"description":"Official Twitter Account of Dan Teasdale: Lead Designer of Twisted Pixel Games"
+	},
+	{
+		"url":"twitter://twisted_pixel",
+		"queue":"tweets",
+		"tag":["twistedpixelgames","microsoft","studio","america","pr","generic"],
+		"about":"http://twistedpixelgames.com/",
+		"notes":"Splosion Man",
+		"description":"Official Twitter Account of Twisted Pixel Games"
+	},
+	{
+		"url":"youtube://twistedpixelgames",
+		"queue":"youtube",
+		"tag":["twistedpixelgames","microsoft","studio","america","pr","generic"],
+		"about":"http://twistedpixelgames.com/",
+		"notes":"Splosion Man",
+		"description":"Official Youtube Channel of Twisted Pixel Games"
+	},
+	{
+		"url":"facebook://131965693483639",
+		"queue":"rss",
+		"tag":["twotribes","indie","studio","europe","pr","generic"],
+		"about":"http://twotribes.com/about/",
+		"notes":"Toki Tori",
+		"description":"Official Facebook Page of Two Tribes"
+	},
+	{
+		"url":"http://twotribes.com/rss/",
+		"queue":"rss",
+		"tag":["twotribes","indie","studio","europe","pr","generic"],
+		"about":"http://twotribes.com/about/",
+		"notes":"Toki Tori",
+		"description":"Official News Feed of Two Tribes"
+	},
+	{
+		"url":"twitter://TwoTribesGames",
+		"queue":"tweets",
+		"tag":["twotribes","indie","studio","europe","pr","generic"],
+		"about":"http://twotribes.com/about/",
+		"notes":"Toki Tori",
+		"description":"Official Twitter Account of Two Tribes"
+	},
+	{
+		"url":"youtube://TwoTribesGames",
+		"queue":"youtube",
+		"tag":["twotribes","indie","studio","europe","pr","generic"],
+		"about":"http://twotribes.com/about/",
+		"notes":"Toki Tori",
+		"description":"Official Youtube Channel of Two Tribes"
+	},
+	{
+		"url":"facebook://81174647292",
+		"queue":"rss",
+		"tag":["ubisoft","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"https://www.ubisoftgroup.com/en-US/about_ubisoft/world_presence/world_presence.aspx",
+		"notes":"Assassin's Creed series",
+		"description":"Official Facebook Page of Ubisoft"
+	},
+	{
+		"url":"twitter://Ubisoft",
+		"queue":"tweets",
+		"tag":["ubisoft","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"https://www.ubisoftgroup.com/en-US/about_ubisoft/world_presence/world_presence.aspx",
+		"notes":"Assassin's Creed series",
+		"description":"Official Twitter Account of Ubisoft"
+	},
+	{
+		"url":"twitter://UbisoftMTL",
+		"queue":"tweets",
+		"tag":["ubisoft","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"https://www.ubisoftgroup.com/en-US/about_ubisoft/world_presence/world_presence.aspx",
+		"notes":"Assassin's Creed series",
+		"description":"Official Twitter Account of Ubisoft Montreal"
+	},
+	{
+		"url":"youtube://ubisoft",
+		"queue":"youtube",
+		"tag":["ubisoft","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"https://www.ubisoftgroup.com/en-US/about_ubisoft/world_presence/world_presence.aspx",
+		"notes":"Assassin's Creed series",
+		"description":"Official Youtube Channel of Ubisoft"
+	},
+	{
+		"url":"youtube://UbisoftMtl",
+		"queue":"youtube",
+		"tag":["ubisoft","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"https://www.ubisoftgroup.com/en-US/about_ubisoft/world_presence/world_presence.aspx",
+		"notes":"Assassin's Creed series",
+		"description":"Official Youtube Channel of Ubisoft Montreal"
+	},
+	{
+		"url":"facebook://274315067253",
+		"queue":"rss",
+		"tag":["ubisoftmassive","thirdparty","studio","europe","pr","generic"],
+		"about":"http://www.massive.se/about_us/",
+		"description":"Official Facebook Page of Ubisoft Massive"
+	},
+	{
+		"url":"facebook://116739968358092",
+		"queue":"rss",
+		"tag":["unitedfront","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.unitedfrontgames.com/about/",
+		"notes":"Sleeping Dogs",
+		"description":"Official Facebook Page of United Front Games"
+	},
+	{
+		"url":"twitter://unitedfrontgame",
+		"queue":"tweets",
+		"tag":["unitedfront","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.unitedfrontgames.com/about/",
+		"notes":"Sleeping Dogs",
+		"description":"Official Twitter Account of United Front Games"
+	},
+	{
+		"url":"youtube://unitedfrontgames",
+		"queue":"youtube",
+		"tag":["unitedfront","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.unitedfrontgames.com/about/",
+		"notes":"Sleeping Dogs",
+		"description":"Official Youtube Channel United Front Games"
+	},
+	{
+		"url":"facebook://103632155147",
+		"queue":"rss",
+		"tag":["valve","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://valvesoftware.com/company/",
+		"notes":"Half Life series",
+		"description":"Official Facebook Page of Valve"
+	},
+	{
+		"url":"http://blogs.valvesoftware.com/feed/?cat=3",
+		"queue":"rss",
+		"tag":["valve","thirdparty","publisher","worldwide","devblog","generic"],
+		"about":"http://valvesoftware.com/company/",
+		"notes":"Half Life series",
+		"description":"Official Valve Dev News Feed by Michael Abrash: Game Programmer & Technical Writer at Valve"
+	},
+	{
+		"url":"http://blogs.valvesoftware.com/feed/?cat=7",
+		"queue":"rss",
+		"tag":["valve","thirdparty","publisher","worldwide","devblog","generic"],
+		"about":"http://valvesoftware.com/company/",
+		"notes":"Half Life series",
+		"description":"Official Valve Dev News Feed by Valve Linux Team"
+	},
+	{
+		"url":"twitter://ValveSoftwares",
+		"queue":"tweets",
+		"tag":["valve","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://valvesoftware.com/company/",
+		"notes":"Half Life series",
+		"description":"Official Twitter Account of Valve"
+	},
+	{
+		"url":"youtube://Valve",
+		"queue":"youtube",
+		"tag":["valve","thirdparty","publisher","worldwide","pr","generic"],
+		"about":"http://valvesoftware.com/company/",
+		"notes":"Half Life series",
+		"description":"Official Youtube Channel of Valve"
+	},
+	{
+		"url":"twitter://VblankGames",
+		"queue":"tweets",
+		"tag":["vblank","indie","studio","america","pr","generic"],
+		"about":"http://www.retrocityrampage.com/contact.php",
+		"notes":"Retro City Rampage",
+		"description":"Official Twitter Account of Vblank Entertainment"
+	},
+	{
+		"url":"twitter://VisceralGames",
+		"queue":"tweets",
+		"tag":["visceralgames","thirdparty","studio","america","pr","generic"],
+		"notes":"Dead Space series",
+		"description":"Official Twitter Account of Visceral Games"
+	},
+	{
+		"url":"facebook://123174304424121",
+		"queue":"rss",
+		"tag":["volition","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.dsvolition.com/careers/",
+		"notes":"Saints Row series",
+		"description":"Official Facebook Page of Volition"
+	},
+	{
+		"url":"http://www.dsvolition.com/feed/",
+		"queue":"rss",
+		"tag":["volition","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.dsvolition.com/careers/",
+		"notes":"Saints Row series",
+		"description":"Official News Feed of Volition"
+	},
+	{
+		"url":"twitter://volitioninc",
+		"queue":"tweets",
+		"tag":["volition","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.dsvolition.com/careers/",
+		"notes":"Saints Row series",
+		"description":"Official Twitter Account of Volition"
+	},
+	{
+		"url":"facebook://144950778875445",
+		"queue":"rss",
+		"tag":["wayforward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.wayforward.com/about/",
+		"notes":"Mighty Switch Force!",
+		"description":"Official Facebook Page of Wayforward"
+	},
+	{
+		"url":"http://www.wayforward.com/blog/rss.xml",
+		"queue":"rss",
+		"tag":["wayforward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.wayforward.com/about/",
+		"notes":"Mighty Switch Force!",
+		"description":"Official News Feed of Wayforward"
+	},
+	{
+		"url":"twitter://WayForward",
+		"queue":"tweets",
+		"tag":["wayforward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.wayforward.com/about/",
+		"notes":"Mighty Switch Force!",
+		"description":"Official Twitter Account of Wayforward"
+	},
+	{
+		"url":"youtube://wayforwardtube",
+		"queue":"youtube",
+		"tag":["wayforward","thirdparty","studio","america","pr","generic"],
+		"about":"http://www.wayforward.com/about/",
+		"notes":"Mighty Switch Force!",
+		"description":"Official Youtube Channel of Wayforward"
+	},
+	{
+		"url":"http://tomorrowcorporation.com/feed",
+		"queue":"rss",
+		"tag":["tomorrowcorporation","indie","studio","america","pr","experimental"],
+		"about":"http://tomorrowcorporation.com/about",
+		"notes":"Little Inferno",
+		"description":"Official News Feed of Tomorrow Corporation"
+	},
+	{
+		"url":"http://www.gamefreak.co.jp/blog/dir_english/?feed=rss2",
+		"queue":"rss",
+		"tag":["japan","people","generic"],
+		"notes":"Pokemon series",
+		"description":"Official News Feed of Junichi Masuda: Game Director of GameFreak inc"
+	},
+	{
+		"url":"twitter://Junichi_Masuda",
+		"queue":"tweets",
+		"tag":["japan","people","generic"],
+		"notes":"Pokemon series",
+		"description":"Official Twitter Account of Junichi Masuda: Game Director of GameFreak inc"
+	},
+	{
+		"url":"twitter://pmolyneux",
+		"queue":"tweets",
+		"tag":["europe","people","generic"],
+		"notes":"Curiosity",
+		"description":"Official Twitter Account of Peter Moulineux: A Designer & Director of computer entertainment"
+	},
+	{
+		"url":"twitter://notch",
+		"queue":"tweets",
+		"tag":["europe","people","generic"],
+		"notes":"Minecraft",
+		"description":"Official Twitter Account of Notch: Game Developer at Mojang"
+	},
+	{
+		"url":"http://nippon1.jp/news/news.cgi?mode=rss",
+		"queue":"rss",
+		"tag":["nipponichi","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"notes":"Disgaea series",
+		"description":"Official News Feed of Nippon Ichi Software"
+	},
+	{
+		"url":"twitter://nis_prinny",
+		"queue":"tweets",
+		"tag":["nipponichi","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"notes":"Disgaea series",
+		"description":"Official Twitter Account of Nippon Ichi Software"
+	},
+	{
+		"url":"youtube://nippon1software",
+		"queue":"youtube",
+		"tag":["nipponichi","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"notes":"Disgaea series",
+		"description":"Official Youtube Channel of  Nippon Ichi Software"
+	},
+	{
+		"url":"facebook://428753060506729",
+		"queue":"rss",
+		"tag":["nipponichi","thirdparty","studio","japan","pr","japaneseonly"],
+		"about":"http://nisamerica.com/index.php?nav=c",
+		"notes":"Disgaea series",
+		"description":"Official Facebook Page of  Nippon Ichi Software"
+	},
+	{
+		"url":"twitter://DylanCuthbert",
+		"queue":"tweets",
+		"tag":["europe","people","generic"],
+		"notes":"Starfox64 3D",
+		"description":"Official Twitter Account of Dylan Cuthbert: Game Designer & Founder of Q-Games"
+	},
+	{
+		"url":"twitter://BriProv",
+		"queue":"tweets",
+		"tag":["indie","america","people","generic"],
+		"notes":"Retro City Rampage",
+		"description":"Official Twitter Account of Brian Provinciano: a Canadian video game developer"
+	},
+	{
+		"url":"http://www.infinite-interactive.com/feed/",
+		"queue":"rss",
+		"tag":["infiniteinteractive","independent","studio","world","pr","generic"],
+		"about":"http://www.infinite-interactive.com/company/",
+		"notes":"Puzzle Quest series",
+		"description":"Official News Feed of Infinite Interactive"
+	},
+	{
+		"url":"facebook://101684993210681",
+		"queue":"rss",
+		"tag":["infiniteinteractive","independent","studio","world","pr","generic"],
+		"about":"http://www.infinite-interactive.com/company/",
+		"notes":"Puzzle Quest series",
+		"description":"Official Facebook Page of Infinite Interactive"
+	},
+	{
+		"url":"twitter://i2games",
+		"queue":"tweets",
+		"tag":["infiniteinteractive","independent","studio","world","pr","generic"],
+		"about":"http://www.infinite-interactive.com/company/",
+		"notes":"Puzzle Quest series",
+		"description":"Official Twitter Account of Infinite Interactive"
+	},
+	{
+		"url":"http://portalcp.joymax.com/XML/_Rss/Notice/Notice_US.xml",
+		"queue":"rss",
+		"tag":["joymax","thirdparty","studio","world","pr","mmorpg"],
+		"about":"http://www.joymax.co.kr/eng/company/about.asp",
+		"notes":"Silkroad series",
+		"description":"Official News Feed of Joymax"
+	},
+	{
+		"url":"facebook://142725249118439",
+		"queue":"rss",
+		"tag":["joymax","thirdparty","studio","world","pr","mmorpg"],
+		"about":"http://www.joymax.co.kr/eng/company/about.asp",
+		"notes":"Silkroad series",
+		"description":"Official Facebook Page of Joymax"
+	},
+	{
+		"url":"youtube://KOGtheater",
+		"queue":"youtube",
+		"tag":["kog","thirdparty","studio","world","pr","mmorpg"],
+		"about":"http://www.kog.co.kr/eng/company/whoweare.php",
+		"notes":"Grand Chase",
+		"description":"Official Youtube Channel of Kog"
+	},
+	{
+		"url":"youtube://ncsoft",
+		"queue":"youtube",
+		"tag":["ncsoft","thirdparty","studio","world","pr","mmorpg"],
+		"about":"http://global.ncsoft.com/global/aboutus/overview.aspx",
+		"notes":"Guild Wars series",
+		"description":"Official Youtube Channel of Ncsoft"
+	},
+	{
+		"url":"twitter://ncsoftgames",
+		"queue":"tweets",
+		"tag":["ncsoft","thirdparty","studio","world","pr","mmorpg"],
+		"about":"http://global.ncsoft.com/global/aboutus/overview.aspx",
+		"notes":"Guild Wars series",
+		"description":"Official Twitter Account of English Ncsoft"
+	},
+	{
+		"url":"youtube://SoftmaxNews",
+		"queue":"youtube",
+		"tag":["softmax","thirdparty","studio","world","pr","generic"],
+		"about":"http://www.softmax.co.kr/English/Company/Overview.aspx?menuid=1_1",
+		"notes":"Magna Carta series",
+		"description":"Official Youtube Channel of Softmax"
+	},
+	{
+		"url":"twitter://spicy_horse",
+		"queue":"tweets",
+		"tag":["spicyhorse","thirdparty","studio","world","pr","generic"],
+		"about":"http://www.spicyhorse.com/about-us/",
+		"notes":"Alice Madness returns",
+		"description":"Official Twitter Account of Spicy Horse Games"
+	},
+	{
+		"url":"youtube://SpicyHorseOfficial",
+		"queue":"youtube",
+		"tag":["spicyhorse","thirdparty","studio","world","pr","generic"],
+		"about":"http://www.spicyhorse.com/about-us/",
+		"notes":"Alice Madness returns",
+		"description":"Official Youtube Channel of Spicy Horse Games"
+	},
+	{
+		"url":"facebook://274129019372900",
+		"queue":"rss",
+		"tag":["celestialgames","indie","studio","world","pr","generic"],
+		"about":"http://celestial-games.com/about.html",
+		"notes":"Toxic Bunny",
+		"description":"Official Facebook Page of Celestial Games"
+	},
+	{
+		"url":"twitter://tbulford",
+		"queue":"tweets",
+		"tag":["celestialgames","indie","studio","world","pr","generic"],
+		"about":"http://celestial-games.com/about.html",
+		"notes":"Toxic Bunny",
+		"description":"Official Twitter Account of Celestial Games"
+	},
+	{
+		"url":"twitter://cave_world_en",
+		"queue":"tweets",
+		"tag":["caveworld","thirdparty","studio","japan","pr","mobile"],
+		"about":"http://www.cave-world.com/en/",
+		"notes":"Dodonpachi Resurrection (mobile)",
+		"description":"Official Twitter Account of CAVE World"
+	},
+	{
+		"url":"youtube://cavemobile",
+		"queue":"youtube",
+		"tag":["caveworld","thirdparty","studio","japan","pr","mobile"],
+		"about":"http://www.cave-world.com/en/",
+		"notes":"Dodonpachi Resurrection (mobile)",
+		"description":"Official Youtube Channel of CAVE World"
+	}
+]

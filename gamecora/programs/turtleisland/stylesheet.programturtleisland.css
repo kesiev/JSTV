@@ -1,0 +1,180 @@
+/* START */
+.simpleintro.programintro.program-turtleisland .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-turtleisland .main.program {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 270px;
+	font-size: 60px;
+	color: #020;
+	font-family: LakeshoreDriveRegular;
+	text-shadow: 0 0 5px #fff;
+	font-weight: normal;
+}
+
+.simpleintro.programintro.program-turtleisland .main.description {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 320px;
+	font-size: 25px;
+	color: #020;
+	font-family: LakeshoreDriveRegular;
+	text-shadow: 0 0 5px #fff;
+}
+
+.simpleintro.programintro.program-turtleisland .main.sprite-0 {
+	background-color: #080;
+}
+
+.simpleintro.programintro.program-turtleisland .main.sprite-1 {
+	display: block;
+	background-image: url(sprites/turtleislandlogo.png);
+	width: 300px;
+	height: 300px;
+	top: 40px;
+	left: 180px;
+}
+
+.simpleintro.programintro.program-turtleisland .main.sprite-2,.simpleintro.programintro.program-turtleisland .main.sprite-3 {
+	display: block;
+	background-image: url(sprites/turtle.gif);
+	width: 300px;
+	height: 300px;
+	top: 40px;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-turtleisland .main.sprite-4 {
+	display: block;
+	background-image: url(sprites/turtlealone.gif);
+	width: 300px;
+	height: 300px;
+	top: 40px;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-turtleisland .main.sprite-5 {
+	display: block;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #080;
+	z-index: 900;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-turtleisland.onair .main.sprite-2 {
+	-webkit-transition: all 3s linear 0s;
+	-moz-transition: all 3s linear 0s;
+	-o-transition: all 3s linear 0s;
+	-ms-transition: all 3s linear 0s;
+	transition: all 3s linear 0s;
+	left: -300px;
+}
+
+.simpleintro.programintro.program-turtleisland.onair .main.sprite-3 {
+	-webkit-transition: all 3s linear 1s;
+	-moz-transition: all 3s linear 1s;
+	-o-transition: all 3s linear 1s;
+	-ms-transition: all 3s linear 1s;
+	transition: all 3s linear 1s;
+	left: -300px;
+}
+
+.simpleintro.programintro.program-turtleisland.onair .main.sprite-4 {
+	-webkit-transition: all 3s ease 2s;
+	-moz-transition: all 3s ease 2s;
+	-o-transition: all 3s ease 2s;
+	-ms-transition: all 3s ease 2s;
+	transition: all 3s ease 2s;
+	left: 180px;
+}
+
+.simpleintro.programintro.program-turtleisland.onair .main.program {
+	-webkit-transition: all 2s ease 2s;
+	-moz-transition: all 2s ease 2s;
+	-o-transition: all 2s ease 2s;
+	-ms-transition: all 2s ease 2s;
+	transition: all 2s ease 2s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 250px;
+}
+
+.simpleintro.programintro.program-turtleisland.onair .main.description {
+	-webkit-transition: all 2s ease 3s;
+	-moz-transition: all 2s ease 3s;
+	-o-transition: all 2s ease 3s;
+	-ms-transition: all 2s ease 3s;
+	transition: all 2s ease 3s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 300px;
+}
+
+.simpleintro.programintro.program-turtleisland.onair .main.sprite-1 {
+	-webkit-transition: all 2s ease 2s;
+	-moz-transition: all 2s ease 2s;
+	-o-transition: all 2s ease 2s;
+	-ms-transition: all 2s ease 2s;
+	transition: all 2s ease 2s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-turtleisland.closing .main.sprite-5 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-turtleisland .background {
+	background-color: #080;
+}
+
+.simpleintro.sectionintro.program-turtleisland .main.program {
+	color: #030;
+}
+
+.simpleintro.sectionintro.program-turtleisland .type-text {
+	font-family: LakeshoreDriveRegular;
+}
+
+/* SLIDESHOW */
+
+.textstream.slideshow.program-turtleisland .streamitem .item.title,.textstream.slideshow.program-turtleisland .streamitem .item.source {
+	color: #030;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-turtleisland .main.sprite-0 {
+	background-color: #030;
+}
+
+.textstream.program-turtleisland .main.program {
+	color: #030;
+	font-family: LakeshoreDriveRegular;
+}
+
+/* LOADER */
+.onload-programturtleisland {
+	z-index: 123321;
+}

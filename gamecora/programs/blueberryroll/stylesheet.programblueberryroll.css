@@ -1,0 +1,185 @@
+/* START */
+.simpleintro.programintro.program-blueberryroll .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-blueberryroll .main.program {
+	color: #fff;
+	font-family: YukarimobileRegular;
+	font-weight: normal;
+	font-size: 50px;
+	top: 260px;
+	text-shadow: 0px 0px 5px #000;
+	left: -640px;
+	width: 640px;
+}
+
+.simpleintro.programintro.program-blueberryroll .main.description {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 330px;
+	font-size: 25px;
+	color: #fff;
+	font-family: YukarimobileRegular;
+	text-shadow: 0 0 5px #000;
+}
+
+.simpleintro.programintro.program-blueberryroll .main.sprite-0 {
+	background-color: #11285a;
+}
+
+.simpleintro.programintro.program-blueberryroll .main.sprite-1 {
+	display: block;
+	background-color: #1b37f0;
+	width: 0px;
+	height: 200px;
+	top: 45px;
+	left: -100px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.simpleintro.programintro.program-blueberryroll .main.sprite-2 {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	display: block;
+	background-image: url(sprites/logo.png);
+	width: 200px;
+	height: 200px;
+	top: 45px;
+	left: -200px;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-blueberryroll.onair .main.program {
+	-webkit-transition: all 2.9s ease 1s;
+	-moz-transition: all 2.9s ease 1s;
+	-o-transition: all 2.9s ease 1s;
+	-ms-transition: all 2.9s ease 1s;
+	transition: all 2.9s ease 1s;
+	left: 0;
+}
+
+.simpleintro.programintro.program-blueberryroll.onair .main.description {
+	-webkit-transition: all 2s ease 3.5s;
+	-moz-transition: all 2s ease 3.5s;
+	-o-transition: all 2s ease 3.5s;
+	-ms-transition: all 2s ease 3.5s;
+	transition: all 2s ease 3.5s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 310px;
+}
+
+.simpleintro.programintro.program-blueberryroll.onair .main.sprite-1 {
+	-webkit-transition: all 2s ease 1s;
+	-moz-transition: all 2s ease 1s;
+	-o-transition: all 2s ease 1s;
+	-ms-transition: all 2s ease 1s;
+	transition: all 2s ease 1s;
+	width: 420px;
+}
+
+.simpleintro.programintro.program-blueberryroll.onair .main.sprite-2 {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+	-webkit-transition: all 2s ease 1s;
+	-moz-transition: all 2s ease 1s;
+	-o-transition: all 2s ease 1s;
+	-ms-transition: all 2s ease 1s;
+	transition: all 2s ease 1s;
+	left: 220px;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-blueberryroll.closing .main.program {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-blueberryroll.closing .main.sprite-1 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	width: 840px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.simpleintro.programintro.program-blueberryroll.closing .main.sprite-2 {
+	-webkit-transform: rotate(720deg);
+	-moz-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+	-ms-transform: rotate(720deg);
+	transform: rotate(720deg);
+
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	left: 640px;
+}
+
+.simpleintro.programintro.program-blueberryroll.closing .main.description {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 290px;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-blueberryroll .background {
+	background-color: #0e224d;
+}
+
+.simpleintro.sectionintro.program-blueberryroll .main.program {
+	color: #0e224d;
+}
+
+.simpleintro.sectionintro.program-blueberryroll .type-text {
+	font-family: YukarimobileRegular;
+}
+
+/* SLIDESHOW */
+
+.textstream.slideshow.program-blueberryroll .streamitem .item.title,.textstream.slideshow.program-blueberryroll .streamitem .item.source {
+	color: #0e224d;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-blueberryroll .main.sprite-0 {
+	background-color: #0e224d;
+}
+
+.textstream.program-blueberryroll .main.program {
+	color: #0e224d;
+	font-family: YukarimobileRegular;
+}
+
+/* LOADER */
+.onload-programblueberryroll {
+	z-index: 123321;
+}

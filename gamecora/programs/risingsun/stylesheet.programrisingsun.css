@@ -1,0 +1,152 @@
+/* START */
+.simpleintro.programintro.program-risingsun .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-risingsun .main.sprite-0 {
+	background-color: #fff;
+
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+}
+
+.simpleintro.programintro.program-risingsun .main.sprite-1 {
+	display: block;
+	top: -50px;
+	left: 120px;
+	width: 400px;
+	height: 400px;
+	background-image: url(sprites/japan-sun.png);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.simpleintro.programintro.program-risingsun .main.sprite-2 {
+	display: block;
+	left: 10px;
+	right: 10px;
+	background-image: url(logo.png);
+	height: 60px;
+	top: 390px;
+}
+
+.simpleintro.programintro.program-risingsun .main.program {
+	font-family: MolotRegular;
+	color: #fff;
+	font-size: 35px;
+	font-weight: normal;
+	top: 200px;
+}
+
+.simpleintro.programintro.program-risingsun .main.description {
+	font-family: MolotRegular;
+	color: #300;
+	bottom: -30px;
+}
+
+.simpleintro.programintro.program-risingsun.onair .main.sprite-3 {
+	display: block;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #e00;
+	z-index: 900;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-risingsun.onair .main.sprite-0 {
+	-webkit-transition: all 0.5s ease 1s;
+	-moz-transition: all 0.5s ease 1s;
+	-o-transition: all 0.5s ease 1s;
+	-ms-transition: all 0.5s ease 1s;
+	transition: all 0.5s ease 1s;
+	background-color: #e00;
+}
+
+.simpleintro.programintro.program-risingsun.onair .main.sprite-1 {
+	-webkit-transition: all 5s ease 1s;
+	-moz-transition: all 5s ease 1s;
+	-o-transition: all 5s ease 1s;
+	-ms-transition: all 5s ease 1s;
+	transition: all 5s ease 1s;
+
+	-webkit-transform: rotate(260deg);
+	-moz-transform: rotate(260deg);
+	-o-transform: rotate(260deg);
+	-ms-transform: rotate(260deg);
+	transform: rotate(260deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+}
+
+.simpleintro.programintro.program-risingsun.onair .main.sprite-2 {
+	-webkit-transition: all 0.5s ease 1s;
+	-moz-transition: all 0.5s ease 1s;
+	-o-transition: all 0.5s ease 1s;
+	-ms-transition: all 0.5s ease 1s;
+	transition: all 0.5s ease 1s;
+	top: 120px;
+}
+
+.simpleintro.programintro.program-risingsun.onair .main.description {
+	-webkit-transition: all 1s ease 1s;
+	-moz-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	-ms-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
+	bottom: 120px;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-risingsun.closing .main.sprite-3 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-risingsun .background {
+	background-color: #e00;
+}
+
+.simpleintro.sectionintro.program-risingsun .main.program {
+	color: #300;
+}
+
+.simpleintro.sectionintro.program-risingsun .type-text {
+	font-family: MolotRegular;
+}
+
+/* SLIDESHOW */
+.textstream.slideshow.program-risingsun .streamitem .item.title,.textstream.slideshow.program-risingsun .streamitem .item.source {
+	color: #300;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-risingsun .main.sprite-0 {
+	background-color: #300;
+}
+
+.textstream.program-risingsun .main.program {
+	color: #300;
+	font-family: MolotRegular;
+}
+
+/* LOADER */
+.onload-programrisingsun {
+	z-index: 123321;
+}

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			JSTV suite - The internet player
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="gamecora/sitestyle.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="gamecora/channelgenerator.js">
+</script>
+	</head>
+	<body onload="onl()">
+		<div class="block">
+			<h1>
+				JSTV suite <span class="beta">0.1 BETA</span>
+			</h1>
+			<h2>
+				The internet player
+			</h2>
+		</div>
+		<div class="dark">
+			<div class="block">
+				<p>
+					<b>JSTV</b> is not your classic video player. In fact, <b>JSTV</b> is an <i>internet player</i>: instead of a stream of images, <b>JSTV</b> plays a sequence of scenes rendered by Javascript code/CSS3 animations defined in a <i>channel contents</i> JSON descriptor.
+				</p>
+				<p>
+					Yeah, right: since the scenes are DHTML, your video is smaller in size, can have HTML5/vector quality graphics, can be interactive, can embed what you want, can use any JS framework, can show realtime data and can be built by your server without any particular transcoding phase.
+				</p>
+				<p>
+					Not enough? <b>JSTV</b> can be used together with its brother <b>JSTVC</b>: starting from a <i>channel definition</i> JSON which describes how your TV shows have to work, it merges multiple data feeds and generates a working <i>channel contents</i> file for <b>JSTV</b> - everything client side.
+				</p>
+				<p>
+					Your favourite feeds aren't served by yourself? No problem. <b>Aggro</b> is a simple PHP server that gently aggregates your <b>JSTVC</b> served feeds without any background process. It is bundled with the other two guys.
+				</p>
+				<p>
+					Confused? <a href="index.html">Gamecora TV</a> is a neverending TV channel about videogames powered by the entire suite. Wondering how it works? Just <a href="#download">download the sources</a> and use your nerdy superpowers. All of this is Open Sourced.
+				</p>
+			</div>
+		</div>
+		<div class="block">
+			<h3 id="intro">
+				Nobody in the middle.
+			</h3>
+			<p>
+				Everything started after me, KesieV, and my girlfriend Bianca, both passionate gamers, read <a target="_blank" href="http://www.neogaf.com/forum/showthread.php?t=510083">this</a> pretty famous post on NeoGAF about the role of <a target="_blank" href="http://www.nintendo.com/nintendo-direct/">Nintendo Direct</a> in gaming journalism.
+			</p>
+			<p>
+				That article, despite its focus is on gaming, depicts an idea I've always had about internet: it has the capabilities to give information from the original source but this practice is not as common as it should. Having first hand information is crucial for <i>making your own opinion about facts</i> instead of <i>making your own opinion about opinions</i>: you'll discover what's <i>right</i>, <i>wrong</i>, <i>fair</i> and <i>unfair</i> by yourself.
+			</p>
+			<p>
+				Keeping this idea in mind, we started the opensourced project <b>JSTV</b> that, thanks to some code and magic, can aggregate information from various sources and show them in video/reel form, that sometime looks like a <i>train station display</i> or <i>a thematic TV channel</i>, mainly picking the idea of <i>Nintendo Direct</i> and extending that to any topic and source.
+			</p>
+			<h3>
+				Infrastructure.
+			</h3>
+			<p>
+				While its scheme is quite a knot of arrows, the <b>JSTV</b> infrastructure is nothing exotic.
+			</p>
+			<p>
+				<img src="jstv-site/scheme.png">
+			</p>
+			<p>
+				Download this scheme as PDF <a href="jstv-site/scheme.pdf">here</a>.
+			</p>
+			<ul>
+				<li>During the <b>channel building</b> phase, the <a href="#channelstructure">channel structure</a> JSON file is read by <a href="#jstvcconfiguration">JSTVC</a> and converted to a valid <a href="#channelcontents">channel contents</a> descriptor in order to be played. A <i>channel structure</i> file mainly describes which feeds will be used for building your channel (i.e. RSS feeds with contents) and how its programs have to be built - channels and data picked from feeds (called <a href="#dataitem">data items</a>) will be matched via tags. After some work, it will be converted in a <i>sequence of scenes</i>, that will be read by <b>JSTV</b>.
+					<ul>
+						<li>
+							<b>JSTVC</b> and the channel building phase can be entirely skipped if you already have a <i>channel contents</i> file, that can be static or server generated.
+						</li>
+						<li>
+							<b>JSTVC</b> can both contact an <a href="#aggroconfiguration">Aggro</a> server or the <i>Google RSS/JSONP</i> service - it's up to you to host a server-side proxy on your site or trust on the (probably short) life of the Google Service. Have a look to the <a href="#jstvcconfiguration">JSTVC configuration</a> in order to define your server-side infrastructure.
+						</li>
+					</ul>
+				</li>
+				<li>If you've not decided to use <b>JSTVC</b>, and then you've totally skipped the <i>channel building</i> phase, an external <a href="#channelcontents">channel contents</a> descriptor will be loaded during the <b>channel loading</b> phase. As a a static file or something that come from a server, it will must contain the sequence of scenes that will be played.
+				</li>
+				<li>Once a valid <a href="#channelcontents">channel contents</a> descriptor is in memory, during the <b>channel parsing</b> phase, <b>JSTV</b> starts fetching it and prepares the channel schedule and video playback reading different metadata and, most remarkably, the scene sequence from the <i>Channel contents</i> file.
+				</li>
+				<li>During the <b>resources loading</b> phase, depending on the scenes readed during the <i>channel loading</i> phase, a set of <i>stylesheets and Javascript files</i> is downloaded in order to recreate a particular kind of scene (for example, multiple Twitter stream scenes can be rendered by the same Javascript file and skinned by a related CSS) and for reproducing a particular single scene (for example, a Twitter stream about <a target="_blank" href="http://en.wikipedia.org/wiki/Dubstep">Dubstep</a> DJs can use a particular darker variant of the default theme). Most of the metadata contained into the <a href="#channelcontents">channel contents</a> descriptor is kept unused for now.
+				</li>
+				<li>Once the <i>resources loading</i> phase is ended, the <b>playback</b> phase starts: the first Javascript renderer is invoked on the displayed layer (that's a DIV on a page) and starts rendering its scene, mixing the loaded stylesheets and the scene related data. The next renderer and its rendering layer is prepared in background in order to preload data and ensure minimal lag between a scene and another one. Metadata is used for creating the channel schedule automatically. (On <a href="index.html">Gamecora TV</a> example all the tabs contents is generated from metadata except for the <i>About</i> tab)
+				</li>
+			</ul>
+			<h3 id="howtouse">
+				How to use
+			</h3>
+			<p>
+				Add these two lines in your page header:
+			</p>
+			<div class="code">
+				&lt;head&gt;<br>
+				&nbsp;&nbsp;&lt;script type="text/javascript" src="jstv/jstvt.js"&gt;&lt;/script&gt;<br>
+				&nbsp;&nbsp;&lt;script type="text/javascript" src="jstv/jstv.js"&gt;&lt;/script&gt;<br>
+				&lt;/head&gt;
+			</div>
+			<p>
+				Make a DIV object as placeholder for your player, give it the right size and an ID...
+			</p>
+			<div class="code">
+				&lt;body&gt;<br>
+				&nbsp;&nbsp;&lt;div id="yourplayerid" style="width:640px;height:390px"&gt;&lt;/div&gt;<br>
+				&lt;/body&gt;
+			</div>
+			<p>
+				...and, when the page is loaded, embed your video like this:
+			</p>
+			<div class="code">
+				window.onload=function() { JSTV.embed( "yourplayerid", <a href="#channelcontents">Your channel contents descriptor</a>, [onload callback])}
+			</div>
+			<p>
+				The <a href="#channelcontents">channel contents descriptor</a> can be specified inline as a Javascript object or loaded externally as a file. The <span class="code">onload callback</span> function is optional and is triggered when the player is ready for playing.
+			</p>
+			<p>
+				During the <span class="code">onload callback</span> the player can be queried for different data:
+			</p>
+			<ul>
+				<li>
+					<span class="code">this.getStatsData()</span> returns an object with different statistics about the loaded channel: the <span class="code">schedule</span> key, which lists the programs sequence and scenes details, the <span class="code">sources</span> key with statistics about the listed sources and <span class="code">stats</span> with extra statistics about the channel contents and logs.
+				</li>
+				<li>
+					<span class="code">this.getStats(true|false)</span> works like the <span class="code">getStatsData</span> method but returns HTML chunks instead of raw data that can be placed in your page as they are. Multiple classes are applied to all of the elements so can be easily styled via CSS.
+				</li>
+			</ul>
+			<p>
+				<b>If you're going to specify a <a href="#channelstructure">channel structure</a> descriptor</b>, and then you're going to use the <b>JSTVC/Aggro</b> combo for making merging data with programs client-side in order to make your channel, you have to load one more Javascript file...
+			</p>
+			<div class="code">
+				&lt;head&gt;<br>
+				&nbsp;&nbsp;&lt;script type="text/javascript" src="jstv/jstvt.js"&gt;&lt;/script&gt;<br>
+				&nbsp;&nbsp;&lt;script type="text/javascript" src="jstv/jstv.js"&gt;&lt;/script&gt;<br>
+				&nbsp;&nbsp;&lt;script type="text/javascript" src="jstv/jstc.js"&gt;&lt;/script&gt;<br>
+				&lt;/head&gt;
+			</div>
+			<p>
+				...and specify a <a href="#channelstructure">channel structure</a> descriptor instead of a <a href="#channelcontents">channel contents</a> descriptor but in the same way: defined inline or as a filename.
+			</p>
+			<h3 id="channelcontents">
+				The channels contents descriptor
+			</h3>
+			<p>
+				If you're going to produce your scene sequences by yourself, you just need a channel contents descriptor and <b>JSTV</b> player. The channel contents descriptor contains metadata of your channel, such like its name and description and the scene sequence to be played. Since it can be <a href="#howtouse">directly passed</a> to the <span class="code">JSTV.embed</span> command or loaded from a file, it can be <i>statically defined</i> in your Javascript, <i>procedurally generated client-side</i> by a Javascript function, <i>statically saved</i> on a file or <i>dynamically generated</i> by your server. (no particular flavour of server is required).
+			</p>
+			<p>
+				Your channel contents descriptors have to be structured in this way:
+			</p>
+			<div class="commented code">
+				{<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;"name": "Gamecora TV",<br>
+					&nbsp;&nbsp;"description": "Gaming info from their sources. Nobody in the middle.",<br>
+					&nbsp;&nbsp;"logo": "GTV",<br>
+					<div class="text">
+						You can define your channel name and description here. They will be shown in channel schedule, that's available for rendering when your channel is loaded by JSTV. The <i>logo</i> is ever shown on the lower right of the screen during video playback.<br>
+						Notice that it can be hidden by the browser when embedding external objects, like Flash video players)
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;"width": 640,<br>
+					&nbsp;&nbsp;"height": 390,<br>
+					<div class="text">
+						The native size of your video, that is the size of each scene layer in which jour Javascript/CSS renderer will work. JSTV will proportionally stretch the video when embedded on the page or in fullscreen mode via HTML5 transformations, so vector graphics and native DOM object will zoom without quality loss.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"path": "gamecora/",<br>
+					<div class="text">
+						Any of the resources referenced with relative paths in this file will be searched from this root path (except for absolute links). If not specified, the descriptor path will be used. If the descriptor path is not available, the current page path is used.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"poster": "poster.png",<br>
+					&nbsp;&nbsp;"posterButton": "posterbutton.png",<br>
+					<div class="text">
+						As classic video players, JSTV supports a trasparent <i>poster image</i> and an opaque play button to be shown when idle. If not specified, a black background is used.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"sources": [<br>
+					<div class="text optional">
+						You can specify here the sources from which the channel information were picked up. While is optional here, we <i>always suggest to cite sources</i> whenever is needed. This information will be shown into the channel schedule.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "http://gdata.youtube.com/feeds/base/users/gearboxsoftware/uploads?alt=rss&amp;v=2",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tag": [ "gearbox",;"studio","america","generic" ],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Official Youtube Channel of Gearbox",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"about": "http://www.gearboxsoftware.com/about",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"notes": "Borderlands series"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "https://www.facebook.com/feeds/page.php?id=298652701947&amp;format=rss20",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tag": [ "gearbox", "thirdparty", "studio", "america", "generic" ],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Official Facebook Page of Gearbox"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"about": "http://www.gearboxsoftware.com/about",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"notes": "Borderlands series"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}, ...<br>
+					<div class="text">
+						Each source has an <span class="code">url</span> pointing to the original source, a set of <span class="code">tag</span> that classifies the news feed, a <span class="code">description</span> field and two optional <span class="code">about</span> and <span class="code">notes</span> fields to link the about page of the original source and some textual notes about. You can specify multiple sources for your channel.<br>
+						If you need some in-depth explanation about the <span class="code">sources</span> descriptor, have a look to the <a href="#sourcesdescriptor">sources descriptor</a> section for more details.
+					</div>
+				</div>&nbsp;&nbsp;],<br>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"sourcesAvailable": 553,<br>
+					<div class="text">
+						You can specify the number of feeds that your channel uses. While only the specified subset was used for making your channel, the total amount of information sources is described by this number. It is just displayed in the channel schedule.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;"scenes": [<br>
+					<div class="text">
+						A JSTV video is mainly a sequence of Javascript/CSS rendered scenes. This sequence is descripted by this array.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resources": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "stylesheet",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "programs/independentsday/stylesheet.programindependentsday.css"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "stylesheet",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "programs/independentsday/font/stylesheet.fontindependentsday.css"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"musicIntro": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "intro",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"files": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"audio/mp3": "music.mp3",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"audio/ogg": "music.ogg"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "simpleintro",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "programintro program-independentsday",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"program": "Independents Day",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Random gaming news from independent studios",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"logo": "programs/independentsday/logo.png"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "youtube",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tag": [ "feed-video", "gearboxsoftware", "type-video", ;"gearbox", "thirdparty", "studio", "america", "generic" ],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "Borderlands 2 - Sir Hammerlock's Big Game Hunt Launch Trailer",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"videoId": "2mSRW_Yscb8",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"link": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"http://www.youtube.com/watch?v=2mSRW_Yscb8&amp;feature=youtube_gdata"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}, ...<br>
+					<div class="text">
+						Each scene is composed by:
+						<ul>
+							<li>some <b>resources:</b> <i>(optional)</i> it is an array that lists a series of external files needed for rendering this particular scene. <span class="code">type</span> can be <span class="code">stylesheet</span> or <span class="code">javascript</span> and the related source address is described by the <span class="code">url</span> attribute. It can be both an absolute or relative address. If a resource is referred multiple times is loaded just once. Since CSS file <span class="code">onload</span> event is not available, a timer is used. It's possible to check when your stylesheet was loaded with best accuracy naming your files <span class="code">yourcssname.youruniquefilekey.css</span> and adding a <span class="code">.onload-youruniquefilekey { z-index: 123321; }</span> line on the bottom.
+							</li>
+							<li>a <b>renderer:</b> it describes the <i>Javascript and CSS files</i> needed for shaping this specific scene. It will load a pair of files located at <span class="code">[JSTV path]/renderers/[renderer name].js</span> and <span class="code">[JSTV path]/renderers/[renderer name].css</span>. The Javascript must be structured as <i>JSTV scene renderers</i>: documentation about JSTV renderers is within the sample renderers code.
+							</li>
+						</ul>The other keys will be passed to the specified renderer as arguments in order to render your scene so its syntax may vary. You can find each renderer documentation within their code. You can use the same renderer for multiple scenes: it will be loaded just once and called with different arguments.<br>
+						Channel schedule is generated by renderers too, starting from the scene data and most of them uses the <span class="code">tag</span>, <span class="code">title</span> or <span class="code">program</span> keys.
+					</div>
+				</div>&nbsp;&nbsp;],<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;"programs": [<br>
+					<div class="text">
+						Scenes have to be indicized by the <span class="code">programs</span> section, which mainly lists from which scene each program starts.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "Independents Day",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Random gaming news from independent studios",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"startAt": 0<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "Turtle Island",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Random news from American Studios",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"startAt": 15<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}, ...<br>
+					<div class="text">
+						Each program is defined by its <span class="code">title</span>, <span class="code">description</span> and an index to the <span class="code">scenes</span> structure from which the program starts. These data are used for building the channel schedule and can be selectable in order to jump from a particular scene of your sequence.
+					</div>
+				</div>&nbsp;&nbsp;]<br>
+				}
+			</div>
+			<h3 id="channelstructure">
+				The channels structure descriptor
+			</h3>
+			<p>
+				If you want to generate your scenes sequence client side starting from a particular dataset, you can use <b>JSTVC/Aggro</b> together with <b>JSTV</b>. <b>JSTVC</b> <i>channel structure</i> descriptor is quite similar to the <b>JSTV</b> <a href="#channelcontents">channel contents</a> descriptor - the main difference is that you're going to define <i>how</i> your programs are going to be composed instead of directly defining its scenes.
+			</p>
+			<p>
+				Client side channel definition is as fun as experimental: while it <i>doesn't ensure the same resulting scene sequence on all of the clients</i>, it <i>removes the need of server side batch-production of the scene sequence</i> distributing the data parsing process to all the clients and making them updating just the needed sources <i>on-demand</i>, <i>reducing remarkably your server-to-server data transfer</i>, since a full update of cached data will just be a <i>worst case</i> that can be handled without a running daemon - That's the <b>Aggro</b> job, which will avoid this, checking the creation date of each file before running an update.
+			</p>
+			<p>
+				Channel structure descriptor are directly passed to <b>JSTV</b> as for <a href="#channelcontents">channel contents</a> descriptor but it has to be structured in this way:
+			</p>
+			<div class="commented code">
+				{<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;"name": "Gamecora TV",<br>
+					&nbsp;&nbsp;"description": "Gaming info from their sources. Nobody in the middle.",<br>
+					&nbsp;&nbsp;"logo": "GTV",<br>
+					&nbsp;&nbsp;"width": 640,<br>
+					&nbsp;&nbsp;"height": 390,<br>
+					&nbsp;&nbsp;"path": "gamecora/",<br>
+					&nbsp;&nbsp;"poster": "poster.png",<br>
+					&nbsp;&nbsp;"posterButton": "posterbutton.png",<br>
+					<div class="text">
+						These channels metadata are the same of the <a href="#channelcontents">channel contents</a> descriptor: the channel name, its description, the textual logo, the screen width and height, the resources relative path and the channel poster are defined here.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;"sources": "sources/all.json",<br>
+					<div class="text">
+						Unlike for the <a href="#channelcontents">channel contents</a> descriptor, the <span class="code">sources</span> section is mandatory here. It will be used as list of feeds from which the data will be picked. It can be an inline list like for the channel contents descriptor or an external file.<br>
+						There are some differences between <a href="#channelcontents">channel contents</a> descriptor version of <span class="code">sources</span> and this one - please, have a look to the <a href="#sourcesdescriptor">sources descriptor</a> section for more details.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"sourcesProcessor": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"shuffle": true,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"count": 50,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"tag": [ "gearbox" ]<br>
+					&nbsp;&nbsp;},<br>
+					<div class="text">
+						After the feeds database specified into the previous <span class="code">sources</span> is loaded, a subset of them can be selected from the whole bunch before starting downloading and parsing them.<br>
+						It's possible to <span class="code">shuffle</span> the feeds list, in order to randomize feed distribution in your programs, pick a subset of the sources database with a specified <span class="code">count</span> or filter them by <span class="code">tag</span>.<br>
+						The <span class="code">sourcesProcessor</span> key is not mandatory, like all of its subkeys.<br>
+						Notice that the random seed of feeds shuffle is based on <i>the current UTC date and hour</i> that ensures that, in the same hour, all of your users are watching the same data sources.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"materialProcessor": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"shuffle": true<br>
+					&nbsp;&nbsp;},<br>
+					<div class="text">
+						When the feeds are selected and downloaded, <b>JTVC</b> starts crawling data for contents, producing more <a href="#dataitem">data items</a>. Once extracted and listed, they can be shuffled in order to mix feeds contents before creating programs. Notice that this way of shuffling is different from the one of <span class="code">sourcesProcessor</span> since the first one shuffles feeds but keeps feed data in their original order when distributed in channels.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"programProcessor": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"shuffle": false<br>
+					&nbsp;&nbsp;},<br>
+					<div class="text">
+						Your programs can be shuffled before being filled in order to generate different sequences of shows.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;"channelIntro": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resources": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "stylesheet",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "programs/gamecora/stylesheet.programgamecora.css"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "stylesheet",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "programs/gamecora/font/stylesheet.fontgamecora.css"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "simpleintro",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "programintro program-gamecora",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"text1": "Game",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"text2": "Cora",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"text3": "TV",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "Gamecora TV",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Gaming info from their sources. Nobody in the middle."<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;],<br>
+					<div class="text">
+						The channel intro list is a sequence of scenes described like in the <span class="code">scenes</span> key of the <a href="#channelcontents">channel contents</a> descriptor. It will be played first before the generated programs, so you can use it for specifying a particular channel introduction.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;"programModels": [<br>
+					<div class="text">
+						Using a <i>channel structure</i> instead of a <a href="#channelcontents">channel contents</a> descriptor, you have to define how your programs will work instead of define statically your scenes sequence. The <a href="#dataitem">data items</a> picked by the <span class="code">sources</span> key will be used by <b>JSTVC</b> to fill them matching their tags and generating a <i>scenes sequence</i>.<br>
+						<i>Remember that <b>JSTVC</b> just converts a channel structure descriptor to a channel contents descriptor</i> so you can store <b>JSTVC</b> output to a file and use it statically with <b>JSTV</b> only.
+					</div>
+				</div>&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "Independents Day",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Random gaming news from independent studios",<br>
+					<div class="text">
+						First of all you have to define your program <span class="code">title</span> and its <span class="code">description</span>
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"times": 3,<br>
+					<div class="text">
+						Every program is aired multiple times until there aren't enough <a href="#dataitem">data items</a> to fill it. If you want that a program episode is aired a particular number of times, you can specify the amount here.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"scheme": [<br>
+					<div class="text">
+						The <span class="code">scheme</span> section explains to <b>JSTVC</b> how your program is structured. Each element of the <span class="code">scheme</span> key defines a <i>segment</i> of your program. Each segment can contain one or more scenes (the same we defined into the <a href="#channelcontents">channel contents</a> descriptor) and these scenes can be merged with one or more <a href="#dataitem">data items</a>, extracted from the specified <span class="code">sources</span> and with the rules defined by the <span class="code">sourcesProcessor</span>.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"scene": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"resources": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "stylesheet",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "programs/independentsday/stylesheet.programindependentsday.css"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "stylesheet",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "programs/independentsday/font/stylesheet.fontindependentsday.css"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"musicIntro": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pick": "randomly",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fromSet": "intros",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oneOf": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music1.mp3"},{"audio/ogg":"music1.ogg"}},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music2.mp3"},{"audio/ogg":"music2.ogg"}},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music3.mp3"},{"audio/ogg":"music3.ogg"}},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music4.mp3"},{"audio/ogg":"music4.ogg"}}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "simpleintro",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "programintro program-independentsday",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"program": "Independents Day",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Random gaming news from independent studios",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"logo": "programs/independentsday/logo.png"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					<div class="text">
+						This is our first <i>scene generator</i>. A scene generator will produce a set of scenes for a segment of your program.<br>
+						This first segment of the program is composed by a single scene rendered by <span class="code">simpleintro</span> renderer - as you can see the scene is defined in the same way of the <a href="#channelcontents">channel contents</a> scene descriptor. Since the <span class="code">tag</span> key is not defined, the scene generator will not merge any <a href="#dataitem">data items</a> to this scene, keeping it as it is. (That's ok for us since is our program intro)<br>
+						During a scene definition into a program segment you can use the <span class="code">{pick:"randomly"}</span> object instead of any of the values. The <span class="code">pick</span> object allows some simple logic applied on scene data values. In this case the <span class="code">{pick:"randomly"}</span> object will <span class="code">randomly</span> pick <span class="code">oneOf</span> the specified entries and will use it as <span class="code">musicIntro</span> scene value. (<span class="code">simpleintro</span> renderer will play the music specified in the <span class="code">musicIntro</span> key when the scene starts, so we are telling him to play a random music chosen from the <span class="code">oneOf</span> set).<br>
+						The <span class="code">fromSet</span> key ensures that the next time we will choose a random music for another scene, the previous one will not be repeated. The <span class="code">fromSet</span> key indicates a <i>not-repeating sequence</i> of elements, so you can specify multiple sequences using different values (in this case, we labeled the <i>intro music sequences</i> as <span class="code">intros</span>)<br>
+						Notice that you can assign multiple scene to a scene generator using an array instead of a single object, as in this example.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tag": [ "gearbox", "type-video" ],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"times": [ 1, 3 ],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"allowNoItems": true,<br>
+					<div class="text">
+						This second segment will be generated starting from the data get from the specified sources. The scene generator will pick <a href="#dataitem">data items</a> with both the <i>gearbox</i> and <i>type-video</i> <span class="code">tag</span> from 1 to 3 <span class="code">times</span>. That means that this segment will be added to the program only if <i>at least one <a href="#dataitem">data item</a> tagged as "gearbox" and "type-video"</i> is available.<br>
+						The entire program will not be aired if this scene hasn't enough material to be filled for its lower quota, unless you set the <span class="code">allowNoItem</span> key <i>true</i>.<br>
+						Notice that the lower quota for each program needs to be satisfied before picking more data for reaching the higher one.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"scene": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "youtube",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tag": { "pick": "tag" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": { "pick": "title" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"videoId": { "pick": "video.id" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"link": { "pick": "link" }<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "simpleintro",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "videooutro program-independentsday",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"program": "Independents Day",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"source": { "pick": "source" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"logo": "programs/independentsday/logo.png",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": { "pick": "title" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"link": { "pick": "link" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"date": { "pick": "date" }<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					<div class="text">
+						This is a scene generator quite like the previous one but, since we've used an array, we've defined a multiple scenes instead of a single one for this segment.<br>
+						The biggest difference is given by the fact that this segment is <i>related to some <a href="#dataitem">data items</a></i> (remember the previous marker? We've used the <span class="code">tag</span> key this time) so <i>each scene will be copied to the program segment for every <a href="#dataitem">data item</a> that was chosen</i>. That means that if we've picked 3 <i>type-video</i> about <i>gearbox</i> <a href="#dataitem">data items</a>, this set of scenes will be copied 3 times, giving 6 scenes in total for this section.<br>
+						What will make each copy different to the other one? You surely noticed the <span class="code">{pick:"keyname"}</span> spreaded into the scene definitions: unlike <span class="code">{pick:"randomly"}</span>, the value for the specified key of each scene will not be picked randomly but <i>picked from the selected <a href="#dataitem">data items</a></i> instead, so <span class="code">title:{pick:"title"}</span> will set the <span class="code">title</span> value for the current data element to the <span class="code">title</span> key of each copy of the scene data.<br>
+						More information about <a href="#dataitem">data items</a> keys are available to its section of this documentation.<br>
+						The sequence described by this example will produce 3 pairs of scenes: the first one will be rendered by the <span class="code">youtube</span> renderer (that will show a YouTube video) picking the <span class="code">videoId</span> from the extracted data element (which will have the <i>gearbox</i> and <i>type-video</i> tags applied as defined into the <span class="code">tag</span> key before) and the second one will be rendered by the <span class="code">simpleintro</span> renderer (that will show a short animation) which will use the video <span class="code">{pick:"title"}</span> as its displayed <span class="code">title</span>.<br>
+						<i>Et voil&agrave;.</i> A sequence of 3 YouTube videos with its nice outro.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"beforeScene": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"musicIntro": {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pick": "randomly",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fromSet": "intros",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"oneOf": [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music1.mp3"},{"audio/ogg":"music1.ogg"}},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music2.mp3"},{"audio/ogg":"music2.ogg"}},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music3.mp3"},{"audio/ogg":"music3.ogg"}},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "name": "intro", "files": {"audio/mp3":"music4.mp3"},{"audio/ogg":"music4.ogg"}}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"musicOutro": { "stop": true },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"renderer": "simpleintro",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "sectionintro program-independentsday",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"showInSchedule": 1,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"backgroundImage": { pick": "image" },<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"program": "Independents Day",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "Cinema",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"subtitle": "Videos",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"image": "programs-common/sprites/video.png",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"logo": "programs/independentsday/logo.png"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					<div class="text">
+						Each segment can have two more scene generator other than <span class="code">scene</span>: <span class="code">beforeScene</span> and <span class="code">afterScene</span>. They operate in the same way of <span class="code">scene</span> generator - the only difference between them is the fact that the scene copies defined in the <span class="code">beforeScene</span> will happen before the one defined in <span class="code">scene</span> and then the <span class="code">afterScene</span> will be appended at the end of the segment.<br>
+						Long story short, if you need to make an intro to a particular segment of your program, put the intro scene into <span class="code">beforeScene</span>. You have to put your contents into <span class="code">scene</span>. Outros will be added to the <span class="code">afterScene</span>.
+					</div>
+				</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"afterScene": { ... }<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, ...<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;]<br>
+				}
+			</div>
+			<h3 id="sourcesdescriptor">
+				The sources descriptor
+			</h3>
+			<p>
+				Both <b>JSTV</b> <a href="#channelcontents">channel contents</a> and <b>JSTVC</b> <a href="#channelstructure">channel structure</a> descriptor have to specify a set of sources from which your channel is built (or will be built) in their <span class="code">sources</span> key. This set has to be specified inline for <a href="#channelcontents">channel contents</a> files - in <a href="#channelstructure">channel structure</a> you can also specify an external file as reference.
+			</p>
+			<p>
+				While this section is display-only for <b>JSTV</b>, it is more meaningful for <b>JSTVC</b>: it contains the full feeds database and will be used first by the <span class="code">sourcesProcessor</span> in order to eventually pick a subset of them and then will be fetched in order to extract the <a href="#dataitem">data items</a> used for filling the programs defined by the <a href="#channelstructure">channel structure</a>.
+			</p>
+			<p>
+				<span class="code">sourcesProcessor</span> can decide client side a subset of feeds by its own but if you prefer a safer <i>server side</i> approach you can point to a server side produced sub-list in the <a href="#channelstructure">channel structure</a> descriptor instead of a static full database.
+			</p>
+			<div class="commented code">
+				[<br>
+				&nbsp;&nbsp;{<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;"url":"http://www.2kgames.com/news/list?format=rss",<br>
+					<div class="text">
+						This is your feed URL. While you have to provide a valid URL when specified in <b>JSTV</b>, you can use three different <i>pseudo-url</i> in <b>JSTVC</b>.
+						<ul>
+							<li>
+								<b>plain URL</b>: <span class="code">http://www.2kgames.com/news/list?format=rss</span><br>
+								A plain url is a classic RSS feed resource URL.
+							</li>
+							<li>
+								<b>meta URL</b>: <span class="code">youtube://2KGames</span>, <span class="code">facebook://197404747597</span> or <span class="code">flickr://51277380@N08</span><br>
+								<b>JSTVC</b> supports simple URL converters called <i>metaProtocol</i> which works replacing the specified resource location to an RSS resource template URL. The <span class="code">YouTube</span> metaprotocol just converts <span class="code">youtube://2KGames</span> using the <span class="code">http://gdata.youtube.com/feeds/base/users/**/uploads?alt=rss&amp;v=2</span> template before getting its resources - so will point to <span class="code">http://gdata.youtube.com/feeds/base/users/YouTube/uploads?alt=rss&amp;v=2</span>. You can find all of the supported metaprotocols in the <a href="#jstvcconfiguration">JSTVC configuration</a> section.
+							</li>
+							<li>
+								<b>Aggro URL</b>: <span class="code">twitter://CAPYGAMES</span><br>
+								Some protocols are understood by <b>Aggro</b> specific bridges, like the Twitter one that's built in. Data bridges can standardize to the RSS feed JSON format used by <b>JSTVC</b> different sources: in this case, the <span class="code">CAPYGAMES</span> Twitter user timeline will be converted by <b>Aggro</b> to JSON and served to <b>JSTVC</b>.<br>
+								Notice that <i>Aggro URL</i> will be available by Aggro only and ignored when the Google RSS/JSON proxy is used. More information is available at the <a href="#aggroconfiguration">Aggro configuration</a> section.
+							</li>
+						</ul>
+						Notice that, if it is not using the <span class="code">http</span> or <span class="code">https</span> protocols, <b>JSTVC</b> will show the <span class="code">feedUrl</span> attribute from original RSS feed - that happens mostly for <a href="#aggroconfiguration">Aggro URL</a>.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;"description":"Official News Feed of 2K Games"<br>
+					<div class="text">
+						This is your feed name. Just make it meaningful :)
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;&nbsp;&nbsp;"queue":"rss",<br>
+					<div class="text">
+						While this key is ignored in a <a href="#channelcontents">channel contents</a> descriptor, this is mandatory in a <a href="#channelstructure">channel structure</a> descriptor.<br>
+						<b>JSTVC</b> uses multiple parsing queues in order to convert feed raw data to <a href="#dataitem">data items</a>, that are used for filling your programs and for converting an <a href="#channelstructure">channel structure</a> descriptor to a <a href="#channelcontents">channel contents</a> descriptor. Each feed can be routed to a different queue depending on the feed genre: RSS feeds are usually parsed by the <span class="code">rss</span> queue, the <span class="code">flickr</span> queue can be used for... well... Flickr and image-based feeds, the <span class="code">youtube</span> queue is optimal for YouTube-rich feeds and the <span class="code">twitter</span> queue is for microblogging services that provides RSS feeds - or can be proxied by <b>Aggro</b>.<br>
+						A full list of the supported queues is available in the <a href="#jstvcconfiguration">JSTVC configuration</a> section.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;"tag":["2kgames","thirdparty","publisher","worldwide","pr","generic"],<br>
+					<div class="text">
+						In both <a href="#channelcontents">channel contents</a> and <a href="#channelstructure">channel structure</a> descriptor you have to assign a set of tags to your feeds - but it will be used in different ways. While it is used just for creating a tag cloud of your channel by <b>JSTV</b>, <b>JSTVC</b> will assign these tags to all of the <a href="#dataitem">data items</a> extracted by the referred feed.<br>
+						It's a convenient way to organize your feeds and ensure their assignment to one or multiple programs of your channel.<br>
+						Notice that these aren't the only tags assigned to the derived <a href="#dataitem">data items</a>: a number of tags is added by processing queues reading them from the original source, like <i>per-news RSS tags</i>, <i>Twitter cited users</i> and so on - these tags can be referred too in your channel structure.
+					</div>
+				</div>
+				<div class="marker closed optional">
+					&nbsp;&nbsp;&nbsp;&nbsp;"about":"http://www.2kgames.com/#/about-2k/",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"notes":"Bioshock series",<br>
+					<div class="text">
+						These attributes have the same meaning for <b>JSTV</b> and <b>JSTVC</b>:
+						<ul>
+							<li>
+								<b>about</b> is a link to the source information page.
+							</li>
+							<li>
+								<b>notes</b> is a text-only descriptive text that can give some hints about the cited source - just for avoiding the classic TL;DR of about pages.
+							</li>
+						</ul>
+						Notice that <b>JSTVC</b> will show the <span class="code">link</span> attribute from original RSS feed if <span class="code">about</span> link is not specified.
+					</div>
+				</div>&nbsp;&nbsp;}, ...
+			</div>
+			<h3 id="dataitem">
+				The data item
+			</h3>
+			<p>
+				<i>Data items</i> are extracted by <a href="#jstvcconfiguration">JSTVC</a> from the specified <a href="#sourcesdescriptor">sources</a> defined into its <a href="#channelstructure">channel structure</a> file. Each feed passes through a processing <span class="code">queue</span> defined for each feed and crawled for information.
+			</p>
+			<p>
+				Data items can be referenced by program segments of the <a href="#channelstructure">channel structure</a> descriptor via tags - the data items tags are both picked from the <a href="#sourcesdescriptor">sources descriptor</a> and the specific resource. You have to use the <span class="code">{pick:"keyname"}</span> object in order to link scene data to data items.
+			</p>
+			<div class="commented code">
+				{<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;title: "Item title",<br>
+					&nbsp;&nbsp;content: "Original item content (tags stripped)",<br>
+					&nbsp;&nbsp;simpleContent: "Original content strippe...",<br>
+					<div class="text">
+						Textual data of the data item are stored here.
+						<ul>
+							<li>
+								<b>title</b> contains the data item title. It can be a video name, a news heading etc.
+							</li>
+							<li>
+								<b>content</b> is a text-only version of the data item, that can be a tweet or body news, a video description etc.
+							</li>
+							<li>
+								<b>simpleContent</b> contains a shortened version of the content
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;sourceurl: "http://source.com",<br>
+					&nbsp;&nbsp;source: "Your source description",<br>
+					<div class="text">
+						These are copied from original source: <span class="code">sourceurl</span> is the source url and <span class="source">source</span> is its description, as defined in <a href="#sourcesdescriptor">source descriptor</a>.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;tag: ["type-video", "tagFromSource","tagFromFeed" ...],<br>
+					<div class="text">
+						These tags are both picked from the <span class="code">tag</span> key of the feed, applied by the processing queues and extracted from source metadata. The <span class="code">type-video</span> tag is applied by the queue once is detected as suitable for <span class="code">video</span>, <span class="code">image</span>, <span class="code">news</span> or <span class="code">tweet</span>. A <span class="code">tweet</span> is meant as <i>short news</i> - and extracted from Twitter too.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;link: "http://relatedlink.com",<br>
+					<div class="text">
+						This contains a specific URL if referenced by the extracted data item. For <span class="code">type-video</span> usually contains the original YouTube page of the video, for <span class="code">type-tweet</span> points to the related Twitter page and so on.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;video: { id: "YouTube video id"},<br>
+					<div class="text">
+						For <span class="code">type-video</span> items you can find the video id here.<br>
+						Notice that for now just YouTube videos are supported and can be referenced with the <span class="code">{pick:"video.id"}</span> in your <a href="#channelstructure">channel structure</a> descriptor.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;image: "http://relatedImage.jpg",<br>
+					<div class="text">
+						While this key is quite crucial (and obvious) for <span class="code">type-image</span> data items, can be valued for other types of items, like <span class="code">type-news</span> and, more frequently, <span class="code">type-video</span>.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;author: "Content author",<br>
+					<div class="text">
+						A textual reference to the original author of the data item.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;date: "13 Feb 2013"<br>
+					<div class="text">
+						A human readable shortened version of the publication date of the data item.
+					</div>
+				</div>}<br>
+			</div>
+			<h3 id="jstvconfiguration">
+				The JSTV configuration
+			</h3>
+			<p>
+				<b>JSTV</b> is the main player. It reads a <a class="#channelcontents">channel contents</a> descriptor, loads its resources and starts playback. Since its limited functionality, its configuration is quite straightforward and - mostly - doesn't need any customization - user can configure the player from the menu button from the popup status bar showed, hovering or tapping on the lower part of the player.
+			</p>
+			<div class="commented code">
+				var JSTV={<br>
+				&nbsp;&nbsp;configuration: {<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Project name - shown on menu screen */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;name: "JSTV",<br>
+					<div class="text">
+						The project name is displayed on the bottom right of the menu screen as link.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Project version - shown on menu screen */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;version: "0.1b",<br>
+					<div class="text">
+						The project version - as string.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Project URL - shown on menu screen */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;url: "http://www.kesiev.com/gamecoratv/index-jstv.html",<br>
+					<div class="text">
+						This link is available at the menu screen, on the bottom right, clicking on the project <span class="code">name</span>.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Disclaimer - is shown in every JSTV screen */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;disclaimer: "JSTV is still in beta. Video playback could be limited by your browser vendor and/or video publisher. Medias are owned by their original publisher and not endorsed with this site."<br>
+					&nbsp;&nbsp;},<br>
+					<div class="text">
+						A disclaimer text that's displayed both in loading screens, idle screen and menus.
+					</div>
+				</div>&nbsp;&nbsp;...
+			</div>
+			<h3 id="jstvcconfiguration">
+				The JSTVC configuration
+			</h3>
+			<p>
+				<b>JSTVC</b> can fetch multiple feeds, extract data and merge them in programs, starting from a <a href="#channelstructure">channel structure</a> descriptor. Since it is a <i>quite complex</i> <a href="#channelstructure">channel structure</a> to <a href="#channelcontents">channel contents</a> descriptor converter, you don't have to use it for your channel - but you have to define your scene sequences by yourself.
+			</p>
+			<p>
+				<b>JSTVC</b> configuration is splitted in two: the <span class="code">reporter</span> configuration defines the collecting phase behaviour and the <span class="code">finalizer</span> configuration defines the <a href="#dataitem">data item</a> merging phase. Luckly, the <span class="code">finalizer</span> configuration is quite simple. :)
+			</p>
+			<p>
+				The reporter phase configuration:
+			</p>
+			<div class="commented code">
+				reporter: {<br>
+				&nbsp;&nbsp;configuration: {<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Enables logging. Produced channels will have additional data of unused data/sources */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;logging: false,<br>
+					<div class="text">
+						The <span class="code">reporer</span> module will fetch <a href="#sourcesdescriptor">data sources</a> in order to extract <a href="#dataitem">data items</a>. It's possible to enable logging: it will report empty or dead sources, unused URLs and other relevant notices triggered by the extraction phase.<br>
+						All of the logs will be reported into the generated <a href="#channelcontents">channel contents</a> descriptor under the <span class="code">logs</span> key and parsed by the <span class="code">getStats</span> and <span class="code">getStatsData</span> of the player object.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Number of feeds requested for bundle calls - only for URL managers that can handle URL bundles */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;maxBundleSize: 10, //-1 for unlimited<br>
+					<div class="text">
+						<b>Aggro</b> supports multiple feeds download in a single calls. This attribute decides how many feeds can be requested by <b>JSTVC</b> in a single call.<br>
+						For more information about bundles, have a look to <a href="#aggroconfiguration">Aggro configuration</a> section.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* A list of servers that can handle sources data */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;urlManagers: [<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Aggro histances can be used for retriving data - Remove this block if you don't want to host an Aggro server */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label: "Local Aggro Server",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protocols: ["http", "https", "twitter"],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contacts: {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"bundle": "aggro/?mode=bundle&amp;%RANDOM%",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ajax": "aggro/?q=%FEED%&amp;%RANDOM%",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"jsonp": "aggro/?q=%FEED%&amp;v=1.0&amp;callback=**&amp;%RANDOM%"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;/* JSTVC is also compatible with the Google's feed-to-JSONP service. Can be used instead of Aggro for some protocols */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label: "Google RSS Proxy",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protocols: ["http", "https"],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contacts: {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"jsonp": "http://ajax.googleapis.com/ajax/services/feed/load?&amp;q=%FEED%&amp;v=1.0&amp;callback=**"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}],<br>
+					<div class="text">
+						<b>JSTVC</b> supports multiple servers and protocols during its reporting phase - each server is called <i>URL manager</i>. Each URL manager can be defined by:
+						<ul>
+							<li>
+								<b>label</b>: A textual label defining the URL manager
+							</li>
+							<li>
+								<b>protocols</b>: A list of <a href="#aggroconfiguration">Aggro protocols</a> and standard protocols supported by the specified manager
+							</li>
+							<li>
+								<b>contacts</b>: A list of contacting methods and URLs linked to the specified manager.<br>
+								The key can be <span class="code">bundle</span> (for Aggro bundles), <span class="code">ajax</span> (for single calls per feed via AJAX post calls) or <span class="code">jsonp</span> (for single calls per feed via JSONP calls). Each protocol has its pros and cons: <span class="code">bundle</span> works with Aggro only and can process multiple feeds at once, speeding up the downloading process, <span class="code">ajax</span> is more compatible, generates less traffic and is more secure than <span class="code">JSONP</span> calls but doesn't work cross-domain <a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">out-of-the-box</a> and <span class="code">JSONP</span> works well cross-domain but are less secure. <b>Aggro</b> supports all of them and Google RSS/JSONP service supports JSONP only.<br>
+								The value is the related URL, that can use two placeholders: <span class="code">%FEED%</span> that's the feed URL <b>JSTVC</b> wants to download and <span class="code">%RANDOM%</span> that is a random number that can be used for breaking cache.<br>
+								For each feed to download, <b>JSTVC</b> will pick <i>the first URL manager that handles the current protocol</i>. If available, it will find the best method for contacting it - starting from from <span class="code">bundle</span>, then <span class="code">ajax</span> and <span class="code">jsonp</span> at last. If no combination of protocol/method is available, the feed is skipped.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* A list of meta-protocols. Will be converted to other URLs pointing standardad RSS */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;metaProtocols: {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facebook: "https://www.facebook.com/feeds/page.php?id=**&amp;format=rss20",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube: "http://gdata.youtube.com/feeds/base/users/**/uploads?alt=rss&amp;v=2",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flickr: "http://api.flickr.com/services/feeds/photos_public.gne?id=**&amp;lang=it-it&amp;format=rss_200",<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tumblr: "http://**.tumblr.com/rss"<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					<div class="text">
+						<span class="code">metaProtocols</span> are simple URL converters: if the <span class="code">youtube://capybaragames</span> feed is requested, the related <span class="code">http://gdata.youtube.com/feeds/base/users/capybaragames/uploads?alt=rss&amp;v=2</span> is downloaded instead.<br>
+						Notice that you can add your own <span class="code">metaProtocols</span> but remember to mirror them into the <a href="#aggroconfiguration">Aggro configuration</a> in order to make them working.
+					</div>
+				</div>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;/* Used for breaking cached data */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;random: Math.floor(Math.random() * 10000)<br>
+					<div class="text">
+						A random number, used as value for the <span class="code">%RANDOM%</span> placeholder used in <span class="code">urlManagers</span> definitions.
+					</div>
+				</div>&nbsp;&nbsp;},<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;/* Available processing queues usable for sources */<br>
+					&nbsp;&nbsp;queues: {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;tweets: ["getFeed", "parseTweets", "crawl", "finalize"],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;rss: ["getFeed", "parseNews", "crawl", "finalize"],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;youtube: ["getFeed", "parseYoutube", "uniquize", "findImage", "finalize"],<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;flickr: ["getFeed", "parseNews", "labelAsImage", "findImage", "finalize"]<br>
+					&nbsp;&nbsp;},
+					<div class="text">
+						<span class="code">queues</span> are used in <a href="#sourcesdescriptor">source descriptor</a> in order to define which series of parsing procedures the feed has to pass for extracting its <a href="#dataitem">data items</a>.<br>
+						These queues are pointing to functions defined in <span class="code">JSTVC.reporter.fetchers</span>.
+					</div>
+				</div>
+			</div>
+			<p>
+				The finalizer phase configuration:
+			</p>
+			<div class="commented code">
+				finalizer: {<br>
+				<div class="marker closed">
+					&nbsp;&nbsp;&nbsp;&nbsp;configuration: {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Enables logging. Produced channels will have additional data of unused programs/assets */<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging: false<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+					<div class="text">
+						After extracting <a href="#dataitem">data items</a> from the specified feeds, <b>JSTVC</b> will merge them in programs during the <span class="code">finalizer</span> phase.<br>
+						Finalization phase can happen via <a href="http://www.w3.org/TR/workers/">HTML5 Web Workers</a> where available, detect unused <a href="#dataitem">data items</a> and check for repeated material, in order to help you filtering similar feeds in your database.<br>
+						This information can be enabled via this flag: all of the logs will be reported into the generated <a href="#channelcontents">channel contents</a> descriptor under the <span class="code">logs</span> key and parsed by the <span class="code">getStats</span> and <span class="code">getStatsData</span> of the player object.
+					</div>
+				</div>
+			</div>
+			<h3 id="aggroconfiguration">
+				The Aggro configuration
+			</h3>
+			<p>
+				<b>Aggro</b> is an RSS proxy and standardizator inspired by the Google RSS/JSONP proxy. It acts as an <a href="#jstvcconfiguration">URL Handler</a> and features all of the protocols supported by <b>JSTVC</b>.
+			</p>
+			<p>
+				<b>Aggro</b> was built just for doing its work and is not meant for offering always up-to-date data - typical of RSS reader aggregators. It was designed for working in limited server configurability and low resources consumption - its story is long and sad: it was built after <a href="http://googleblog.blogspot.it/2013/03/a-second-spring-of-cleaning.html">Google shocking decision to close Reader</a> and <a href="https://dev.twitter.com/discussions/11582">Twitter decision to kill User Timeline RSS feeds</a>, both happened during JSTV development. That's why is called <i>Aggro</i> - <i>it aggregates due to rage</i>.
+			</p>
+			<p>
+				Since is quite minimal, <b>Aggro</b> configuration is contained in his <span class="code">index.php</span> file as a sequence of setters calls.
+			</p>
+			<div class="commented code">
+				<div class="marker closed">
+					AggroVerifier::setCheckReferrer(false); // Check referrer at start<br>
+					<div class="text">
+						<b>Aggro</b> can check referrer before answering to calls. It will check if referrer domain and local are matching.
+					</div>
+				</div>
+				<div class="marker closed">
+					AggroOut::setGZip(true); // Enables/disables GZIP compression of any output.<br>
+					AggroOut::setGZipThreshold(2048); // Don't compress data smaller than this threshold<br>
+					<div class="text">
+						<b>Aggro</b> answers can be gZipped when client is supporting them. GZip can be enabled depending on the answer size, in order to avoid meaningless compressions.
+					</div>
+				</div>
+				<div class="marker closed">
+					AggroCache::setCachePath("cache/"); // Cache folder<br>
+					AggroCache::setSalt("aggrocache"); // URL hashes used for caching will be salted with this string<br>
+					AggroCache::setUserAgent("Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6"); // Downloader user agent<br>
+					AggroCache::setPersistentCache(false); // Never refresh the cached data<br>
+					AggroCache::setCacheLife(60*60*24); // Life of cached data<br>
+					AggroCache::setDownloadedItemsLimitPerSession(3); // Maximum number of external calls for session. -1 for no limit, 0 for no downloads<br>
+					AggroCache::setSessionDuration(60*60); // Duration of a user download session.<br>
+					<div class="text">
+						Most of the files handled by <b>Aggro</b> are cached into the <span class="code">setCachePath</span> defined directory.<br>
+						Resources are referenced via hashes that can be salted with the <span class="code">setSalt</span> value avoiding direct linking.<br>
+						AggroCache can also download files in cache directly, defining a user agent in order to get the right answers. <span class="code">setUserAgent</span> can change it.<br>
+						Resources in cache can expire, checking their <i>last modified date</i>. If you want to disable this behaviour, <span class="code">setPersistentCache</span> to <span class="code">true</span>.<br>
+						A resource is considered expired when is <span class="code">setCacheLife</span> seconds old. An expired resource will be updated the next time is requested.<br>
+						It's possible to limit the number of resources updated by each user with <span class="code">setDownloadedItemsLimitPerSession</span>. Users are verified via PHP session.<br>
+						Downloadable items are resetted when the session expires. It's also possible to reduce session life with <span class="code">setSessionDuration</span>.<br>
+					</div>
+				</div>
+				<div class="marker closed">
+					AggroRSS::setEntryCount(4); // Number of extracted entries<br>
+					<div class="text">
+						RSS feeds are downloaded and cache by <b>Aggro</b> depending on <span class="code">AggroCache</span> settings. Once downloaded, it's possible to send to <b>JSTV</b> clients a limited amount of items via <span class="code">setEntryCount</span>.
+					</div>
+				</div>
+				<div class="marker closed">
+					AggroTwitter::setEntryCount(4); // Number of extracted entries<br>
+					<div class="text">
+						In the same way of RSS, Twitter timelines can be limited to a defined amount of posts via <span class="code">setEntryCount</span>
+					</div>
+				</div>
+				<div class="marker closed">
+					// Comment these lines in order to disable Twitter support<br>
+					AggroTwitter::setOAuthAccessToken("123456789-a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5");<br>
+					AggroTwitter::setOAuthAccessTokenSecret("a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5");<br>
+					AggroTwitter::setConsumerKey("a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5");<br>
+					AggroTwitter::setConsumerSecret("a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5a1b2c3d4e5");<br>
+					<div class="text">
+						In order to make Twitter proxy to work, you have to get your personal <span class="code">OAuthAccessToken</span>, <span class="code">OAuthAccessTokenSecret</span>, <span class="code">ConsumerKey</span> and <span class="code">ConsumerSecret</span> from <a href="https://dev.twitter.com/">Twitter</a>.
+					</div>
+				</div>
+				<div class="marker closed">
+					AggroJSTV::setVerifySources(true); // Check the sources listed into the specified sources path<br>
+					AggroJSTV::addSourcesPath("../../gamecora/sources/"); // Folder with authorized feeds (JSON)<br>
+					AggroJSTV::setMaxBundleSize(15); // Maximum items per bundle (-1 for unlimited)<br>
+					AggroJSTV::setMaxRequestSize(256*15); // Maximum request allowed to call JSTV - if you can't configure it from php.ini (-1 for unlimited)<br>
+					<div class="text">
+						<b>Aggro</b> can validate <b>JSTVC</b> requests in different ways.<br>
+						It's possible to check that the requested feeds are coming from your <a href="#sourcesdescriptor">sources descriptors</a> and return only authorized contents - this can be enabled via <span class="code">setVeryfySources</span>.<br>
+						Trusted <a href="#sourcesdescriptor">sources descriptors</a> have to be gathered in a single folder set by <span class="code">addSourcesPath</span>.<br>
+						<b>Aggro</b> bundle support can be limited server side in size via <span class="code">setMaxBundleSize</span> - just remember to set your <a href="#jstvcconfiguration">JSTVC configuration</a> key <span class="code">maxBundleSize</span> accordingly.<br>
+						It's also possible to answer to requests - both bundles and single JSON calls - that are sending a certain amount of data. Maximum threshold is both set in PHP.ini and checkable via <span class="code">setMaxRequestSize</span>.
+					</div>
+				</div>
+				<div class="marker closed">
+					// Metaprotocols just convert URLs to standard RSS feeds, like in JSTVC.<br>
+					AggroJSTV::addMetaProtocol("facebook","https://www.facebook.com/feeds/page.php?id=**&amp;format=rss20");<br>
+					AggroJSTV::addMetaProtocol("youtube","http://gdata.youtube.com/feeds/base/users/**/uploads?alt=rss&amp;v=2");<br>
+					AggroJSTV::addMetaProtocol("flickr","http://api.flickr.com/services/feeds/photos_public.gne?id=**&amp;lang=it-it&amp;format=rss_200");<br>
+					AggroJSTV::addMetaProtocol("tumblr","http://**.tumblr.com/rss");<br>
+					<div class="text">
+						You have to specify the same <i>metaprotocols</i> you've set on <a href="#jstvcconfiguration">JSTVC configuration</a> in the related <b>Aggro</b> server too in order to correctly check their presence in your <a href="#sourcesdescriptor">sources descriptors</a>.
+					</div>
+				</div>
+				<div class="marker closed">
+					// These are real protocols and must be linked to their handlers<br>
+					AggroJSTV::setProtocol("twitter","AggroTwitter");<br>
+					AggroJSTV::setProtocol("http","AggroRSS");<br>
+					AggroJSTV::setProtocol("https","AggroRSS");<br>
+					<div class="text">
+						You have to link supported protocols to <b>Aggro</b> parsers here. Mainly you have to specify the same protocols you've set in <a href="#jstvcconfiguration">JSTVC configuration</a> <span class="code">protocols</span> key of the related URL handler.
+					</div>
+				</div>
+				<div class="marker closed">
+					// Rename these two lines to disable AggroAdmin<br>
+					AggroAdmin::setUsername("admin"); // Username for admin<br>
+					AggroAdmin::setPassword("1a1dc91c907325c69271ddf0c944bc72"); // md5("pass") - replace with your own!
+					<div class="text">
+						<b>Aggro</b> also offers a little backend that can help you checking how your cache is going and update it manually. Just specify your <span class="code">Usernme</span> and MD5 <span class="code">Password</span> to enable it. If you want to play it safe, comment both and the backend will be disabled.
+					</div>
+				</div>
+			</div>
+			<h3 id="download">
+				Download
+			</h3>
+			<p>
+				<b>JSTV</b>, <b>JSTVC</b> and <b>Aggro</b> are MIT/GPL2 licensed and its code is opensource - as its demo channel <a href="index.html">Gamecora TV</a> and its assets.
+			</p>
+			<p>
+				Sources will be available on GitHub... well... if someone will be interested on some kind of collaboraton - both for Gamecora TV or JSTV. Meanwhile you can download the whole thing here.
+			</p>
+		</div>
+		<div class="dark">
+			<div class="block">
+				<a href="JSTV-0.1b.zip">Download JSTV, JSTVC, Aggro and Gamecora TV 0.1b here</a>
+			</div>
+		</div>
+		<div class="block">
+			<p>
+				Looking for original assets (full lenght musics, vectors, scripts etc.)? <a href="JSTV-0.1b-originalassets.zip">Download Gamecora TV 0.1 original assets here</a>.
+			</b>
+			<p>
+				Suggestions? Comments? Rage? I'm <a target="_blank" href="http://www.kesiev.com">KesieV</a> and you can contact me <a href="mailto:k34e3208s0234i234e0308v@hot123mail.com">here</a> (strip the numbers) or on <a target="_blank" href="http://www.twitter.com/KesieV">Twitter</a>.
+			</p>
+			<h3>
+				Credits and Kudos
+			</h3>
+			<p>
+				<b>JSTV</b>, the core of <b>Gamecora TV</b> was coded by me, <a target="_blank" href="http://www.kesiev.com">KesieV</a>, with the valuable help of <a target="_blank" href="http://www.sublimetext.com/">Sublime Text</a>, but it's quite obvious that it's just a square with some knobs without its database, intro and outro creativity, logos and site review. Well, everything that's not coding was made by <a target="_blank" href="http://something-white.blogspot.it">Bianca</a>, my girlfriend, with the help of <a target="_blank" href="http://inkscape.org/">Inkscape</a>, <a target="_blank" href="http://www.gimp.org/">Gimp</a>, <a target="_blank" href="http://www.libreoffice.org/download">LibreOffice</a> and a huge amount of effort and time. And, whenever we could work as a duo, everything should have some <i>creepy Daffy-Duck-Style beatbox</i> as background music without...
+			<p>
+			<ul>
+				<li><a href="mailto:arnaldobrenna@hotmail.it">IMHO</a> by <b>Arnaldo Brenna</b></li>
+				<li><a href="http://www.lcp.c64.org/files/2003-LCP/compo/gameboy/">Statoil</a> by <b>Zabutom</b></li>
+				<li><a href="http://mp3.tom7.org/t7es/">If you antietam, join 'em</a> by <b>Tom 7 Entertainment System</b></li>
+				<li><a href="http://freemusicarchive.org/music/Plurabelle/Money_Blood_and_Light/">Ropes</a> by <b>Plurabelle</b></li>
+				<li><a href="http://freemusicarchive.org/music/Plurabelle/Money_Blood_and_Light/">Athens OH</a> by <b>Plurabelle</b></li>
+				<li><a href="http://freemusicarchive.org/music/Foniqz/D2_EP/">Spectrum (Subdiffusion Mix)</a> by <b>Foniqz</b></li>
+				<li><a href="http://freemusicarchive.org/music/Miro_Belle/">In Fielder</a> by <b>Miro Belle</b></li>
+			</p>
+			<p>
+				Thanks to <b>Giuseppe and Giovanni La Scala</b>, <b>Gabriele Sala</b>, <b>Stefano Fioretto</b> and <b>Alessio Gatti</b> that shared their gaming passion with us making the <b>Gamecora TV</b> idea better... without knowing!
+			</p>
+			<h3 id="onemorething">
+				One more thing
+			</h3>
+			<p>
+				What you can do with <b>JSTV</b>? With some coding skills, it's up to you: it can display real-time notifies in a station or in a shop, provide e-learning platforms with interactive videos, broadcast self-made indie music groups videos, create your own digital photo frame and so on.
+			</p>
+			<p>
+				While scene sequences are preloaded, single scenes are in Javascript so they can get their data in realtime before being shown (have a look to the <span class="code">prepare</span> phase on scene renderers), in order to display fresh data despite the playlist is the same. You can make <i>semi-interactive</i> quizzes, in which you can ask a question and wait a while for an answer: if the user click one of the choices, he will earn (or lose) points or - if your video is in kiosk mode - will just see the right answer blinking green. You can easily add a TOC on the first scene a-la <i>Bluray</i> and create your own channel straight from tagged WordPress posts - or a custom backend.
+			</p>
+			<p>
+				Really. <b>JSTV</b> is a Javascript scene player that can be scripted. Power comes just from your imagination - as ever.
+			</p>
+		</div>
+		<div class="block footer">
+			<b>Gamecora TV</b> and <b>JSTV</b> &copy; 2013 by <a target="_blank" href="http://www.kesiev.com">KesieV</a>. Show design and graphics by <b>Bianca Brenna</b>. Fonts are under free license and comes from <a target="_blank" href="http://www.fontsquirrel.com/">Font Squirrel</a>.
+		</div><script type="text/javascript">
+			
+			function toggle(node){
+				var mode;
+				var a=node.childNodes;
+				for (var i=0;i<a.length;i++) {
+					if (mode == undefined && a[i].className && a[i].className.match(/marker/))
+						mode=!a[i].className.match(/closed/);
+					if (a[i].className && a[i].className.match(/marker/))
+						if (mode && !a[i].className.match(/closed/))  a[i].className+=" closed"; else
+						if (!mode && a[i].className.match(/closed/)) a[i].className=a[i].className.replace(" closed","");
+				}
+			}
+
+			function toggleall(){
+				var mode;
+				var a=document.getElementsByClassName("marker");
+				for (var i=0;i<a.length;i++) {
+					if (mode == undefined) mode=!a[i].className.match(/closed/);
+					if (mode && !a[i].className.match(/closed/))  a[i].className+=" closed"; else
+					if (!mode && a[i].className.match(/closed/)) a[i].className=a[i].className.replace(" closed","");
+				}
+			}
+
+			function onl(){
+				var alltogglerset=false;
+				var sect=document.getElementsByClassName("commented");
+				for (var i=0;i<sect.length;i++) {
+					var a=sect[i];
+					var diz=document.createElement("div");
+					diz.className="code-header";
+					diz.innerHTML="Yellow sections are mandatory and grey ones are optional. Click a section to show a brief description. ";
+					var toggler=document.createElement("span");
+					toggler.innerHTML="Toggle this group";
+					toggler.className="toggler";
+					toggler._subj=sect[i];
+					toggler.onclick=function(){toggle(this._subj)};
+					diz.appendChild(toggler);
+					if (!alltogglerset) {
+						var spc=document.createElement("span");
+						spc.innerHTML=" ";
+						diz.appendChild(spc);
+						var alltoggler=document.createElement("span");
+						alltoggler.innerHTML="Toggle all";
+						alltoggler.className="toggler";
+						alltoggler._subj=sect[i];
+						alltoggler.onclick=function(){toggleall()};
+						diz.appendChild(alltoggler);
+						alltogglerset=true;
+					}
+					a.parentNode.insertBefore(diz,a);
+				}
+
+				var marks=document.getElementsByClassName("marker");
+				for (var i=0;i<marks.length;i++)
+					marks[i].onclick=function(){
+						if (this.className.match(/closed/))
+							this.className=this.className.replace(" closed","");
+					}
+
+			}
+		</script>
+	</body>
+</html>

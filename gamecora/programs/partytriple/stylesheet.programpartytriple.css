@@ -1,0 +1,203 @@
+/* START */
+.simpleintro.programintro.program-partytriple .logo {
+	display: none;
+}
+
+.simpleintro.programintro.program-partytriple .main.program {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 290px;
+	font-size: 60px;
+	color: #020;
+	font-family: SpinCycleOTRegular;
+	text-shadow: 0 0 5px #fff;
+	font-weight: normal;
+}
+
+.simpleintro.programintro.program-partytriple .main.description {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	top: 340px;
+	font-size: 20px;
+	color: #020;
+	font-family: SpinCycleOTRegular;
+	text-shadow: 0 0 5px #fff;
+}
+
+.simpleintro.programintro.program-partytriple .main.sprite-0 {
+	background-color: #d72cd1;
+}
+
+.simpleintro.programintro.program-partytriple .main.sprite-1 {
+	display: block;
+	background-image: url(sprites/partytriplestars.png);
+	width: 1200px;
+	height: 300px;
+	top: 0px;
+	left: 0px;
+}
+
+.simpleintro.programintro.program-partytriple .main.sprite-2 {
+	display: block;
+	background-image: url(sprites/partytriplestars.png);
+	width: 600px;
+	height: 150px;
+	top: 50px;
+	left: 320px;
+}
+
+.simpleintro.programintro.program-partytriple .main.sprite-3 {
+	display: block;
+	background-image: url(sprites/partytriple.png);
+	width: 300px;
+	height: 300px;
+	top: -300px;
+	left: 170px;
+}
+
+.simpleintro.programintro.program-partytriple .main.sprite-4 {
+	display: block;
+	background-image: url(sprites/partytriplestars.png);
+	width: 400px;
+	height: 100px;
+	top: 100px;
+	left: 380px;
+}
+
+.simpleintro.programintro.program-partytriple .main.sprite-6 {
+	display: block;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #d72cd1;
+	z-index: 900;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* ONAIR */
+.simpleintro.programintro.program-partytriple.onair .main.program {
+	-webkit-transition: all 2s ease 3s;
+	-moz-transition: all 2s ease 3s;
+	-o-transition: all 2s ease 3s;
+	-ms-transition: all 2s ease 3s;
+	transition: all 2s ease 3s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 270px;
+}
+
+.simpleintro.programintro.program-partytriple.onair .main.description {
+	-webkit-transition: all 2s ease 3.5s;
+	-moz-transition: all 2s ease 3.5s;
+	-o-transition: all 2s ease 3.5s;
+	-ms-transition: all 2s ease 3.5s;
+	transition: all 2s ease 3.5s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 320px;
+}
+
+.simpleintro.programintro.program-partytriple.onair .main.sprite-1 {
+	-webkit-transition: all 8s linear 0s;
+	-moz-transition: all 8s linear 0s;
+	-o-transition: all 8s linear 0s;
+	-ms-transition: all 8s linear 0s;
+	transition: all 8s linear 0s;
+	top: 70px;
+	left: -560px;
+}
+
+.simpleintro.programintro.program-partytriple.onair .main.sprite-2 {
+	top: 100px;
+
+	-webkit-transition: all 18s linear 0s;
+	-moz-transition: all 18s linear 0s;
+	-o-transition: all 18s linear 0s;
+	-ms-transition: all 18s linear 0s;
+	transition: all 18s linear 0s;
+	left: -560px;
+}
+
+.simpleintro.programintro.program-partytriple.onair .main.sprite-3 {
+	top: 100px;
+
+	-webkit-transition: all 5s ease 1s;
+	-moz-transition: all 5s ease 1s;
+	-o-transition: all 5s ease 1s;
+	-ms-transition: all 5s ease 1s;
+	transition: all 5s ease 1s;
+	top: -10px;
+}
+
+.simpleintro.programintro.program-partytriple.onair .main.sprite-4 {
+	-webkit-transition: all 18s linear 0s;
+	-moz-transition: all 18s linear 0s;
+	-o-transition: all 18s linear 0s;
+	-ms-transition: all 18s linear 0s;
+	transition: all 18s linear 0s;
+	top: 130px;
+	left: -560px;
+}
+
+/* CLOSING */
+.simpleintro.programintro.program-partytriple.closing .main.sprite-6 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* SECTIONINTROS */
+.simpleintro.sectionintro.program-partytriple .background {
+	background-color: #b737b2;
+}
+
+.simpleintro.sectionintro.program-partytriple .main.program {
+	color: #763474;
+	bottom: -3px;
+}
+
+.simpleintro.sectionintro.program-partytriple.onair .main.program {
+	bottom: -16px;
+}
+
+.simpleintro.sectionintro.program-partytriple.closing .main.program {
+	bottom: -3px;
+}
+
+.simpleintro.sectionintro.program-partytriple .type-text {
+	font-family: SpinCycleOTRegular;
+}
+
+/* SLIDESHOW */
+
+.textstream.slideshow.program-partytriple .streamitem .item.title,.textstream.slideshow.program-partytriple .streamitem .item.source {
+	color: #763474;
+}
+
+/* ALL TEXTSTREAM */
+.textstream.program-partytriple .main.sprite-0 {
+	background-color: #763474;
+}
+
+.textstream.program-partytriple .main.program {
+	color: #763474;
+	font-family: SpinCycleOTRegular;
+	bottom: -3px;
+}
+
+/* LOADER */
+.onload-programpartytriple {
+	z-index: 123321;
+}
