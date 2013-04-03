@@ -55,7 +55,7 @@
 	AggroAdmin::setUsername("admin"); // Username for admin
 	AggroAdmin::setPassword("1a1dc91c907325c69271ddf0c944bc72"); // md5("pass") - replace with your own!
 
-	// Put your development configuration settings here - is not committed to GIT
+	// Put your development configuration overrides here - is not committed to GIT
 	if (is_file("index-dev.php")) include_once("index-dev.php");
 
 	/* INITIALIZE */
