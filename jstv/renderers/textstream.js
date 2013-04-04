@@ -110,7 +110,7 @@ JSTV.rendererLoaded("textstream",{
 			var ci;
 			for (var i=0;i<scene.items.length;i++) {
 				ci=scene.divitems[i];
-				if (i==scene.currentItem-1) ci.className=ci.className.replace(/ previous/,"")+" hidden";
+				if (i==scene.currentItem-1) ci.className=ci.className.replace(/ previous/,"")+" past";
 				if (i==scene.currentItem) ci.className=ci.className.replace(/ current/,"")+" previous";
 				if (i==scene.currentItem+1) ci.className=ci.className.replace(/ next/,"").replace(/ hidden/,"")+" current";
 				if (i==scene.currentItem+2) ci.className=ci.className.replace(/ hidden/,"")+" next";

@@ -128,8 +128,9 @@
 /*
  * RSS FEED
  */
+ 
 /* DEFAULT */
-.textstream.rssfeed .hidden {
+.textstream.rssfeed .streamitem.hidden, .textstream.rssfeed .streamitem.past {
 	display: none;
 }
 
@@ -291,12 +292,9 @@
  * TWEET
  */
 
-.textstream.tweet .type-image { z-index: 101; }
+.textstream.tweet .image { z-index: 101; }
 
 /* DEFAULT */
-.textstream.tweet .streamitem.hidden {
-	display: none;
-}
 
 .textstream.tweet .streamitem .item.sprite-5 {
 	-webkit-transition: all 1s ease 0s;
@@ -442,7 +440,34 @@
 	color: #555;
 }
 
+/* HIDDEN */
+
+.textstream.tweet .streamitem.hidden .item.image {
+	display: none;
+}
+
+.textstream.tweet .streamitem.hidden .item.date {
+	display: none;
+}
+
+.textstream.tweet .streamitem.hidden .item.sprite-5 {
+	top: 630px;
+}
+
+.textstream.tweet .streamitem.hidden .item.title {
+	top: 640px;
+}
+
+.textstream.tweet .streamitem.hidden .item.text {
+	top: 675px;
+}
+
+.textstream.tweet .streamitem.hidden .item.source {
+	top: 740px;
+}
+
 /* NEXT */
+
 .textstream.tweet .streamitem.next .item.sprite-5 {
 	top: 330px;
 }
@@ -504,11 +529,17 @@
 	transform: scale(1,0);
 }
 
+/* PAST */
+
+.textstream.tweet .streamitem.past {
+	display: none;
+}
+
 /*
  * SLIDESHOW
  */
 /* DEFAULT */
-.textstream.slideshow .streamitem.hidden {
+.textstream.slideshow .streamitem.hidden, .textstream.slideshow .streamitem.past  {
 	display: none;
 }
 
