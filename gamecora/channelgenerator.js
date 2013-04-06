@@ -384,6 +384,7 @@ function makePeopleProgram(programname) {
 					renderer:"simpleintro",
 					type:"sectionintro program-"+modifier,
 					musicIntro:musicintros,
+					musicOutro:{stop:true},
 					showInSchedule:1,
 					backgroundImage:{pick:"image"},
 					program:title,
