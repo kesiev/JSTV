@@ -15,7 +15,15 @@ Helping Gamecora TV
 -------------------
 
 Do you want to suggest a new newsfeed, correct typos, suggest a new tagging structure for the [official hosted version][gamecoratv] of Gamecora TV?
-Just branch JSTV, do some changes to the ``gamecora/sources/all.js`` and propose your commit for the main trunk.
+
+- Branch JSTV
+- Update the ``jstv-assets/gamecora/sources/feeds.ods`` using LibreOffice
+- Copy the first 5 columns and paste them into ``jstv-assets/gamecora/sources/feeds.tsv``. They should appear as tab-separated values.
+- Run ``jstv-assets/gamecora/sources/feeds.sh``
+- Commit everything
+- Propose your patch
+
+There aren't so many contributions for now, so that should be enough for an official integrated way. You can also propose new feeds or suggestions via mail or GitHub tools. 
 
 Documentation
 -------------
