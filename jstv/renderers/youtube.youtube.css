@@ -1,3 +1,9 @@
+iframe:not([seamless]) {
+	border:0;
+	padding:0;
+	margin:0;
+}
+
 .onload-youtube {
 	z-index: 123321;
 }
