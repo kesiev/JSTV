@@ -13,6 +13,7 @@
 function makeMusicPlaylist(){
 	return [
 		{name:'intro',files:{"audio/mp3":"programs-common/music/Arnaldo_brenna_-_imho.mp3","audio/ogg":"programs-common/music/Arnaldo_brenna_-_imho.ogg"}},
+		{name:'intro',files:{"audio/mp3":"programs-common/music/Arnaldo_brenna-piano_delay.mp3","audio/ogg":"programs-common/music/Arnaldo_brenna-piano_delay.ogg"}},
 		{name:'intro',files:{"audio/mp3":"programs-common/music/zabutom-statoil.mp3","audio/ogg":"programs-common/music/zabutom-statoil.ogg"}},
 		{name:'intro',files:{"audio/mp3":"programs-common/music/antietam.mp3","audio/ogg":"programs-common/music/antietam.ogg"}},
 		{name:'intro',files:{"audio/mp3":"programs-common/music/Plurabelle_-_06_-_Ropes.mp3","audio/ogg":"programs-common/music/Plurabelle_-_06_-_Ropes.ogg"}},
